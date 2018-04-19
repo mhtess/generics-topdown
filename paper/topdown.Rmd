@@ -61,7 +61,7 @@ output            : papaja::apa6_pdf
 
 
 ```{r load_packages, include = FALSE}
-library("papaja")
+library(papaja)
 library(tidyverse)
 library(cowplot)
 library(ggthemes)
@@ -77,6 +77,39 @@ set.seed(42)
 
 
 # Introduction
+
+
+<!-- Include (in the GD) some information analysis of Cimpian, Gelman, & Brandone (2010), Lang Cogn Process -->
+
+In the literature on generics, it is long argued that generic meaning cannot be reduced to probabilities or quantification [@Carlson1977; @Carlson1995; @Gelman2007; @Leslie2008; @Prasada2000; @Cimpian2010theory; @Cimpian2010].
+As I argued in the introduction, these studies (both empirical and theoretical) are limited by their assumption that the literal meaning of generics is directly inspectable, that we can interpret our intuitions or findings about generics without needing to formalize the background knowledge that any language user would be bring to interpret a sentence.
+In this chapter, I examine a few of these studies to see, if indeed, they are incompatible with a prevalence-based semantics. 
+
+I will examine two case studies that show top-down influence of conceptual knowledge on generic endorsement: the origins and dangerousness of properties.
+An old intuition with generics is that at least some generics express properties that are especially enduring and central to a category [@Lyons1977]. 
+This intuition was elaborated into a notion of a "principled connection" between a kind and a property [@Prasada2006], which support both a normative expectation (e.g., *Ks should F*) and explanation of category membership (e.g., *x is a K because it Fs*).
+@Gelman2007 posit that the way in which an exemplar comes to have a property---the *origins* of a property---can bring about a principled connection between the kind and the property. 
+Learning that individuals are born with the property (*intrinsic origins*) signals that the kind has a principled connection to the property, whereas observing individuals who acquire the property from the external world (*extrinsic origins*) is less likely to bring about a principled connection. 
+
+Further evidence of how our understanding of generics is tied to our conceptual knowledge comes from the observation that properties that are "striking, appalling, or otherwise gripping" make the generic "...more tolerant [...] to exceptions" [@Leslie2008; p.15].
+This argument comes from intuitions to explain why sentences like "Mosquitos carry malaria" and "Tigers eat people" sound like true generic sentences despite the prevalence of the feature in the referent categories being exceptionally low. 
+@Cimpian2010 provided some empirical support for this claim using generics about novel categories (e.g., "Lorches have dangerous purple feathers"). 
+Information about dangerousness was found to increase participants' propensity to endorse generic sentences when information about the referent prevalence was fixed (e.g., when 30% of lorches have these purple feathers) [@Cimpian2010, Expts. 1 & 4]. 
+
+Both @Gelman2007 and @Cimpian2010 have participants judge whether or not they agree with generic sentences (or if they would rate them as "true" vs. "false").
+From the preceding chapters, we know that endorsement depends on the referent prevalence (i.e., the prevalence of the property within the referent category) in a nonlinear, relative way that depends on the distribution of prevalence of the property within a set of relevant alternative categories. 
+Thus, the minimal computational model presented here already has two distinct avenues by which theory-based expectations can influence endorsement: the prevalence prior and the referent prevalence.
+Prevalence prior distributions reflect complex structure (often manifesting as multi-modal distributions) and can change dramatically between properties of different types (e.g., biological vs. accidental properties; Ch. 2, Expt. 1; Ch. 3, Expt. 1, Expt. 2) and even within properties that are all of the same conceptual type (e.g., biological properties; Ch. 2, Expt. 2l Ch. 3, Expt. 2). 
+Second, referent prevalence is not the objective frequency of the property among actual members of the category in the world. 
+Instead, we define prevalence as a subjective, predictive probability that exists in the mind of the speaker.
+(Frequency information is relevant insofar as it informs a speaker's beliefs about the property or event's probability of occurring in the future.)
+In our experiments on habitual endorsement (Ch. 3, Expt. 2c), we showed how endorsement patterns can easily be divorced from the objective, present frequency, even taking into account the prior distribution over prevalence.
+In those experiments, what mattered for endorsement was participants' predictions about the future (though again, in a manner relative to the prevalence prior). 
+
+We revisit the effects of property origins and property dangerousness through the lens of the computational model.
+First, if referent prevalence is what matters for generic endorsement, then the "pricipled connections" thought to result from learning intrinsic property origins in @Gelman2007 would matter only insofar as it increases the subjective probability that a future instance of the category would have the property. 
+Second, if information about dangerousness is argued to influence generic endorsement in a way independent of prevalence, then it must be shown that information about dangerousness does not alter the prevalence prior.
+We test these arguments in this chapter.
 
 # Experiment 1: Property origins
 
@@ -249,8 +282,6 @@ The semantics of generics can be understood as a threshold on property prevalenc
   }
   \label{fig:dobles}
 \end{figure*}
-
-
 
 
 # Experiment 2: The impact of dangerousness
