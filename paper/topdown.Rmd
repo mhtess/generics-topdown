@@ -220,7 +220,7 @@ The procedure and materials are exactly the same as in Expt. 1a, with the except
 After reading each vignette, participants were asked: "Do you agree or disagree that: *generic statement* (e.g., Dobles have claws)".
 Participants responded by choosing one of two radio buttons corresponding to agree or disagree.
 
-#### Results and discussion
+#### Results
 
 <!-- %                                         Estimate Std. Error z value        Pr(>|z|)     -->
 <!-- %(Intercept)                               -2.9444     0.5130  -5.740 0.0000000094624 *** -->
@@ -284,12 +284,92 @@ The semantics of generics can be understood as a threshold on property prevalenc
 \end{figure*}
 
 
-# Experiment 2: The impact of dangerousness
+# Experiment 2: The impact of strikingness
 
-# Experiment 3: Transient properties
+@Leslie2007 brings our attention to examples like the following:
+
+1. Sharks attack bathers.
+2. Rottweilers maul children. 
+3. Mosquitos carry the West Nile Virus.
+
+In each case, the property is somehow *striking, alarming,* or *dangerous*:
+
+> The examples... have something in common: In all of them, the sentence attributes harmful, dangerous, or appalling properties to the kind. More generally, if the property in question is the sort of property of which one would be well served to be forewarned, even if there were only a small chance of encountering it, then generic attributions of the property are intuitively true. (2008, p.15)
+
+@Leslie2008 argues that these generics are reasonable utterances, even though the actual prevalence of the property is quite low (e.g., less than 1% of mosquitos carry the West Nile Virus), because the property is *striking*. 
+@Cimpian2010 (Expt. 1) found that generics about novel categories (of the kind seen in Chapter 4) are endorsed more highly when the property being predicated is *distinctive and dangerous*. 
+In a follow-up (Expt. 2), the increase in endorsement was found for properties that were described indendently as either distinctive or dangerous.
+
+The information-theoretic communicative model predicts that these differences in endorsements are mediated by corresponding differences in the prevalence prior distributions. 
+Indeed, we have already seen in Chapter 3 (generic endorsement) that statements about familiar categories like (1)-(3) are endorsed despite low referent prevalence because the prevalence prior distribution reflects that of a distinctive property.
+That is, because most animals do not carry the West Nile Virus, and even among those that do, the prevalence is quite low, the endorsement model is willing to assert the generic sentence even though very few mosquitos carry the West Nile Virus. 
+
+Here, we examine if the relationship between striking or dangerous properties and prevalence priors also holds for generics about novel categories using the set of dangerous items used by @Cimpian2010. 
+We reverse the order of our standard experimental procedure.
+First, we replicate the findings of @Cimpian2010 Expt. 4, to try to find the influence of dangerousness information on generic endorsement.
+Then, we run a prior elicitation paradigm and use our computatoinal model to jointly model both sets to see if these differences in endorsements can be traced back to differences in the prevalence prior distributions. 
+
+## Experiment 2a: Truth judgment task
+
+This experiment is a replication of @Cimpian2010 Expt. 4. 
+
+### Method
+
+#### Participants
+
+We recruited 40 participants over MTurk. 
+The experimental design is very similar to @Cimpian2010 (Expt. 4), and we chose to have a sample size at least twice as large as the original study (original n=15). 
+All participants were native English speakers. 
+The experiment took about 5 minutes and participants were compensated \$0.60.
+
+#### Materials
+
+#### Procedure and materials
+
+In order to get participants motivated to reason about novel kinds, they were told they were the resident zoologist of a team of scientists on a recently discovered island with many unknown animals; their task was to provide their expert opinion on questions about these animals.
+On each trial, participants were given a statement about a property's prevalence within a novel kind (*referent prevalence*; e.g. "50% of feps have yellow fur."). 
+Participants were then asked whether or not they agreed or disagreed with the corresponding generic sentence (e.g. "Feps have yellow fur.").
+Referent prevalence varied between 10, 30, 50, 70, and 90%.
+
+The experiment consisted of 25 trials: 5 trials for each of 5 types of properties measured in Ch. 2, Expt. 1A (part, color part, vague part, common accidental, rare accidental). 
+Each prevalence level appeared once for each property type (5 prevalence levels x 5 property types). 
+
+#### Procedure
+
+### Results
+
+## Experiment 2b: Prior elicitation
+
+### Method
+
+#### Participants
+
+#### Materials
+
+#### Procedure
+
+### Results
+
+## Computational modeling results
+
+<!-- # Experiment 3: Transient properties -->
 
 # Discussion
 
+<!-- 
+
+- dangerousness also distorts predictive prevalence?
+  - Leslie draws on inspiration about people's predictions about the likelihood of encountering a dangerouesness property (Leslie  2008, Rothbart etal 1978).
+  - Also, representativeness heuristic (KT) in bringing rare events to mind.  
+  
+- does dangerousness infleunce generic understanding beyond rational(ish) probabilities? 
+  - the evidence that dangerounsness impacts endorsement is confounded... there is no evidence that dangerousness impacts endorsements outside of the relevant probabilities 
+  - Sterken 2015 argues that these statements are false assertions
+  - "loose talk" theories
+  - what does Leslie have to say about the mechanisms by which dangerous information is connected?
+  - Prasada descrbies the "causal connections"
+    - is there a difference between "causal" and "principled" connections in our model? (no, the model is agnositc... also no difference for "statistical" connections...)
+-->
 
 \newpage
 
