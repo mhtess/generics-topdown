@@ -352,13 +352,16 @@ In each case, the property is somehow *striking, alarming,* or *dangerous*:
 
 @Leslie2008 argues that these generics are reasonable utterances, even though the actual prevalence of the property is quite low (e.g., less than 1% of mosquitos carry the West Nile Virus), because the property is *striking*. 
 @Cimpian2010 (Expt. 1) found that generics about novel categories (of the kind seen in Chapter 4) are endorsed more highly when the property being predicated is *distinctive and dangerous*. 
-In a follow-up (Expt. 2), the increase in endorsement was found for properties that were described indendently as either distinctive or dangerous.
+In a follow-up (Expt. 4), the increase in endorsement was found for properties that were described independently as either distinctive or dangerous.
 
 The information-theoretic communicative model predicts that these differences in endorsements are mediated by corresponding differences in the prevalence prior distributions. 
-Indeed, we have already seen in Chapter 3 (generic endorsement) that statements about familiar categories like (1)-(3) are endorsed despite low referent prevalence because the prevalence prior distribution reflects that of a distinctive property.
-That is, because most animals do not carry the West Nile Virus, and even among those that do, the prevalence is quite low, the endorsement model is willing to assert the generic sentence even though very few mosquitos carry the West Nile Virus. 
+Indeed, we have already seen in Chapter 3 (generic endorsement) that statements about familiar categories like Sentences 1-3 are endorsed despite low referent prevalence because the prevalence prior distribution reflects that of a distinctive property.
+That is, because most animals do not carry the West Nile Virus, and even among those that do, the prevalence is quite low, the endorsement model is willing to assert the generic sentence even though very few mosquitos carry the West Nile Virus. ^[
+  An alternative possibility, still within the space of our endorsement model and one that @Leslie2008 suggests, is that a speaker's perception of the prevalence of the feature is altered by virtue of its dangerousness [@Rothbart1978].
+  This explanatory mechanism would be the same as the one we explored in Expt. 1.
+]
 
-Here, we examine if the relationship between striking or dangerous properties and prevalence priors also holds for generics about novel categories using the set of dangerous items used by @Cimpian2010. 
+Here, we examine if the relationship between striking or dangerous properties and prevalence priors also holds for generics about novel  categories using the set of dangerous items used by @Cimpian2010. 
 We reverse the order of our standard experimental procedure.
 First, we replicate the findings of @Cimpian2010 Expt. 4, to try to find the influence of dangerousness information on generic endorsement.
 Then, we run a prior elicitation paradigm and use our computatoinal model to jointly model both sets to see if these differences in endorsements can be traced back to differences in the prevalence prior distributions. 
@@ -378,17 +381,18 @@ The experiment took about 5 minutes and participants were compensated \$0.60.
 
 #### Materials
 
-#### Procedure and materials
+The materials were taken from @Cimpian2010 (Expt. 4).
+Properties were either described as dangerous, distinctive, or neither. 
+
+
+#### Procedure
 
 In order to get participants motivated to reason about novel kinds, they were told they were the resident zoologist of a team of scientists on a recently discovered island with many unknown animals; their task was to provide their expert opinion on questions about these animals.
 On each trial, participants were given a statement about a property's prevalence within a novel kind (*referent prevalence*; e.g. "50% of feps have yellow fur."). 
 Participants were then asked whether or not they agreed or disagreed with the corresponding generic sentence (e.g. "Feps have yellow fur.").
 Referent prevalence varied between 10, 30, 50, 70, and 90%.
 
-The experiment consisted of 25 trials: 5 trials for each of 5 types of properties measured in Ch. 2, Expt. 1A (part, color part, vague part, common accidental, rare accidental). 
-Each prevalence level appeared once for each property type (5 prevalence levels x 5 property types). 
-
-#### Procedure
+The experiment consisted of thirty trials. Participant saw each prevalence level twice paired with each of the three kinds of property (5 prevalence levels x 2 repetitions x 3 property types).
 
 ### Results
 
@@ -398,18 +402,24 @@ Each prevalence level appeared once for each property type (5 prevalence levels 
 
 #### Participants
 
-#### Materials
+We recruited 40 participants over MTurk. 
+All participants were native English speakers. 
+The experiment took about X minutes and participants were compensated \$Y.
 
-#### Procedure
+#### Materials and procedure
+
+The experiment was divided into two blocks. 
+In the first block, participants were told that on this island there were one thousand (1000) different species of animals. They were asked to make a prediction about how many different species of animals they thought would have the property.
+In the second block, participants were told they scientists came across a particular instance of a novel category with the property (e.g., "Scientists today saw a glippet. It had *property*") and asked to predict how many other instances of the category had the property (e.g., "What percentage of other glippets do you think *have property*?").
+
+
+The materials were the same as in Expt. 2a. 
 
 ### Results
-
-## Computational modeling results
 
 <!-- # Experiment 3: Transient properties -->
 
 # Discussion
-
 
 ## Predictive prevalence and sufficiently long histories
 
