@@ -1,3 +1,10 @@
 .Rproj.user
 .Rhistory
 *.Rproj
+mturk/
+*.fff
+paper/topdown.tex
+paper/topdown.pdf
+paper/topdown_cache/
+paper/topdown_files/
+*.nb.html

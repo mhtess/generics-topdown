@@ -1,0 +1,1081 @@
+"workerid","rt","trial_type","property","trial_num","total_num_categories","full_property","property_type","response"
+0,10071,"num_categories","green teeth",1,1000,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",500
+0,5930,"num_categories","purple shells",2,1000,"distinctive purple shells that no other species on the island has","distinctive",200
+0,11532,"num_categories","silver stripes",3,1000,"distinctive silver stripes that no other species on the island has","distinctive",150
+0,4520,"num_categories","yellow fur",4,1000,"yellow fur","bare",200
+0,4304,"num_categories","copper stripes",5,1000,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",20
+0,4867,"num_categories","copper fur",6,1000,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",10
+0,7808,"num_categories","gold spots",7,1000,"distinctive gold spots that no other species on the island has","distinctive",80
+0,2273,"num_categories","pink ears",8,1000,"distinctive pink ears that no other species on the island has","distinctive",90
+0,3490,"num_categories","pink teeth",9,1000,"distinctive pink teeth that no other species on the island has","distinctive",20
+0,4107,"num_categories","red spots",10,1000,"red spots","bare",250
+0,5385,"num_categories","gold feathers",11,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",90
+0,4614,"num_categories","green shells",12,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",40
+0,4165,"num_categories","blue teeth",13,1000,"blue teeth","bare",9
+0,3106,"num_categories","yellow scales",14,1000,"distinctive yellow scales that no other species on the island has","distinctive",45
+0,2157,"num_categories","silver fur",15,1000,"distinctive silver fur that no other species on the island has","distinctive",50
+0,3392,"num_categories","blue scales",16,1000,"blue scales","bare",20
+0,3787,"num_categories","red scales",17,1000,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",35
+0,5225,"num_categories","red feathers",18,1000,"red feathers","bare",600
+0,4384,"num_categories","gold stripes",19,1000,"gold stripes","bare",150
+0,3590,"num_categories","purple tails",20,1000,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",20
+0,6813,"num_categories","green tails",21,1000,"distinctive green tails that no other species on the island has","distinctive",90
+0,6256,"num_categories","orange ears",22,1000,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",25
+0,4022,"num_categories","blue ears",23,1000,"blue ears","bare",60
+0,2433,"num_categories","yellow legs",24,1000,"yellow legs","bare",30
+0,3565,"num_categories","purple feathers",25,1000,"distinctive purple feathers that no other species on the island has","distinctive",40
+0,4942,"num_categories","copper spots",26,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",15
+0,3614,"num_categories","silver legs",27,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",20
+0,4556,"num_categories","pink legs",28,1000,"distinctive pink legs that no other species on the island has","distinctive",55
+0,3695,"num_categories","orange shells",29,1000,"orange shells","bare",26
+0,4068,"num_categories","orange tails",30,1000,"orange tails","bare",40
+0,7504,"projectibility","green teeth",1,100,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",70
+0,3718,"projectibility","purple shells",2,100,"distinctive purple shells that no other animal on the island has","distinctive",40
+0,2007,"projectibility","silver stripes",3,100,"distinctive silver stripes that no other animal on the island has","distinctive",60
+0,4140,"projectibility","yellow fur",4,100,"yellow fur","bare",30
+0,3851,"projectibility","copper stripes",5,100,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",20
+0,2362,"projectibility","copper fur",6,100,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",50
+0,2038,"projectibility","gold spots",7,100,"distinctive gold spots that no other animal on the island has","distinctive",30
+0,1955,"projectibility","pink ears",8,100,"distinctive pink ears that no other animal on the island has","distinctive",70
+0,1897,"projectibility","pink teeth",9,100,"distinctive pink teeth that no other animal on the island has","distinctive",39
+0,1935,"projectibility","red spots",10,100,"red spots","bare",25
+0,2367,"projectibility","gold feathers",11,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",24
+0,4864,"projectibility","green shells",12,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",58
+0,8184,"projectibility","blue teeth",13,100,"blue teeth","bare",90
+0,4559,"projectibility","yellow scales",14,100,"distinctive yellow scales that no other animal on the island has","distinctive",5
+0,2642,"projectibility","silver fur",15,100,"distinctive silver fur that no other animal on the island has","distinctive",15
+0,2442,"projectibility","blue scales",16,100,"blue scales","bare",50
+0,1445,"projectibility","red scales",17,100,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",49
+0,1713,"projectibility","red feathers",18,100,"red feathers","bare",30
+0,1832,"projectibility","gold stripes",19,100,"gold stripes","bare",60
+0,3594,"projectibility","purple tails",20,100,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",35
+0,2715,"projectibility","green tails",21,100,"distinctive green tails that no other animal on the island has","distinctive",20
+0,2561,"projectibility","orange ears",22,100,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",50
+0,1811,"projectibility","blue ears",23,100,"blue ears","bare",30
+0,1528,"projectibility","yellow legs",24,100,"yellow legs","bare",60
+0,2418,"projectibility","purple feathers",25,100,"distinctive purple feathers that no other animal on the island has","distinctive",30
+0,2907,"projectibility","copper spots",26,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",70
+0,2292,"projectibility","silver legs",27,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",55
+0,2287,"projectibility","pink legs",28,100,"distinctive pink legs that no other animal on the island has","distinctive",35
+0,3711,"projectibility","orange shells",29,100,"orange shells","bare",60
+0,3862,"projectibility","orange tails",30,100,"orange tails","bare",70
+1,13025,"num_categories","yellow legs",1,1000,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",1
+1,5839,"num_categories","copper fur",2,1000,"distinctive copper fur that no other species on the island has","distinctive",2
+1,4934,"num_categories","silver fur",3,1000,"silver fur","bare",5
+1,5712,"num_categories","gold feathers",4,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+1,9132,"num_categories","copper spots",5,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",5
+1,10249,"num_categories","purple shells",6,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",1
+1,10513,"num_categories","blue scales",7,1000,"blue scales","bare",15
+1,10546,"num_categories","silver stripes",8,1000,"distinctive silver stripes that no other species on the island has","distinctive",2
+1,4346,"num_categories","yellow scales",9,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",3
+1,8134,"num_categories","blue teeth",10,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",5
+1,6251,"num_categories","purple tails",11,1000,"purple tails","bare",3
+1,7813,"num_categories","pink teeth",12,1000,"distinctive pink teeth that no other species on the island has","distinctive",1
+1,4893,"num_categories","silver legs",13,1000,"distinctive silver legs that no other species on the island has","distinctive",2
+1,3605,"num_categories","green teeth",14,1000,"green teeth","bare",5
+1,4724,"num_categories","orange ears",15,1000,"orange ears","bare",2
+1,4602,"num_categories","blue ears",16,1000,"distinctive blue ears that no other species on the island has","distinctive",2
+1,3962,"num_categories","gold spots",17,1000,"distinctive gold spots that no other species on the island has","distinctive",3
+1,3163,"num_categories","green tails",18,1000,"distinctive green tails that no other species on the island has","distinctive",3
+1,2171,"num_categories","red feathers",19,1000,"distinctive red feathers that no other species on the island has","distinctive",5
+1,3818,"num_categories","purple feathers",20,1000,"purple feathers","bare",9
+1,7686,"num_categories","pink ears",21,1000,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",5
+1,4359,"num_categories","yellow fur",22,1000,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",3
+1,2746,"num_categories","red spots",23,1000,"red spots","bare",9
+1,4130,"num_categories","green shells",24,1000,"green shells","bare",5
+1,3204,"num_categories","gold stripes",25,1000,"gold stripes","bare",1
+1,3092,"num_categories","red scales",26,1000,"distinctive red scales that no other species on the island has","distinctive",2
+1,2980,"num_categories","pink legs",27,1000,"pink legs","bare",3
+1,4720,"num_categories","copper stripes",28,1000,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",1
+1,3815,"num_categories","orange tails",29,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",2
+1,6131,"num_categories","orange shells",30,1000,"distinctive orange shells that no other species on the island has","distinctive",3
+1,21279,"projectibility","yellow legs",1,100,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",55
+1,9472,"projectibility","copper fur",2,100,"distinctive copper fur that no other animal on the island has","distinctive",67
+1,2819,"projectibility","silver fur",3,100,"silver fur","bare",75
+1,5871,"projectibility","gold feathers",4,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",72
+1,4256,"projectibility","copper spots",5,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",63
+1,5553,"projectibility","purple shells",6,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",75
+1,2719,"projectibility","blue scales",7,100,"blue scales","bare",62
+1,2833,"projectibility","silver stripes",8,100,"distinctive silver stripes that no other animal on the island has","distinctive",55
+1,3673,"projectibility","yellow scales",9,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",82
+1,2723,"projectibility","blue teeth",10,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",96
+1,3771,"projectibility","purple tails",11,100,"purple tails","bare",66
+1,2717,"projectibility","pink teeth",12,100,"distinctive pink teeth that no other animal on the island has","distinctive",96
+1,2973,"projectibility","silver legs",13,100,"distinctive silver legs that no other animal on the island has","distinctive",65
+1,6810,"projectibility","green teeth",14,100,"green teeth","bare",92
+1,2962,"projectibility","orange ears",15,100,"orange ears","bare",62
+1,6324,"projectibility","blue ears",16,100,"distinctive blue ears that no other animal on the island has","distinctive",68
+1,5463,"projectibility","gold spots",17,100,"distinctive gold spots that no other animal on the island has","distinctive",66
+1,3131,"projectibility","green tails",18,100,"distinctive green tails that no other animal on the island has","distinctive",53
+1,3524,"projectibility","red feathers",19,100,"distinctive red feathers that no other animal on the island has","distinctive",82
+1,3578,"projectibility","purple feathers",20,100,"purple feathers","bare",83
+1,4050,"projectibility","pink ears",21,100,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",75
+1,3065,"projectibility","yellow fur",22,100,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",92
+1,3505,"projectibility","red spots",23,100,"red spots","bare",25
+1,4176,"projectibility","green shells",24,100,"green shells","bare",58
+1,2791,"projectibility","gold stripes",25,100,"gold stripes","bare",89
+1,2995,"projectibility","red scales",26,100,"distinctive red scales that no other animal on the island has","distinctive",55
+1,2688,"projectibility","pink legs",27,100,"pink legs","bare",62
+1,2766,"projectibility","copper stripes",28,100,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",63
+1,2610,"projectibility","orange tails",29,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",56
+1,2083,"projectibility","orange shells",30,100,"distinctive orange shells that no other animal on the island has","distinctive",42
+2,11624,"num_categories","gold spots",1,1000,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",5
+2,8278,"num_categories","purple feathers",2,1000,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+2,4270,"num_categories","yellow fur",3,1000,"distinctive yellow fur that no other species on the island has","distinctive",1
+2,6404,"num_categories","purple shells",4,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",10
+2,4451,"num_categories","pink ears",5,1000,"distinctive pink ears that no other species on the island has","distinctive",1
+2,7998,"num_categories","silver fur",6,1000,"silver fur","bare",50
+2,6085,"num_categories","blue ears",7,1000,"blue ears","bare",75
+2,2452,"num_categories","pink legs",8,1000,"distinctive pink legs that no other species on the island has","distinctive",1
+2,3029,"num_categories","silver stripes",9,1000,"distinctive silver stripes that no other species on the island has","distinctive",1
+2,7371,"num_categories","orange tails",10,1000,"orange tails","bare",200
+2,4363,"num_categories","red scales",11,1000,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",3
+2,3771,"num_categories","silver legs",12,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",4
+2,2738,"num_categories","pink teeth",13,1000,"pink teeth","bare",1
+2,6160,"num_categories","green shells",14,1000,"green shells","bare",400
+2,7102,"num_categories","yellow scales",15,1000,"yellow scales","bare",60
+2,9013,"num_categories","gold stripes",16,1000,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",2
+2,7001,"num_categories","purple tails",17,1000,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",5
+2,5041,"num_categories","yellow legs",18,1000,"yellow legs","bare",100
+2,4682,"num_categories","copper spots",19,1000,"copper spots","bare",30
+2,3023,"num_categories","blue scales",20,1000,"distinctive blue scales that no other species on the island has","distinctive",1
+2,4198,"num_categories","orange ears",21,1000,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",1
+2,1856,"num_categories","green tails",22,1000,"distinctive green tails that no other species on the island has","distinctive",1
+2,3878,"num_categories","copper stripes",23,1000,"copper stripes","bare",25
+2,8477,"num_categories","gold feathers",24,1000,"gold feathers","bare",15
+2,3626,"num_categories","blue teeth",25,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",2
+2,1571,"num_categories","green teeth",26,1000,"distinctive green teeth that no other species on the island has","distinctive",1
+2,2396,"num_categories","red feathers",27,1000,"distinctive red feathers that no other species on the island has","distinctive",1
+2,2398,"num_categories","copper fur",28,1000,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",1
+2,1325,"num_categories","red spots",29,1000,"distinctive red spots that no other species on the island has","distinctive",1
+2,1365,"num_categories","orange shells",30,1000,"distinctive orange shells that no other species on the island has","distinctive",1
+2,14645,"projectibility","gold spots",1,100,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",90
+2,6516,"projectibility","purple feathers",2,100,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",100
+2,4508,"projectibility","yellow fur",3,100,"distinctive yellow fur that no other animal on the island has","distinctive",100
+2,5968,"projectibility","purple shells",4,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",80
+2,8076,"projectibility","pink ears",5,100,"distinctive pink ears that no other animal on the island has","distinctive",100
+2,4294,"projectibility","silver fur",6,100,"silver fur","bare",70
+2,4435,"projectibility","blue ears",7,100,"blue ears","bare",60
+2,18921,"projectibility","pink legs",8,100,"distinctive pink legs that no other animal on the island has","distinctive",100
+2,32057,"projectibility","silver stripes",9,100,"distinctive silver stripes that no other animal on the island has","distinctive",100
+2,40820,"projectibility","orange tails",10,100,"orange tails","bare",100
+2,18671,"projectibility","red scales",11,100,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",90
+2,29111,"projectibility","silver legs",12,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",80
+2,7528,"projectibility","pink teeth",13,100,"pink teeth","bare",40
+2,5872,"projectibility","green shells",14,100,"green shells","bare",100
+2,4014,"projectibility","yellow scales",15,100,"yellow scales","bare",100
+2,14223,"projectibility","gold stripes",16,100,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",95
+2,13630,"projectibility","purple tails",17,100,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",100
+2,5190,"projectibility","yellow legs",18,100,"yellow legs","bare",80
+2,3486,"projectibility","copper spots",19,100,"copper spots","bare",70
+2,5963,"projectibility","blue scales",20,100,"distinctive blue scales that no other animal on the island has","distinctive",100
+2,28638,"projectibility","orange ears",21,100,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",100
+2,10894,"projectibility","green tails",22,100,"distinctive green tails that no other animal on the island has","distinctive",100
+2,6174,"projectibility","copper stripes",23,100,"copper stripes","bare",90
+2,4978,"projectibility","gold feathers",24,100,"gold feathers","bare",70
+2,6192,"projectibility","blue teeth",25,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",100
+2,5388,"projectibility","green teeth",26,100,"distinctive green teeth that no other animal on the island has","distinctive",100
+2,4747,"projectibility","red feathers",27,100,"distinctive red feathers that no other animal on the island has","distinctive",100
+2,5227,"projectibility","copper fur",28,100,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",100
+2,12124,"projectibility","red spots",29,100,"distinctive red spots that no other animal on the island has","distinctive",100
+2,4252,"projectibility","orange shells",30,100,"distinctive orange shells that no other animal on the island has","distinctive",100
+3,11063,"num_categories","silver stripes",1,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",200
+3,5616,"num_categories","orange tails",2,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",200
+3,4832,"num_categories","pink ears",3,1000,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",200
+3,6224,"num_categories","green tails",4,1000,"green tails","bare",200
+3,5696,"num_categories","purple feathers",5,1000,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",50
+3,3608,"num_categories","green teeth",6,1000,"distinctive green teeth that no other species on the island has","distinctive",50
+3,3912,"num_categories","orange shells",7,1000,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",50
+3,3752,"num_categories","red scales",8,1000,"distinctive red scales that no other species on the island has","distinctive",50
+3,4840,"num_categories","green shells",9,1000,"distinctive green shells that no other species on the island has","distinctive",50
+3,3776,"num_categories","copper fur",10,1000,"distinctive copper fur that no other species on the island has","distinctive",50
+3,3776,"num_categories","pink legs",11,1000,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",50
+3,5816,"num_categories","copper stripes",12,1000,"distinctive copper stripes that no other species on the island has","distinctive",50
+3,3376,"num_categories","pink teeth",13,1000,"pink teeth","bare",50
+3,6352,"num_categories","gold spots",14,1000,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",50
+3,4624,"num_categories","gold feathers",15,1000,"distinctive gold feathers that no other species on the island has","distinctive",50
+3,3895,"num_categories","yellow legs",16,1000,"yellow legs","bare",50
+3,2632,"num_categories","purple shells",17,1000,"purple shells","bare",50
+3,4224,"num_categories","blue ears",18,1000,"distinctive blue ears that no other species on the island has","distinctive",100
+3,3255,"num_categories","orange ears",19,1000,"orange ears","bare",100
+3,7041,"num_categories","yellow fur",20,1000,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",50
+3,4144,"num_categories","silver legs",21,1000,"distinctive silver legs that no other species on the island has","distinctive",50
+3,3815,"num_categories","blue teeth",22,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",50
+3,2761,"num_categories","copper spots",23,1000,"distinctive copper spots that no other species on the island has","distinctive",50
+3,2656,"num_categories","blue scales",24,1000,"dangerous blue scales that secrete a strong venom that kills you on the spot","dangerous",50
+3,3391,"num_categories","red spots",25,1000,"red spots","bare",50
+3,3271,"num_categories","purple tails",26,1000,"distinctive purple tails that no other species on the island has","distinctive",50
+3,3056,"num_categories","gold stripes",27,1000,"gold stripes","bare",50
+3,2752,"num_categories","yellow scales",28,1000,"yellow scales","bare",50
+3,3097,"num_categories","silver fur",29,1000,"silver fur","bare",50
+3,3487,"num_categories","red feathers",30,1000,"red feathers","bare",50
+3,10776,"projectibility","silver stripes",1,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",80
+3,6224,"projectibility","orange tails",2,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",80
+3,3648,"projectibility","pink ears",3,100,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",80
+3,21103,"projectibility","green tails",4,100,"green tails","bare",80
+3,5608,"projectibility","purple feathers",5,100,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",80
+3,3018,"projectibility","green teeth",6,100,"distinctive green teeth that no other animal on the island has","distinctive",80
+3,3102,"projectibility","orange shells",7,100,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",80
+3,4352,"projectibility","red scales",8,100,"distinctive red scales that no other animal on the island has","distinctive",80
+3,3320,"projectibility","green shells",9,100,"distinctive green shells that no other animal on the island has","distinctive",80
+3,2631,"projectibility","copper fur",10,100,"distinctive copper fur that no other animal on the island has","distinctive",80
+3,3225,"projectibility","pink legs",11,100,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",80
+3,3200,"projectibility","copper stripes",12,100,"distinctive copper stripes that no other animal on the island has","distinctive",80
+3,4886,"projectibility","pink teeth",13,100,"pink teeth","bare",80
+3,4305,"projectibility","gold spots",14,100,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",80
+3,2975,"projectibility","gold feathers",15,100,"distinctive gold feathers that no other animal on the island has","distinctive",80
+3,2959,"projectibility","yellow legs",16,100,"yellow legs","bare",80
+3,3313,"projectibility","purple shells",17,100,"purple shells","bare",80
+3,3120,"projectibility","blue ears",18,100,"distinctive blue ears that no other animal on the island has","distinctive",80
+3,4655,"projectibility","orange ears",19,100,"orange ears","bare",80
+3,7407,"projectibility","yellow fur",20,100,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",80
+3,4593,"projectibility","silver legs",21,100,"distinctive silver legs that no other animal on the island has","distinctive",80
+3,3161,"projectibility","blue teeth",22,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",80
+3,3591,"projectibility","copper spots",23,100,"distinctive copper spots that no other animal on the island has","distinctive",80
+3,4056,"projectibility","blue scales",24,100,"dangerous blue scales that secrete a strong venom that kills you on the spot","dangerous",80
+3,2839,"projectibility","red spots",25,100,"red spots","bare",80
+3,2912,"projectibility","purple tails",26,100,"distinctive purple tails that no other animal on the island has","distinctive",80
+3,3359,"projectibility","gold stripes",27,100,"gold stripes","bare",80
+3,2769,"projectibility","yellow scales",28,100,"yellow scales","bare",80
+3,3087,"projectibility","silver fur",29,100,"silver fur","bare",80
+3,2712,"projectibility","red feathers",30,100,"red feathers","bare",80
+4,19353,"num_categories","yellow fur",1,1000,"distinctive yellow fur that no other species on the island has","distinctive",1
+4,13563,"num_categories","purple shells",2,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",1
+4,10274,"num_categories","green teeth",3,1000,"green teeth","bare",2
+4,15597,"num_categories","green shells",4,1000,"green shells","bare",50
+4,9903,"num_categories","silver fur",5,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",1
+4,9228,"num_categories","orange tails",6,1000,"distinctive orange tails that no other species on the island has","distinctive",1
+4,7743,"num_categories","pink teeth",7,1000,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",1
+4,8973,"num_categories","silver stripes",8,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",1
+4,9684,"num_categories","gold stripes",9,1000,"distinctive gold stripes that no other species on the island has","distinctive",1
+4,8223,"num_categories","pink legs",10,1000,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",1
+4,11357,"num_categories","purple feathers",11,1000,"purple feathers","bare",8
+4,10420,"num_categories","red scales",12,1000,"red scales","bare",40
+4,9840,"num_categories","red feathers",13,1000,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+4,9016,"num_categories","purple tails",14,1000,"purple tails","bare",40
+4,11852,"num_categories","green tails",15,1000,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",1
+4,8520,"num_categories","red spots",16,1000,"red spots","bare",6
+4,8104,"num_categories","gold spots",17,1000,"distinctive gold spots that no other species on the island has","distinctive",1
+4,13035,"num_categories","silver legs",18,1000,"silver legs","bare",15
+4,11686,"num_categories","copper spots",19,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",1
+4,6692,"num_categories","gold feathers",20,1000,"distinctive gold feathers that no other species on the island has","distinctive",1
+4,8632,"num_categories","orange shells",21,1000,"distinctive orange shells that no other species on the island has","distinctive",1
+4,7515,"num_categories","blue scales",22,1000,"dangerous blue scales that secrete a strong venom that kills you on the spot","dangerous",1
+4,6595,"num_categories","yellow legs",23,1000,"distinctive yellow legs that no other species on the island has","distinctive",1
+4,11634,"num_categories","copper fur",24,1000,"copper fur","bare",35
+4,5387,"num_categories","yellow scales",25,1000,"distinctive yellow scales that no other species on the island has","distinctive",1
+4,4414,"num_categories","blue teeth",26,1000,"distinctive blue teeth that no other species on the island has","distinctive",1
+4,8421,"num_categories","blue ears",27,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",1
+4,6619,"num_categories","orange ears",28,1000,"distinctive orange ears that no other species on the island has","distinctive",1
+4,9042,"num_categories","copper stripes",29,1000,"copper stripes","bare",20
+4,9655,"num_categories","pink ears",30,1000,"pink ears","bare",40
+4,30131,"projectibility","yellow fur",1,100,"distinctive yellow fur that no other animal on the island has","distinctive",100
+4,17466,"projectibility","purple shells",2,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",100
+4,12535,"projectibility","green teeth",3,100,"green teeth","bare",75
+4,12080,"projectibility","green shells",4,100,"green shells","bare",90
+4,14296,"projectibility","silver fur",5,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",50
+4,15653,"projectibility","orange tails",6,100,"distinctive orange tails that no other animal on the island has","distinctive",95
+4,13289,"projectibility","pink teeth",7,100,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",85
+4,18113,"projectibility","silver stripes",8,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",30
+4,11995,"projectibility","gold stripes",9,100,"distinctive gold stripes that no other animal on the island has","distinctive",60
+4,11561,"projectibility","pink legs",10,100,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",15
+4,12589,"projectibility","purple feathers",11,100,"purple feathers","bare",98
+4,10596,"projectibility","red scales",12,100,"red scales","bare",20
+4,12495,"projectibility","red feathers",13,100,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",10
+4,20931,"projectibility","purple tails",14,100,"purple tails","bare",68
+4,19499,"projectibility","green tails",15,100,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",45
+4,9238,"projectibility","red spots",16,100,"red spots","bare",16
+4,12592,"projectibility","gold spots",17,100,"distinctive gold spots that no other animal on the island has","distinctive",95
+4,10371,"projectibility","silver legs",18,100,"silver legs","bare",30
+4,18280,"projectibility","copper spots",19,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",80
+4,10736,"projectibility","gold feathers",20,100,"distinctive gold feathers that no other animal on the island has","distinctive",100
+4,9897,"projectibility","orange shells",21,100,"distinctive orange shells that no other animal on the island has","distinctive",95
+4,10626,"projectibility","blue scales",22,100,"dangerous blue scales that secrete a strong venom that kills you on the spot","dangerous",15
+4,16158,"projectibility","yellow legs",23,100,"distinctive yellow legs that no other animal on the island has","distinctive",10
+4,10730,"projectibility","copper fur",24,100,"copper fur","bare",85
+4,11352,"projectibility","yellow scales",25,100,"distinctive yellow scales that no other animal on the island has","distinctive",98
+4,9206,"projectibility","blue teeth",26,100,"distinctive blue teeth that no other animal on the island has","distinctive",90
+4,11636,"projectibility","blue ears",27,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",75
+4,12257,"projectibility","orange ears",28,100,"distinctive orange ears that no other animal on the island has","distinctive",90
+4,13568,"projectibility","copper stripes",29,100,"copper stripes","bare",55
+4,10472,"projectibility","pink ears",30,100,"pink ears","bare",95
+5,59262,"num_categories","silver stripes",1,1000,"distinctive silver stripes that no other species on the island has","distinctive",100
+5,11935,"num_categories","silver fur",2,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",2
+5,10448,"num_categories","orange ears",3,1000,"orange ears","bare",50
+5,5336,"num_categories","orange tails",4,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",3
+5,8072,"num_categories","yellow scales",5,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",10
+5,9087,"num_categories","green tails",6,1000,"distinctive green tails that no other species on the island has","distinctive",1
+5,3018,"num_categories","green shells",7,1000,"distinctive green shells that no other species on the island has","distinctive",1
+5,2824,"num_categories","blue scales",8,1000,"distinctive blue scales that no other species on the island has","distinctive",1
+5,6743,"num_categories","red spots",9,1000,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",20
+5,5481,"num_categories","blue teeth",10,1000,"blue teeth","bare",15
+5,7631,"num_categories","red scales",11,1000,"red scales","bare",100
+5,3752,"num_categories","purple tails",12,1000,"purple tails","bare",50
+5,4168,"num_categories","purple shells",13,1000,"purple shells","bare",35
+5,8920,"num_categories","yellow legs",14,1000,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",75
+5,2944,"num_categories","pink teeth",15,1000,"distinctive pink teeth that no other species on the island has","distinctive",1
+5,33088,"num_categories","gold stripes",16,1000,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",5
+5,5933,"num_categories","yellow fur",17,1000,"distinctive yellow fur that no other species on the island has","distinctive",1
+5,4611,"num_categories","pink legs",18,1000,"pink legs","bare",30
+5,5551,"num_categories","blue ears",19,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",5
+5,12522,"num_categories","green teeth",20,1000,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",20
+5,3416,"num_categories","purple feathers",21,1000,"distinctive purple feathers that no other species on the island has","distinctive",1
+5,6128,"num_categories","gold spots",22,1000,"gold spots","bare",100
+5,5368,"num_categories","copper fur",23,1000,"copper fur","bare",125
+5,5392,"num_categories","red feathers",24,1000,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",3
+5,3024,"num_categories","pink ears",25,1000,"distinctive pink ears that no other species on the island has","distinctive",1
+5,4840,"num_categories","copper spots",26,1000,"distinctive copper spots that no other species on the island has","distinctive",1
+5,14863,"num_categories","orange shells",27,1000,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",5
+5,5287,"num_categories","copper stripes",28,1000,"copper stripes","bare",40
+5,4968,"num_categories","gold feathers",29,1000,"gold feathers","bare",125
+5,2559,"num_categories","silver legs",30,1000,"distinctive silver legs that no other species on the island has","distinctive",1
+5,18318,"projectibility","silver stripes",1,100,"distinctive silver stripes that no other animal on the island has","distinctive",100
+5,17223,"projectibility","silver fur",2,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",80
+5,10681,"projectibility","orange ears",3,100,"orange ears","bare",60
+5,15863,"projectibility","orange tails",4,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",90
+5,6913,"projectibility","yellow scales",5,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",100
+5,5368,"projectibility","green tails",6,100,"distinctive green tails that no other animal on the island has","distinctive",100
+5,3751,"projectibility","green shells",7,100,"distinctive green shells that no other animal on the island has","distinctive",100
+5,2959,"projectibility","blue scales",8,100,"distinctive blue scales that no other animal on the island has","distinctive",100
+5,12847,"projectibility","red spots",9,100,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",90
+5,12961,"projectibility","blue teeth",10,100,"blue teeth","bare",80
+5,4447,"projectibility","red scales",11,100,"red scales","bare",90
+5,5376,"projectibility","purple tails",12,100,"purple tails","bare",90
+5,3480,"projectibility","purple shells",13,100,"purple shells","bare",80
+5,7247,"projectibility","yellow legs",14,100,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",85
+5,3600,"projectibility","pink teeth",15,100,"distinctive pink teeth that no other animal on the island has","distinctive",100
+5,5479,"projectibility","gold stripes",16,100,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",85
+5,3768,"projectibility","yellow fur",17,100,"distinctive yellow fur that no other animal on the island has","distinctive",100
+5,6121,"projectibility","pink legs",18,100,"pink legs","bare",65
+5,11999,"projectibility","blue ears",19,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",50
+5,7808,"projectibility","green teeth",20,100,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",95
+5,4297,"projectibility","purple feathers",21,100,"distinctive purple feathers that no other animal on the island has","distinctive",100
+5,4384,"projectibility","gold spots",22,100,"gold spots","bare",75
+5,4736,"projectibility","copper fur",23,100,"copper fur","bare",80
+5,8904,"projectibility","red feathers",24,100,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",85
+5,6904,"projectibility","pink ears",25,100,"distinctive pink ears that no other animal on the island has","distinctive",100
+5,3904,"projectibility","copper spots",26,100,"distinctive copper spots that no other animal on the island has","distinctive",100
+5,4679,"projectibility","orange shells",27,100,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",85
+5,4433,"projectibility","copper stripes",28,100,"copper stripes","bare",75
+5,3685,"projectibility","gold feathers",29,100,"gold feathers","bare",75
+5,3424,"projectibility","silver legs",30,100,"distinctive silver legs that no other animal on the island has","distinctive",100
+6,36547,"num_categories","yellow scales",1,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",1
+6,15424,"num_categories","pink teeth",2,1000,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",1
+6,6391,"num_categories","purple tails",3,1000,"purple tails","bare",1
+6,9257,"num_categories","copper spots",4,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",1
+6,6080,"num_categories","blue teeth",5,1000,"blue teeth","bare",1
+6,15675,"num_categories","gold stripes",6,1000,"distinctive gold stripes that no other species on the island has","distinctive",1
+6,7126,"num_categories","orange shells",7,1000,"orange shells","bare",2
+6,9591,"num_categories","orange ears",8,1000,"distinctive orange ears that no other species on the island has","distinctive",1
+6,14567,"num_categories","silver fur",9,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",1
+6,10864,"num_categories","pink legs",10,1000,"pink legs","bare",1
+6,5568,"num_categories","purple feathers",11,1000,"distinctive purple feathers that no other species on the island has","distinctive",1
+6,6711,"num_categories","yellow legs",12,1000,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",1
+6,4864,"num_categories","red spots",13,1000,"red spots","bare",2
+6,4054,"num_categories","purple shells",14,1000,"distinctive purple shells that no other species on the island has","distinctive",1
+6,6703,"num_categories","copper fur",15,1000,"distinctive copper fur that no other species on the island has","distinctive",1
+6,6569,"num_categories","red scales",16,1000,"red scales","bare",1
+6,3424,"num_categories","yellow fur",17,1000,"yellow fur","bare",2
+6,4739,"num_categories","gold spots",18,1000,"distinctive gold spots that no other species on the island has","distinctive",1
+6,5660,"num_categories","green tails",19,1000,"distinctive green tails that no other species on the island has","distinctive",1
+6,3617,"num_categories","silver stripes",20,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",1
+6,6159,"num_categories","pink ears",21,1000,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",1
+6,6272,"num_categories","red feathers",22,1000,"red feathers","bare",2
+6,4503,"num_categories","silver legs",23,1000,"distinctive silver legs that no other species on the island has","distinctive",1
+6,3216,"num_categories","blue ears",24,1000,"blue ears","bare",1
+6,8704,"num_categories","green shells",25,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",1
+6,3746,"num_categories","green teeth",26,1000,"distinctive green teeth that no other species on the island has","distinctive",1
+6,3727,"num_categories","blue scales",27,1000,"distinctive blue scales that no other species on the island has","distinctive",1
+6,5855,"num_categories","gold feathers",28,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",1
+6,14928,"num_categories","orange tails",29,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",1
+6,6622,"num_categories","copper stripes",30,1000,"copper stripes","bare",3
+6,17679,"projectibility","yellow scales",1,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",50
+6,9751,"projectibility","pink teeth",2,100,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",100
+6,11376,"projectibility","purple tails",3,100,"purple tails","bare",100
+6,4119,"projectibility","copper spots",4,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",100
+6,4278,"projectibility","blue teeth",5,100,"blue teeth","bare",100
+6,9113,"projectibility","gold stripes",6,100,"distinctive gold stripes that no other animal on the island has","distinctive",50
+6,6935,"projectibility","orange shells",7,100,"orange shells","bare",100
+6,7209,"projectibility","orange ears",8,100,"distinctive orange ears that no other animal on the island has","distinctive",100
+6,4352,"projectibility","silver fur",9,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",100
+6,5526,"projectibility","pink legs",10,100,"pink legs","bare",100
+6,4874,"projectibility","purple feathers",11,100,"distinctive purple feathers that no other animal on the island has","distinctive",100
+6,4943,"projectibility","yellow legs",12,100,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",100
+6,2959,"projectibility","red spots",13,100,"red spots","bare",100
+6,2696,"projectibility","purple shells",14,100,"distinctive purple shells that no other animal on the island has","distinctive",100
+6,3344,"projectibility","copper fur",15,100,"distinctive copper fur that no other animal on the island has","distinctive",100
+6,5663,"projectibility","red scales",16,100,"red scales","bare",100
+6,3969,"projectibility","yellow fur",17,100,"yellow fur","bare",100
+6,2768,"projectibility","gold spots",18,100,"distinctive gold spots that no other animal on the island has","distinctive",100
+6,2358,"projectibility","green tails",19,100,"distinctive green tails that no other animal on the island has","distinctive",100
+6,2680,"projectibility","silver stripes",20,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",100
+6,2614,"projectibility","pink ears",21,100,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",100
+6,5186,"projectibility","red feathers",22,100,"red feathers","bare",100
+6,2735,"projectibility","silver legs",23,100,"distinctive silver legs that no other animal on the island has","distinctive",100
+6,2615,"projectibility","blue ears",24,100,"blue ears","bare",100
+6,3223,"projectibility","green shells",25,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",100
+6,3416,"projectibility","green teeth",26,100,"distinctive green teeth that no other animal on the island has","distinctive",100
+6,2984,"projectibility","blue scales",27,100,"distinctive blue scales that no other animal on the island has","distinctive",100
+6,2232,"projectibility","gold feathers",28,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",100
+6,2503,"projectibility","orange tails",29,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",100
+6,2769,"projectibility","copper stripes",30,100,"copper stripes","bare",100
+7,19446,"num_categories","orange tails",1,1000,"distinctive orange tails that no other species on the island has","distinctive",10
+7,9489,"num_categories","copper stripes",2,1000,"distinctive copper stripes that no other species on the island has","distinctive",25
+7,7862,"num_categories","orange shells",3,1000,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",40
+7,9918,"num_categories","blue scales",4,1000,"blue scales","bare",400
+7,11582,"num_categories","gold stripes",5,1000,"gold stripes","bare",250
+7,8639,"num_categories","copper spots",6,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",100
+7,10797,"num_categories","green shells",7,1000,"distinctive green shells that no other species on the island has","distinctive",1
+7,4903,"num_categories","pink ears",8,1000,"pink ears","bare",5
+7,7431,"num_categories","blue teeth",9,1000,"distinctive blue teeth that no other species on the island has","distinctive",1
+7,5576,"num_categories","silver stripes",10,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",100
+7,5486,"num_categories","red feathers",11,1000,"red feathers","bare",350
+7,9400,"num_categories","yellow legs",12,1000,"distinctive yellow legs that no other species on the island has","distinctive",1
+7,5389,"num_categories","green tails",13,1000,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",150
+7,8911,"num_categories","green teeth",14,1000,"green teeth","bare",660
+7,4318,"num_categories","pink legs",15,1000,"pink legs","bare",300
+7,3129,"num_categories","gold spots",16,1000,"distinctive gold spots that no other species on the island has","distinctive",1
+7,4670,"num_categories","purple tails",17,1000,"purple tails","bare",50
+7,13575,"num_categories","copper fur",18,1000,"copper fur","bare",500
+7,5103,"num_categories","red spots",19,1000,"red spots","bare",450
+7,3200,"num_categories","purple feathers",20,1000,"distinctive purple feathers that no other species on the island has","distinctive",40
+7,3229,"num_categories","silver fur",21,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",50
+7,2896,"num_categories","purple shells",22,1000,"purple shells","bare",30
+7,2647,"num_categories","silver legs",23,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",20
+7,2728,"num_categories","yellow fur",24,1000,"distinctive yellow fur that no other species on the island has","distinctive",1
+7,2365,"num_categories","yellow scales",25,1000,"distinctive yellow scales that no other species on the island has","distinctive",1
+7,2462,"num_categories","red scales",26,1000,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",50
+7,44427,"num_categories","blue ears",27,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",34
+7,2031,"num_categories","pink teeth",28,1000,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",56
+7,2035,"num_categories","gold feathers",29,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",54
+7,2614,"num_categories","orange ears",30,1000,"distinctive orange ears that no other species on the island has","distinctive",1
+7,8220,"projectibility","orange tails",1,100,"distinctive orange tails that no other animal on the island has","distinctive",50
+7,5839,"projectibility","copper stripes",2,100,"distinctive copper stripes that no other animal on the island has","distinctive",45
+7,2407,"projectibility","orange shells",3,100,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",23
+7,2216,"projectibility","blue scales",4,100,"blue scales","bare",64
+7,1951,"projectibility","gold stripes",5,100,"gold stripes","bare",43
+7,1975,"projectibility","copper spots",6,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",23
+7,2040,"projectibility","green shells",7,100,"distinctive green shells that no other animal on the island has","distinctive",75
+7,1614,"projectibility","pink ears",8,100,"pink ears","bare",54
+7,2406,"projectibility","blue teeth",9,100,"distinctive blue teeth that no other animal on the island has","distinctive",1
+7,2400,"projectibility","silver stripes",10,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",3
+7,1933,"projectibility","red feathers",11,100,"red feathers","bare",2
+7,3661,"projectibility","yellow legs",12,100,"distinctive yellow legs that no other animal on the island has","distinctive",54
+7,1946,"projectibility","green tails",13,100,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",3
+7,2838,"projectibility","green teeth",14,100,"green teeth","bare",2
+7,1992,"projectibility","pink legs",15,100,"pink legs","bare",3
+7,1775,"projectibility","gold spots",16,100,"distinctive gold spots that no other animal on the island has","distinctive",34
+7,2055,"projectibility","purple tails",17,100,"purple tails","bare",64
+7,1808,"projectibility","copper fur",18,100,"copper fur","bare",34
+7,1418,"projectibility","red spots",19,100,"red spots","bare",45
+7,1758,"projectibility","purple feathers",20,100,"distinctive purple feathers that no other animal on the island has","distinctive",45
+7,2615,"projectibility","silver fur",21,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",23
+7,2175,"projectibility","purple shells",22,100,"purple shells","bare",45
+7,1821,"projectibility","silver legs",23,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",23
+7,1703,"projectibility","yellow fur",24,100,"distinctive yellow fur that no other animal on the island has","distinctive",34
+7,1584,"projectibility","yellow scales",25,100,"distinctive yellow scales that no other animal on the island has","distinctive",34
+7,1758,"projectibility","red scales",26,100,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",64
+7,1473,"projectibility","blue ears",27,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",23
+7,2271,"projectibility","pink teeth",28,100,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",34
+7,1910,"projectibility","gold feathers",29,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",64
+7,1697,"projectibility","orange ears",30,100,"distinctive orange ears that no other animal on the island has","distinctive",23
+8,9903,"num_categories","green teeth",1,1000,"distinctive green teeth that no other species on the island has","distinctive",5
+8,10025,"num_categories","purple shells",2,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",5
+8,11335,"num_categories","blue ears",3,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",30
+8,9081,"num_categories","silver fur",4,1000,"distinctive silver fur that no other species on the island has","distinctive",25
+8,12767,"num_categories","gold feathers",5,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",12
+8,7577,"num_categories","orange tails",6,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",6
+8,6178,"num_categories","blue scales",7,1000,"blue scales","bare",100
+8,2709,"num_categories","green shells",8,1000,"green shells","bare",100
+8,13480,"num_categories","copper fur",9,1000,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",4
+8,126849,"num_categories","purple tails",10,1000,"purple tails","bare",50
+8,5338,"num_categories","pink teeth",11,1000,"pink teeth","bare",65
+8,6446,"num_categories","blue teeth",12,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",6
+8,6041,"num_categories","silver legs",13,1000,"silver legs","bare",25
+8,19226,"num_categories","red feathers",14,1000,"red feathers","bare",120
+8,5285,"num_categories","orange ears",15,1000,"distinctive orange ears that no other species on the island has","distinctive",5
+8,7337,"num_categories","copper stripes",16,1000,"distinctive copper stripes that no other species on the island has","distinctive",16
+8,6902,"num_categories","copper spots",17,1000,"copper spots","bare",55
+8,328220,"num_categories","silver stripes",18,1000,"silver stripes","bare",132
+8,3887,"num_categories","purple feathers",19,1000,"distinctive purple feathers that no other species on the island has","distinctive",16
+8,3945,"num_categories","pink ears",20,1000,"pink ears","bare",50
+8,4109,"num_categories","yellow legs",21,1000,"distinctive yellow legs that no other species on the island has","distinctive",32
+8,2307,"num_categories","orange shells",22,1000,"distinctive orange shells that no other species on the island has","distinctive",13
+8,4182,"num_categories","green tails",23,1000,"distinctive green tails that no other species on the island has","distinctive",12
+8,3069,"num_categories","yellow scales",24,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",7
+8,5689,"num_categories","gold stripes",25,1000,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",2
+8,4560,"num_categories","pink legs",26,1000,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",6
+8,4554,"num_categories","yellow fur",27,1000,"yellow fur","bare",64
+8,4171,"num_categories","gold spots",28,1000,"distinctive gold spots that no other species on the island has","distinctive",53
+8,2274,"num_categories","red spots",29,1000,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",26
+8,3757,"num_categories","red scales",30,1000,"distinctive red scales that no other species on the island has","distinctive",21
+8,12942,"projectibility","green teeth",1,100,"distinctive green teeth that no other animal on the island has","distinctive",95
+8,9789,"projectibility","purple shells",2,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",95
+8,7328,"projectibility","blue ears",3,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",95
+8,3543,"projectibility","silver fur",4,100,"distinctive silver fur that no other animal on the island has","distinctive",95
+8,3037,"projectibility","gold feathers",5,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",95
+8,2717,"projectibility","orange tails",6,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",95
+8,8759,"projectibility","blue scales",7,100,"blue scales","bare",35
+8,2316,"projectibility","green shells",8,100,"green shells","bare",35
+8,4195,"projectibility","copper fur",9,100,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",96
+8,5435,"projectibility","purple tails",10,100,"purple tails","bare",25
+8,3661,"projectibility","pink teeth",11,100,"pink teeth","bare",60
+8,6848,"projectibility","blue teeth",12,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",90
+8,6121,"projectibility","silver legs",13,100,"silver legs","bare",95
+8,3239,"projectibility","red feathers",14,100,"red feathers","bare",96
+8,8768,"projectibility","orange ears",15,100,"distinctive orange ears that no other animal on the island has","distinctive",87
+8,5168,"projectibility","copper stripes",16,100,"distinctive copper stripes that no other animal on the island has","distinctive",98
+8,5278,"projectibility","copper spots",17,100,"copper spots","bare",65
+8,3314,"projectibility","silver stripes",18,100,"silver stripes","bare",65
+8,4755,"projectibility","purple feathers",19,100,"distinctive purple feathers that no other animal on the island has","distinctive",95
+8,6386,"projectibility","pink ears",20,100,"pink ears","bare",76
+8,17177,"projectibility","yellow legs",21,100,"distinctive yellow legs that no other animal on the island has","distinctive",88
+8,4956,"projectibility","orange shells",22,100,"distinctive orange shells that no other animal on the island has","distinctive",95
+8,4753,"projectibility","green tails",23,100,"distinctive green tails that no other animal on the island has","distinctive",94
+8,4878,"projectibility","yellow scales",24,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",95
+8,5732,"projectibility","gold stripes",25,100,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",95
+8,5326,"projectibility","pink legs",26,100,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",95
+8,5505,"projectibility","yellow fur",27,100,"yellow fur","bare",65
+8,3364,"projectibility","gold spots",28,100,"distinctive gold spots that no other animal on the island has","distinctive",95
+8,6826,"projectibility","red spots",29,100,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",68
+8,4403,"projectibility","red scales",30,100,"distinctive red scales that no other animal on the island has","distinctive",95
+9,62106,"num_categories","copper stripes",1,1000,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",100
+9,3059,"num_categories","silver legs",2,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",562
+9,2513,"num_categories","red feathers",3,1000,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",120
+9,2466,"num_categories","blue teeth",4,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",115
+9,3373,"num_categories","green teeth",5,1000,"distinctive green teeth that no other species on the island has","distinctive",350
+9,2629,"num_categories","orange tails",6,1000,"distinctive orange tails that no other species on the island has","distinctive",650
+9,2176,"num_categories","green shells",7,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",600
+9,2191,"num_categories","copper fur",8,1000,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",500
+9,3048,"num_categories","purple tails",9,1000,"purple tails","bare",850
+9,2459,"num_categories","purple feathers",10,1000,"distinctive purple feathers that no other species on the island has","distinctive",990
+9,18958,"num_categories","yellow legs",11,1000,"yellow legs","bare",500
+9,2749,"num_categories","blue ears",12,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",500
+9,2331,"num_categories","red scales",13,1000,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",250
+9,3849,"num_categories","orange shells",14,1000,"distinctive orange shells that no other species on the island has","distinctive",364
+9,1691,"num_categories","pink ears",15,1000,"pink ears","bare",450
+9,1430,"num_categories","yellow fur",16,1000,"yellow fur","bare",455
+9,1530,"num_categories","gold spots",17,1000,"gold spots","bare",555
+9,1674,"num_categories","pink teeth",18,1000,"pink teeth","bare",500
+9,2713,"num_categories","purple shells",19,1000,"purple shells","bare",143
+9,1290,"num_categories","red spots",20,1000,"distinctive red spots that no other species on the island has","distinctive",420
+9,1450,"num_categories","yellow scales",21,1000,"yellow scales","bare",200
+9,1368,"num_categories","pink legs",22,1000,"distinctive pink legs that no other species on the island has","distinctive",220
+9,998,"num_categories","gold feathers",23,1000,"gold feathers","bare",200
+9,1475,"num_categories","orange ears",24,1000,"distinctive orange ears that no other species on the island has","distinctive",450
+9,1378,"num_categories","blue scales",25,1000,"distinctive blue scales that no other species on the island has","distinctive",500
+9,1472,"num_categories","gold stripes",26,1000,"gold stripes","bare",520
+9,1127,"num_categories","silver fur",27,1000,"distinctive silver fur that no other species on the island has","distinctive",200
+9,1748,"num_categories","silver stripes",28,1000,"distinctive silver stripes that no other species on the island has","distinctive",250
+9,1560,"num_categories","green tails",29,1000,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",200
+9,1559,"num_categories","copper spots",30,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",425
+9,2529,"projectibility","copper stripes",1,100,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",10
+9,1479,"projectibility","silver legs",2,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",5
+9,1260,"projectibility","red feathers",3,100,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+9,1170,"projectibility","blue teeth",4,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",15
+9,1274,"projectibility","green teeth",5,100,"distinctive green teeth that no other animal on the island has","distinctive",20
+9,1686,"projectibility","orange tails",6,100,"distinctive orange tails that no other animal on the island has","distinctive",25
+9,1052,"projectibility","green shells",7,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",0
+9,1015,"projectibility","copper fur",8,100,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",0
+9,1955,"projectibility","purple tails",9,100,"purple tails","bare",10
+9,1626,"projectibility","purple feathers",10,100,"distinctive purple feathers that no other animal on the island has","distinctive",1
+9,1242,"projectibility","yellow legs",11,100,"yellow legs","bare",10
+9,1237,"projectibility","blue ears",12,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",5
+9,1287,"projectibility","red scales",13,100,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",2
+9,968,"projectibility","orange shells",14,100,"distinctive orange shells that no other animal on the island has","distinctive",10
+9,1180,"projectibility","pink ears",15,100,"pink ears","bare",10
+9,992,"projectibility","yellow fur",16,100,"yellow fur","bare",10
+9,904,"projectibility","gold spots",17,100,"gold spots","bare",10
+9,1092,"projectibility","pink teeth",18,100,"pink teeth","bare",11
+9,914,"projectibility","purple shells",19,100,"purple shells","bare",10
+9,1522,"projectibility","red spots",20,100,"distinctive red spots that no other animal on the island has","distinctive",10
+9,1410,"projectibility","yellow scales",21,100,"yellow scales","bare",10
+9,1302,"projectibility","pink legs",22,100,"distinctive pink legs that no other animal on the island has","distinctive",10
+9,1153,"projectibility","gold feathers",23,100,"gold feathers","bare",10
+9,1582,"projectibility","orange ears",24,100,"distinctive orange ears that no other animal on the island has","distinctive",10
+9,1058,"projectibility","blue scales",25,100,"distinctive blue scales that no other animal on the island has","distinctive",10
+9,1149,"projectibility","gold stripes",26,100,"gold stripes","bare",10
+9,1136,"projectibility","silver fur",27,100,"distinctive silver fur that no other animal on the island has","distinctive",10
+9,1214,"projectibility","silver stripes",28,100,"distinctive silver stripes that no other animal on the island has","distinctive",20
+9,1236,"projectibility","green tails",29,100,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",25
+9,1100,"projectibility","copper spots",30,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",25
+10,9733,"num_categories","gold spots",1,1000,"distinctive gold spots that no other species on the island has","distinctive",20
+10,3729,"num_categories","copper fur",2,1000,"copper fur","bare",50
+10,3963,"num_categories","pink ears",3,1000,"distinctive pink ears that no other species on the island has","distinctive",20
+10,2260,"num_categories","orange tails",4,1000,"orange tails","bare",20
+10,2664,"num_categories","blue teeth",5,1000,"blue teeth","bare",20
+10,3331,"num_categories","silver fur",6,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",20
+10,4980,"num_categories","pink teeth",7,1000,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",20
+10,1417,"num_categories","yellow legs",8,1000,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",20
+10,1820,"num_categories","pink legs",9,1000,"pink legs","bare",2
+10,2416,"num_categories","gold feathers",10,1000,"gold feathers","bare",50
+10,5991,"num_categories","purple tails",11,1000,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",2
+10,1793,"num_categories","green tails",12,1000,"distinctive green tails that no other species on the island has","distinctive",2
+10,1288,"num_categories","green teeth",13,1000,"distinctive green teeth that no other species on the island has","distinctive",2
+10,2129,"num_categories","red spots",14,1000,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",20
+10,1555,"num_categories","purple feathers",15,1000,"distinctive purple feathers that no other species on the island has","distinctive",2
+10,2440,"num_categories","blue scales",16,1000,"distinctive blue scales that no other species on the island has","distinctive",50
+10,2105,"num_categories","green shells",17,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",20
+10,1585,"num_categories","yellow fur",18,1000,"distinctive yellow fur that no other species on the island has","distinctive",2
+10,9677,"num_categories","copper spots",19,1000,"copper spots","bare",20
+10,3914,"num_categories","silver legs",20,1000,"distinctive silver legs that no other species on the island has","distinctive",2
+10,2315,"num_categories","gold stripes",21,1000,"gold stripes","bare",20
+10,2048,"num_categories","purple shells",22,1000,"distinctive purple shells that no other species on the island has","distinctive",20
+10,5280,"num_categories","red scales",23,1000,"red scales","bare",2
+10,2654,"num_categories","copper stripes",24,1000,"distinctive copper stripes that no other species on the island has","distinctive",1
+10,3766,"num_categories","red feathers",25,1000,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",20
+10,2251,"num_categories","blue ears",26,1000,"blue ears","bare",20
+10,1673,"num_categories","orange shells",27,1000,"orange shells","bare",20
+10,2995,"num_categories","yellow scales",28,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",20
+10,1867,"num_categories","orange ears",29,1000,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",20
+10,1596,"num_categories","silver stripes",30,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",20
+10,9357,"projectibility","gold spots",1,100,"distinctive gold spots that no other animal on the island has","distinctive",1
+10,2077,"projectibility","copper fur",2,100,"copper fur","bare",1
+10,2101,"projectibility","pink ears",3,100,"distinctive pink ears that no other animal on the island has","distinctive",2
+10,5079,"projectibility","orange tails",4,100,"orange tails","bare",20
+10,4912,"projectibility","blue teeth",5,100,"blue teeth","bare",80
+10,11662,"projectibility","silver fur",6,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",82
+10,2575,"projectibility","pink teeth",7,100,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",82
+10,3353,"projectibility","yellow legs",8,100,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",82
+10,1954,"projectibility","pink legs",9,100,"pink legs","bare",88
+10,4051,"projectibility","gold feathers",10,100,"gold feathers","bare",82
+10,2732,"projectibility","purple tails",11,100,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",72
+10,1630,"projectibility","green tails",12,100,"distinctive green tails that no other animal on the island has","distinctive",82
+10,1928,"projectibility","green teeth",13,100,"distinctive green teeth that no other animal on the island has","distinctive",72
+10,2563,"projectibility","red spots",14,100,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",65
+10,8273,"projectibility","purple feathers",15,100,"distinctive purple feathers that no other animal on the island has","distinctive",44
+10,2266,"projectibility","blue scales",16,100,"distinctive blue scales that no other animal on the island has","distinctive",78
+10,2202,"projectibility","green shells",17,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",54
+10,3632,"projectibility","yellow fur",18,100,"distinctive yellow fur that no other animal on the island has","distinctive",85
+10,2606,"projectibility","copper spots",19,100,"copper spots","bare",25
+10,1879,"projectibility","silver legs",20,100,"distinctive silver legs that no other animal on the island has","distinctive",85
+10,2423,"projectibility","gold stripes",21,100,"gold stripes","bare",45
+10,1940,"projectibility","purple shells",22,100,"distinctive purple shells that no other animal on the island has","distinctive",65
+10,2873,"projectibility","red scales",23,100,"red scales","bare",55
+10,1728,"projectibility","copper stripes",24,100,"distinctive copper stripes that no other animal on the island has","distinctive",45
+10,1583,"projectibility","red feathers",25,100,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",65
+10,1858,"projectibility","blue ears",26,100,"blue ears","bare",85
+10,2110,"projectibility","orange shells",27,100,"orange shells","bare",45
+10,2258,"projectibility","yellow scales",28,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",98
+10,2346,"projectibility","orange ears",29,100,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",85
+10,1962,"projectibility","silver stripes",30,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",75
+11,18799,"num_categories","blue scales",1,1000,"distinctive blue scales that no other species on the island has","distinctive",1
+11,7495,"num_categories","orange shells",2,1000,"orange shells","bare",40
+11,18848,"num_categories","yellow fur",3,1000,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",0
+11,6512,"num_categories","silver stripes",4,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",5
+11,4440,"num_categories","blue ears",5,1000,"distinctive blue ears that no other species on the island has","distinctive",1
+11,4168,"num_categories","green teeth",6,1000,"green teeth","bare",0
+11,6184,"num_categories","silver fur",7,1000,"silver fur","bare",80
+11,11128,"num_categories","copper spots",8,1000,"distinctive copper spots that no other species on the island has","distinctive",1
+11,5799,"num_categories","yellow legs",9,1000,"yellow legs","bare",50
+11,3713,"num_categories","green shells",10,1000,"distinctive green shells that no other species on the island has","distinctive",1
+11,5375,"num_categories","purple tails",11,1000,"purple tails","bare",500
+11,5208,"num_categories","gold spots",12,1000,"gold spots","bare",400
+11,9376,"num_categories","gold feathers",13,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",0
+11,10041,"num_categories","red scales",14,1000,"red scales","bare",5
+11,14223,"num_categories","green tails",15,1000,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",5
+11,4175,"num_categories","gold stripes",16,1000,"gold stripes","bare",4
+11,8009,"num_categories","blue teeth",17,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",0
+11,4343,"num_categories","pink ears",18,1000,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",0
+11,5672,"num_categories","orange ears",19,1000,"orange ears","bare",0
+11,5648,"num_categories","pink teeth",20,1000,"distinctive pink teeth that no other species on the island has","distinctive",1
+11,4479,"num_categories","silver legs",21,1000,"distinctive silver legs that no other species on the island has","distinctive",1
+11,11704,"num_categories","yellow scales",22,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",5
+11,3799,"num_categories","red feathers",23,1000,"distinctive red feathers that no other species on the island has","distinctive",1
+11,7248,"num_categories","purple shells",24,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",50
+11,5136,"num_categories","copper stripes",25,1000,"distinctive copper stripes that no other species on the island has","distinctive",1
+11,2672,"num_categories","orange tails",26,1000,"distinctive orange tails that no other species on the island has","distinctive",1
+11,2424,"num_categories","copper fur",27,1000,"distinctive copper fur that no other species on the island has","distinctive",1
+11,9855,"num_categories","red spots",28,1000,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",0
+11,4752,"num_categories","purple feathers",29,1000,"purple feathers","bare",15
+11,6047,"num_categories","pink legs",30,1000,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",1
+11,27399,"projectibility","blue scales",1,100,"distinctive blue scales that no other animal on the island has","distinctive",1
+11,12079,"projectibility","orange shells",2,100,"orange shells","bare",100
+11,12752,"projectibility","yellow fur",3,100,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",100
+11,8319,"projectibility","silver stripes",4,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",100
+11,9447,"projectibility","blue ears",5,100,"distinctive blue ears that no other animal on the island has","distinctive",1
+11,6615,"projectibility","green teeth",6,100,"green teeth","bare",100
+11,7840,"projectibility","silver fur",7,100,"silver fur","bare",100
+11,10344,"projectibility","copper spots",8,100,"distinctive copper spots that no other animal on the island has","distinctive",1
+11,4831,"projectibility","yellow legs",9,100,"yellow legs","bare",100
+11,5249,"projectibility","green shells",10,100,"distinctive green shells that no other animal on the island has","distinctive",1
+11,10408,"projectibility","purple tails",11,100,"purple tails","bare",100
+11,10208,"projectibility","gold spots",12,100,"gold spots","bare",100
+11,9599,"projectibility","gold feathers",13,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",100
+11,11495,"projectibility","red scales",14,100,"red scales","bare",100
+11,7064,"projectibility","green tails",15,100,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",100
+11,10207,"projectibility","gold stripes",16,100,"gold stripes","bare",100
+11,12751,"projectibility","blue teeth",17,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",100
+11,5192,"projectibility","pink ears",18,100,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",100
+11,3528,"projectibility","orange ears",19,100,"orange ears","bare",100
+11,2688,"projectibility","pink teeth",20,100,"distinctive pink teeth that no other animal on the island has","distinctive",1
+11,3200,"projectibility","silver legs",21,100,"distinctive silver legs that no other animal on the island has","distinctive",1
+11,3319,"projectibility","yellow scales",22,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",100
+11,2465,"projectibility","red feathers",23,100,"distinctive red feathers that no other animal on the island has","distinctive",1
+11,4600,"projectibility","purple shells",24,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",100
+11,6184,"projectibility","copper stripes",25,100,"distinctive copper stripes that no other animal on the island has","distinctive",1
+11,4832,"projectibility","orange tails",26,100,"distinctive orange tails that no other animal on the island has","distinctive",1
+11,2849,"projectibility","copper fur",27,100,"distinctive copper fur that no other animal on the island has","distinctive",1
+11,2871,"projectibility","red spots",28,100,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",100
+11,5712,"projectibility","purple feathers",29,100,"purple feathers","bare",100
+11,4112,"projectibility","pink legs",30,100,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",100
+12,15640,"num_categories","gold feathers",1,1000,"gold feathers","bare",5
+12,7649,"num_categories","blue teeth",2,1000,"blue teeth","bare",0
+12,10718,"num_categories","gold spots",3,1000,"distinctive gold spots that no other species on the island has","distinctive",1
+12,8280,"num_categories","copper fur",4,1000,"copper fur","bare",0
+12,8032,"num_categories","purple tails",5,1000,"purple tails","bare",1
+12,10695,"num_categories","pink teeth",6,1000,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",0
+12,6560,"num_categories","red scales",7,1000,"distinctive red scales that no other species on the island has","distinctive",1
+12,14367,"num_categories","silver stripes",8,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",0
+12,16288,"num_categories","red feathers",9,1000,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",0
+12,7760,"num_categories","gold stripes",10,1000,"gold stripes","bare",3
+12,9751,"num_categories","yellow legs",11,1000,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",1
+12,7384,"num_categories","silver legs",12,1000,"silver legs","bare",5
+12,45024,"num_categories","yellow scales",13,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",1
+12,11888,"num_categories","blue scales",14,1000,"blue scales","bare",5
+12,10800,"num_categories","yellow fur",15,1000,"distinctive yellow fur that no other species on the island has","distinctive",1
+12,13401,"num_categories","silver fur",16,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",0
+12,10559,"num_categories","purple feathers",17,1000,"distinctive purple feathers that no other species on the island has","distinctive",1
+12,7112,"num_categories","green teeth",18,1000,"distinctive green teeth that no other species on the island has","distinctive",0
+12,38871,"num_categories","copper spots",19,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",1
+12,10519,"num_categories","blue ears",20,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",0
+12,8160,"num_categories","orange tails",21,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",0
+12,6841,"num_categories","green tails",22,1000,"distinctive green tails that no other species on the island has","distinctive",1
+12,11247,"num_categories","orange shells",23,1000,"orange shells","bare",2
+12,8540,"num_categories","red spots",24,1000,"red spots","bare",3
+12,10084,"num_categories","green shells",25,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",0
+12,6880,"num_categories","pink legs",26,1000,"distinctive pink legs that no other species on the island has","distinctive",1
+12,6912,"num_categories","purple shells",27,1000,"distinctive purple shells that no other species on the island has","distinctive",1
+12,5920,"num_categories","pink ears",28,1000,"distinctive pink ears that no other species on the island has","distinctive",1
+12,9039,"num_categories","orange ears",29,1000,"orange ears","bare",3
+12,18776,"num_categories","copper stripes",30,1000,"distinctive copper stripes that no other species on the island has","distinctive",1
+12,20567,"projectibility","gold feathers",1,100,"gold feathers","bare",33
+12,12527,"projectibility","blue teeth",2,100,"blue teeth","bare",100
+12,12632,"projectibility","gold spots",3,100,"distinctive gold spots that no other animal on the island has","distinctive",50
+12,13359,"projectibility","copper fur",4,100,"copper fur","bare",50
+12,9744,"projectibility","purple tails",5,100,"purple tails","bare",20
+12,12048,"projectibility","pink teeth",6,100,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",100
+12,12903,"projectibility","red scales",7,100,"distinctive red scales that no other animal on the island has","distinctive",33
+12,12304,"projectibility","silver stripes",8,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",100
+12,13503,"projectibility","red feathers",9,100,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",50
+12,7656,"projectibility","gold stripes",10,100,"gold stripes","bare",25
+12,9583,"projectibility","yellow legs",11,100,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",100
+12,10375,"projectibility","silver legs",12,100,"silver legs","bare",25
+12,11158,"projectibility","yellow scales",13,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",100
+12,6352,"projectibility","blue scales",14,100,"blue scales","bare",25
+12,10856,"projectibility","yellow fur",15,100,"distinctive yellow fur that no other animal on the island has","distinctive",25
+12,10151,"projectibility","silver fur",16,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",50
+12,8591,"projectibility","purple feathers",17,100,"distinctive purple feathers that no other animal on the island has","distinctive",20
+12,11927,"projectibility","green teeth",18,100,"distinctive green teeth that no other animal on the island has","distinctive",75
+12,7823,"projectibility","copper spots",19,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",100
+12,10137,"projectibility","blue ears",20,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",100
+12,12840,"projectibility","orange tails",21,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",33
+12,9968,"projectibility","green tails",22,100,"distinctive green tails that no other animal on the island has","distinctive",25
+12,12672,"projectibility","orange shells",23,100,"orange shells","bare",20
+12,6935,"projectibility","red spots",24,100,"red spots","bare",25
+12,8120,"projectibility","green shells",25,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",100
+12,8551,"projectibility","pink legs",26,100,"distinctive pink legs that no other animal on the island has","distinctive",50
+12,9567,"projectibility","purple shells",27,100,"distinctive purple shells that no other animal on the island has","distinctive",75
+12,11440,"projectibility","pink ears",28,100,"distinctive pink ears that no other animal on the island has","distinctive",50
+12,6632,"projectibility","orange ears",29,100,"orange ears","bare",33
+12,6303,"projectibility","copper stripes",30,100,"distinctive copper stripes that no other animal on the island has","distinctive",25
+13,11815,"num_categories","purple shells",1,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",2
+13,10000,"num_categories","silver stripes",2,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",5
+13,7511,"num_categories","pink legs",3,1000,"distinctive pink legs that no other species on the island has","distinctive",1
+13,5179,"num_categories","red scales",4,1000,"distinctive red scales that no other species on the island has","distinctive",1
+13,7429,"num_categories","copper stripes",5,1000,"copper stripes","bare",20
+13,4449,"num_categories","yellow scales",6,1000,"yellow scales","bare",40
+13,4863,"num_categories","pink teeth",7,1000,"pink teeth","bare",10
+13,4567,"num_categories","green shells",8,1000,"distinctive green shells that no other species on the island has","distinctive",1
+13,3880,"num_categories","gold stripes",9,1000,"distinctive gold stripes that no other species on the island has","distinctive",1
+13,4855,"num_categories","copper fur",10,1000,"copper fur","bare",100
+13,5175,"num_categories","green tails",11,1000,"green tails","bare",200
+13,3929,"num_categories","orange ears",12,1000,"orange ears","bare",50
+13,5224,"num_categories","red spots",13,1000,"red spots","bare",50
+13,3319,"num_categories","orange shells",14,1000,"orange shells","bare",50
+13,4017,"num_categories","orange tails",15,1000,"distinctive orange tails that no other species on the island has","distinctive",1
+13,3295,"num_categories","purple feathers",16,1000,"distinctive purple feathers that no other species on the island has","distinctive",1
+13,7105,"num_categories","purple tails",17,1000,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",2
+13,6151,"num_categories","gold feathers",18,1000,"gold feathers","bare",40
+13,5497,"num_categories","gold spots",19,1000,"distinctive gold spots that no other species on the island has","distinctive",1
+13,6487,"num_categories","red feathers",20,1000,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",5
+13,6025,"num_categories","yellow fur",21,1000,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",10
+13,5039,"num_categories","yellow legs",22,1000,"yellow legs","bare",100
+13,3015,"num_categories","blue ears",23,1000,"distinctive blue ears that no other species on the island has","distinctive",1
+13,6768,"num_categories","green teeth",24,1000,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",10
+13,4672,"num_categories","pink ears",25,1000,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",10
+13,10479,"num_categories","silver legs",26,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",50
+13,3961,"num_categories","silver fur",27,1000,"distinctive silver fur that no other species on the island has","distinctive",1
+13,4408,"num_categories","blue scales",28,1000,"dangerous blue scales that secrete a strong venom that kills you on the spot","dangerous",2
+13,3663,"num_categories","blue teeth",29,1000,"distinctive blue teeth that no other species on the island has","distinctive",1
+13,6377,"num_categories","copper spots",30,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",20
+13,13912,"projectibility","purple shells",1,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",1
+13,9176,"projectibility","silver stripes",2,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",2
+13,6295,"projectibility","pink legs",3,100,"distinctive pink legs that no other animal on the island has","distinctive",1
+13,9376,"projectibility","red scales",4,100,"distinctive red scales that no other animal on the island has","distinctive",1
+13,6711,"projectibility","copper stripes",5,100,"copper stripes","bare",5
+13,7440,"projectibility","yellow scales",6,100,"yellow scales","bare",10
+13,6089,"projectibility","pink teeth",7,100,"pink teeth","bare",2
+13,4999,"projectibility","green shells",8,100,"distinctive green shells that no other animal on the island has","distinctive",1
+13,3607,"projectibility","gold stripes",9,100,"distinctive gold stripes that no other animal on the island has","distinctive",1
+13,5599,"projectibility","copper fur",10,100,"copper fur","bare",5
+13,5240,"projectibility","green tails",11,100,"green tails","bare",10
+13,26608,"projectibility","orange ears",12,100,"orange ears","bare",5
+13,4049,"projectibility","red spots",13,100,"red spots","bare",10
+13,4199,"projectibility","orange shells",14,100,"orange shells","bare",10
+13,4848,"projectibility","orange tails",15,100,"distinctive orange tails that no other animal on the island has","distinctive",1
+13,3920,"projectibility","purple feathers",16,100,"distinctive purple feathers that no other animal on the island has","distinctive",1
+13,6200,"projectibility","purple tails",17,100,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",2
+13,4688,"projectibility","gold feathers",18,100,"gold feathers","bare",10
+13,5008,"projectibility","gold spots",19,100,"distinctive gold spots that no other animal on the island has","distinctive",1
+13,8184,"projectibility","red feathers",20,100,"dangerous red feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+13,7952,"projectibility","yellow fur",21,100,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",2
+13,13976,"projectibility","yellow legs",22,100,"yellow legs","bare",10
+13,10120,"projectibility","blue ears",23,100,"distinctive blue ears that no other animal on the island has","distinctive",1
+13,3535,"projectibility","green teeth",24,100,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",2
+13,5495,"projectibility","pink ears",25,100,"dangerous pink ears that are the home to dangerous parasites that can make you go deaf","dangerous",2
+13,5713,"projectibility","silver legs",26,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",5
+13,8143,"projectibility","silver fur",27,100,"distinctive silver fur that no other animal on the island has","distinctive",1
+13,6120,"projectibility","blue scales",28,100,"dangerous blue scales that secrete a strong venom that kills you on the spot","dangerous",2
+13,5680,"projectibility","blue teeth",29,100,"distinctive blue teeth that no other animal on the island has","distinctive",1
+13,5423,"projectibility","copper spots",30,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",2
+14,9859,"num_categories","yellow legs",1,1000,"yellow legs","bare",5
+14,2640,"num_categories","green shells",2,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",2
+14,2254,"num_categories","yellow fur",3,1000,"yellow fur","bare",5
+14,2808,"num_categories","gold feathers",4,1000,"distinctive gold feathers that no other species on the island has","distinctive",5
+14,1722,"num_categories","pink teeth",5,1000,"pink teeth","bare",15
+14,1110,"num_categories","pink legs",6,1000,"distinctive pink legs that no other species on the island has","distinctive",55
+14,3460,"num_categories","pink ears",7,1000,"pink ears","bare",5
+14,4992,"num_categories","silver legs",8,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",50
+14,1497,"num_categories","purple feathers",9,1000,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",5
+14,2310,"num_categories","red feathers",10,1000,"red feathers","bare",5
+14,1164,"num_categories","blue scales",11,1000,"blue scales","bare",5
+14,1703,"num_categories","orange ears",12,1000,"distinctive orange ears that no other species on the island has","distinctive",25
+14,1199,"num_categories","gold stripes",13,1000,"distinctive gold stripes that no other species on the island has","distinctive",5
+14,1360,"num_categories","blue teeth",14,1000,"distinctive blue teeth that no other species on the island has","distinctive",35
+14,1295,"num_categories","orange shells",15,1000,"orange shells","bare",5
+14,1279,"num_categories","purple tails",16,1000,"distinctive purple tails that no other species on the island has","distinctive",5
+14,1900,"num_categories","blue ears",17,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",35
+14,1159,"num_categories","red scales",18,1000,"distinctive red scales that no other species on the island has","distinctive",2
+14,1247,"num_categories","silver stripes",19,1000,"silver stripes","bare",3
+14,3146,"num_categories","orange tails",20,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",55
+14,1289,"num_categories","gold spots",21,1000,"gold spots","bare",25
+14,1167,"num_categories","copper spots",22,1000,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",55
+14,1962,"num_categories","copper fur",23,1000,"distinctive copper fur that no other species on the island has","distinctive",5
+14,2068,"num_categories","yellow scales",24,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",35
+14,1143,"num_categories","purple shells",25,1000,"distinctive purple shells that no other species on the island has","distinctive",5
+14,1714,"num_categories","silver fur",26,1000,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",55
+14,1457,"num_categories","green tails",27,1000,"green tails","bare",25
+14,1497,"num_categories","red spots",28,1000,"distinctive red spots that no other species on the island has","distinctive",5
+14,1482,"num_categories","green teeth",29,1000,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",25
+14,1819,"num_categories","copper stripes",30,1000,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",15
+14,20796,"projectibility","yellow legs",1,100,"yellow legs","bare",55
+14,3671,"projectibility","green shells",2,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",25
+14,6141,"projectibility","yellow fur",3,100,"yellow fur","bare",55
+14,1932,"projectibility","gold feathers",4,100,"distinctive gold feathers that no other animal on the island has","distinctive",25
+14,3250,"projectibility","pink teeth",5,100,"pink teeth","bare",25
+14,3195,"projectibility","pink legs",6,100,"distinctive pink legs that no other animal on the island has","distinctive",35
+14,5159,"projectibility","pink ears",7,100,"pink ears","bare",25
+14,2238,"projectibility","silver legs",8,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",25
+14,4063,"projectibility","purple feathers",9,100,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",15
+14,2672,"projectibility","red feathers",10,100,"red feathers","bare",55
+14,5447,"projectibility","blue scales",11,100,"blue scales","bare",76
+14,1940,"projectibility","orange ears",12,100,"distinctive orange ears that no other animal on the island has","distinctive",55
+14,4067,"projectibility","gold stripes",13,100,"distinctive gold stripes that no other animal on the island has","distinctive",25
+14,19346,"projectibility","blue teeth",14,100,"distinctive blue teeth that no other animal on the island has","distinctive",15
+14,2294,"projectibility","orange shells",15,100,"orange shells","bare",25
+14,9899,"projectibility","purple tails",16,100,"distinctive purple tails that no other animal on the island has","distinctive",5
+14,7920,"projectibility","blue ears",17,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",25
+14,5576,"projectibility","red scales",18,100,"distinctive red scales that no other animal on the island has","distinctive",25
+14,6333,"projectibility","silver stripes",19,100,"silver stripes","bare",25
+14,15759,"projectibility","orange tails",20,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",25
+14,3655,"projectibility","gold spots",21,100,"gold spots","bare",55
+14,6014,"projectibility","copper spots",22,100,"dangerous copper spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",55
+14,2592,"projectibility","copper fur",23,100,"distinctive copper fur that no other animal on the island has","distinctive",25
+14,4853,"projectibility","yellow scales",24,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",55
+14,2261,"projectibility","purple shells",25,100,"distinctive purple shells that no other animal on the island has","distinctive",25
+14,2793,"projectibility","silver fur",26,100,"dangerous silver fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",25
+14,6374,"projectibility","green tails",27,100,"green tails","bare",55
+14,2149,"projectibility","red spots",28,100,"distinctive red spots that no other animal on the island has","distinctive",55
+14,4966,"projectibility","green teeth",29,100,"dangerous green teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",55
+14,3276,"projectibility","copper stripes",30,100,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",25
+15,11959,"num_categories","red spots",1,1000,"red spots","bare",300
+15,10741,"num_categories","green teeth",2,1000,"green teeth","bare",200
+15,6719,"num_categories","blue teeth",3,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",1
+15,5040,"num_categories","copper spots",4,1000,"distinctive copper spots that no other species on the island has","distinctive",10
+15,3468,"num_categories","orange ears",5,1000,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",1
+15,3435,"num_categories","silver legs",6,1000,"distinctive silver legs that no other species on the island has","distinctive",2
+15,2423,"num_categories","yellow scales",7,1000,"distinctive yellow scales that no other species on the island has","distinctive",1
+15,4152,"num_categories","gold stripes",8,1000,"gold stripes","bare",20
+15,3335,"num_categories","copper fur",9,1000,"copper fur","bare",10
+15,4183,"num_categories","pink teeth",10,1000,"distinctive pink teeth that no other species on the island has","distinctive",1
+15,3031,"num_categories","red scales",11,1000,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",1
+15,4013,"num_categories","blue scales",12,1000,"blue scales","bare",200
+15,3555,"num_categories","green tails",13,1000,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",1
+15,3172,"num_categories","orange tails",14,1000,"orange tails","bare",12
+15,2342,"num_categories","green shells",15,1000,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",1
+15,2932,"num_categories","orange shells",16,1000,"distinctive orange shells that no other species on the island has","distinctive",1
+15,3485,"num_categories","purple feathers",17,1000,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+15,2327,"num_categories","yellow fur",18,1000,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",1
+15,2258,"num_categories","silver fur",19,1000,"distinctive silver fur that no other species on the island has","distinctive",1
+15,2296,"num_categories","purple tails",20,1000,"distinctive purple tails that no other species on the island has","distinctive",1
+15,2325,"num_categories","red feathers",21,1000,"distinctive red feathers that no other species on the island has","distinctive",1
+15,2549,"num_categories","silver stripes",22,1000,"distinctive silver stripes that no other species on the island has","distinctive",1
+15,2473,"num_categories","copper stripes",23,1000,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",1
+15,4725,"num_categories","blue ears",24,1000,"blue ears","bare",20
+15,8822,"num_categories","gold feathers",25,1000,"gold feathers","bare",10
+15,3282,"num_categories","purple shells",26,1000,"purple shells","bare",10
+15,2418,"num_categories","yellow legs",27,1000,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",1
+15,3388,"num_categories","pink ears",28,1000,"distinctive pink ears that no other species on the island has","distinctive",1
+15,2132,"num_categories","pink legs",29,1000,"pink legs","bare",10
+15,4795,"num_categories","gold spots",30,1000,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",1
+15,13059,"projectibility","red spots",1,100,"red spots","bare",70
+15,6039,"projectibility","green teeth",2,100,"green teeth","bare",100
+15,7012,"projectibility","blue teeth",3,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",100
+15,5495,"projectibility","copper spots",4,100,"distinctive copper spots that no other animal on the island has","distinctive",100
+15,7282,"projectibility","orange ears",5,100,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",100
+15,8068,"projectibility","silver legs",6,100,"distinctive silver legs that no other animal on the island has","distinctive",100
+15,4036,"projectibility","yellow scales",7,100,"distinctive yellow scales that no other animal on the island has","distinctive",100
+15,4056,"projectibility","gold stripes",8,100,"gold stripes","bare",60
+15,3887,"projectibility","copper fur",9,100,"copper fur","bare",60
+15,4118,"projectibility","pink teeth",10,100,"distinctive pink teeth that no other animal on the island has","distinctive",100
+15,2140,"projectibility","red scales",11,100,"dangerous red scales that secrete a strong venom that kills you on the spot","dangerous",100
+15,3400,"projectibility","blue scales",12,100,"blue scales","bare",40
+15,2887,"projectibility","green tails",13,100,"dangerous green tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",100
+15,4071,"projectibility","orange tails",14,100,"orange tails","bare",50
+15,3439,"projectibility","green shells",15,100,"dangerous green shells that are so heavy that they would immediately crush your bones","dangerous",100
+15,3572,"projectibility","orange shells",16,100,"distinctive orange shells that no other animal on the island has","distinctive",100
+15,2695,"projectibility","purple feathers",17,100,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",100
+15,7010,"projectibility","yellow fur",18,100,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",100
+15,4137,"projectibility","silver fur",19,100,"distinctive silver fur that no other animal on the island has","distinctive",100
+15,2784,"projectibility","purple tails",20,100,"distinctive purple tails that no other animal on the island has","distinctive",100
+15,2954,"projectibility","red feathers",21,100,"distinctive red feathers that no other animal on the island has","distinctive",100
+15,1980,"projectibility","silver stripes",22,100,"distinctive silver stripes that no other animal on the island has","distinctive",100
+15,4935,"projectibility","copper stripes",23,100,"dangerous copper stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",100
+15,3069,"projectibility","blue ears",24,100,"blue ears","bare",30
+15,2636,"projectibility","gold feathers",25,100,"gold feathers","bare",40
+15,3534,"projectibility","purple shells",26,100,"purple shells","bare",40
+15,3078,"projectibility","yellow legs",27,100,"dangerous yellow legs that are so powerful that a single blow could kill you","dangerous",100
+15,3849,"projectibility","pink ears",28,100,"distinctive pink ears that no other animal on the island has","distinctive",100
+15,5753,"projectibility","pink legs",29,100,"pink legs","bare",100
+15,3585,"projectibility","gold spots",30,100,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",100
+16,16012,"num_categories","copper fur",1,1000,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",1
+16,8112,"num_categories","pink ears",2,1000,"distinctive pink ears that no other species on the island has","distinctive",1
+16,6006,"num_categories","copper spots",3,1000,"copper spots","bare",10
+16,6198,"num_categories","blue scales",4,1000,"distinctive blue scales that no other species on the island has","distinctive",1
+16,20560,"num_categories","yellow legs",5,1000,"yellow legs","bare",20
+16,4646,"num_categories","red feathers",6,1000,"red feathers","bare",40
+16,5294,"num_categories","yellow fur",7,1000,"distinctive yellow fur that no other species on the island has","distinctive",1
+16,9896,"num_categories","gold spots",8,1000,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",2
+16,12934,"num_categories","green shells",9,1000,"green shells","bare",20
+16,4582,"num_categories","blue teeth",10,1000,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",1
+16,10518,"num_categories","pink legs",11,1000,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",1
+16,4992,"num_categories","green teeth",12,1000,"distinctive green teeth that no other species on the island has","distinctive",1
+16,18886,"num_categories","blue ears",13,1000,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",2
+16,5510,"num_categories","copper stripes",14,1000,"distinctive copper stripes that no other species on the island has","distinctive",1
+16,3544,"num_categories","orange shells",15,1000,"distinctive orange shells that no other species on the island has","distinctive",1
+16,6126,"num_categories","green tails",16,1000,"distinctive green tails that no other species on the island has","distinctive",1
+16,3240,"num_categories","red spots",17,1000,"distinctive red spots that no other species on the island has","distinctive",1
+16,4272,"num_categories","gold stripes",18,1000,"gold stripes","bare",10
+16,7560,"num_categories","silver stripes",19,1000,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",5
+16,4392,"num_categories","gold feathers",20,1000,"distinctive gold feathers that no other species on the island has","distinctive",1
+16,6456,"num_categories","purple tails",21,1000,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",4
+16,4974,"num_categories","purple shells",22,1000,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",2
+16,4168,"num_categories","purple feathers",23,1000,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",2
+16,4400,"num_categories","yellow scales",24,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",4
+16,7888,"num_categories","pink teeth",25,1000,"pink teeth","bare",10
+16,16726,"num_categories","orange tails",26,1000,"orange tails","bare",20
+16,8672,"num_categories","orange ears",27,1000,"orange ears","bare",25
+16,3704,"num_categories","red scales",28,1000,"red scales","bare",40
+16,3184,"num_categories","silver fur",29,1000,"silver fur","bare",30
+16,2936,"num_categories","silver legs",30,1000,"distinctive silver legs that no other species on the island has","distinctive",1
+16,15176,"projectibility","copper fur",1,100,"dangerous copper fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",100
+16,7358,"projectibility","pink ears",2,100,"distinctive pink ears that no other animal on the island has","distinctive",100
+16,18416,"projectibility","copper spots",3,100,"copper spots","bare",100
+16,6518,"projectibility","blue scales",4,100,"distinctive blue scales that no other animal on the island has","distinctive",100
+16,9750,"projectibility","yellow legs",5,100,"yellow legs","bare",100
+16,8040,"projectibility","red feathers",6,100,"red feathers","bare",50
+16,6096,"projectibility","yellow fur",7,100,"distinctive yellow fur that no other animal on the island has","distinctive",100
+16,11712,"projectibility","gold spots",8,100,"dangerous gold spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",100
+16,10294,"projectibility","green shells",9,100,"green shells","bare",80
+16,10304,"projectibility","blue teeth",10,100,"dangerous blue teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",40
+16,15126,"projectibility","pink legs",11,100,"dangerous pink legs that are so powerful that a single blow could kill you","dangerous",40
+16,7406,"projectibility","green teeth",12,100,"distinctive green teeth that no other animal on the island has","distinctive",80
+16,9646,"projectibility","blue ears",13,100,"dangerous blue ears that are the home to dangerous parasites that can make you go deaf","dangerous",80
+16,9312,"projectibility","copper stripes",14,100,"distinctive copper stripes that no other animal on the island has","distinctive",80
+16,7584,"projectibility","orange shells",15,100,"distinctive orange shells that no other animal on the island has","distinctive",50
+16,9678,"projectibility","green tails",16,100,"distinctive green tails that no other animal on the island has","distinctive",100
+16,7400,"projectibility","red spots",17,100,"distinctive red spots that no other animal on the island has","distinctive",50
+16,6622,"projectibility","gold stripes",18,100,"gold stripes","bare",75
+16,6112,"projectibility","silver stripes",19,100,"dangerous silver stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",40
+16,5288,"projectibility","gold feathers",20,100,"distinctive gold feathers that no other animal on the island has","distinctive",80
+16,7230,"projectibility","purple tails",21,100,"dangerous purple tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",40
+16,5638,"projectibility","purple shells",22,100,"dangerous purple shells that are so heavy that they would immediately crush your bones","dangerous",25
+16,18296,"projectibility","purple feathers",23,100,"dangerous purple feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",60
+16,6448,"projectibility","yellow scales",24,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",40
+16,5246,"projectibility","pink teeth",25,100,"pink teeth","bare",85
+16,4494,"projectibility","orange tails",26,100,"orange tails","bare",100
+16,3680,"projectibility","orange ears",27,100,"orange ears","bare",75
+16,5112,"projectibility","red scales",28,100,"red scales","bare",75
+16,5438,"projectibility","silver fur",29,100,"silver fur","bare",100
+16,3920,"projectibility","silver legs",30,100,"distinctive silver legs that no other animal on the island has","distinctive",100
+17,13882,"num_categories","blue teeth",1,1000,"blue teeth","bare",3
+17,11453,"num_categories","red scales",2,1000,"red scales","bare",12
+17,9523,"num_categories","gold spots",3,1000,"gold spots","bare",3
+17,7659,"num_categories","pink legs",4,1000,"distinctive pink legs that no other species on the island has","distinctive",1
+17,4378,"num_categories","silver stripes",5,1000,"silver stripes","bare",3
+17,15048,"num_categories","silver legs",6,1000,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",2
+17,13208,"num_categories","yellow legs",7,1000,"yellow legs","bare",42
+17,10663,"num_categories","green teeth",8,1000,"distinctive green teeth that no other species on the island has","distinctive",18
+17,9856,"num_categories","copper fur",9,1000,"copper fur","bare",25
+17,12971,"num_categories","red spots",10,1000,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",1
+17,9149,"num_categories","pink teeth",11,1000,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",3
+17,5073,"num_categories","yellow fur",12,1000,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",1
+17,8952,"num_categories","yellow scales",13,1000,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",6
+17,6994,"num_categories","orange tails",14,1000,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",5
+17,5720,"num_categories","purple shells",15,1000,"distinctive purple shells that no other species on the island has","distinctive",12
+17,3862,"num_categories","purple tails",16,1000,"distinctive purple tails that no other species on the island has","distinctive",18
+17,9467,"num_categories","gold feathers",17,1000,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",6
+17,11667,"num_categories","orange shells",18,1000,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",2
+17,6433,"num_categories","green tails",19,1000,"green tails","bare",94
+17,5135,"num_categories","pink ears",20,1000,"pink ears","bare",154
+17,16713,"num_categories","red feathers",21,1000,"red feathers","bare",42
+17,5847,"num_categories","copper stripes",22,1000,"distinctive copper stripes that no other species on the island has","distinctive",2
+17,7853,"num_categories","gold stripes",23,1000,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",2
+17,5533,"num_categories","green shells",24,1000,"green shells","bare",22
+17,5047,"num_categories","orange ears",25,1000,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",2
+17,11020,"num_categories","silver fur",26,1000,"distinctive silver fur that no other species on the island has","distinctive",1
+17,3619,"num_categories","blue scales",27,1000,"distinctive blue scales that no other species on the island has","distinctive",1
+17,2826,"num_categories","purple feathers",28,1000,"distinctive purple feathers that no other species on the island has","distinctive",1
+17,4572,"num_categories","blue ears",29,1000,"distinctive blue ears that no other species on the island has","distinctive",1
+17,3576,"num_categories","copper spots",30,1000,"distinctive copper spots that no other species on the island has","distinctive",1
+17,21014,"projectibility","blue teeth",1,100,"blue teeth","bare",2
+17,11875,"projectibility","red scales",2,100,"red scales","bare",10
+17,3910,"projectibility","gold spots",3,100,"gold spots","bare",4
+17,7869,"projectibility","pink legs",4,100,"distinctive pink legs that no other animal on the island has","distinctive",10
+17,7212,"projectibility","silver stripes",5,100,"silver stripes","bare",20
+17,6723,"projectibility","silver legs",6,100,"dangerous silver legs that are so powerful that a single blow could kill you","dangerous",25
+17,5141,"projectibility","yellow legs",7,100,"yellow legs","bare",15
+17,5480,"projectibility","green teeth",8,100,"distinctive green teeth that no other animal on the island has","distinctive",5
+17,16332,"projectibility","copper fur",9,100,"copper fur","bare",60
+17,13121,"projectibility","red spots",10,100,"dangerous red spots that are the home to a contagious fungus that is deadly to anyone who becomes infected with it","dangerous",20
+17,14694,"projectibility","pink teeth",11,100,"dangerous pink teeth that are razor sharp and so powerful that a single bite can be lethal","dangerous",80
+17,4529,"projectibility","yellow fur",12,100,"dangerous yellow fur that sheds particles that get lodged in your lungs and make it impossible to breathe","dangerous",20
+17,5111,"projectibility","yellow scales",13,100,"dangerous yellow scales that secrete a strong venom that kills you on the spot","dangerous",12
+17,4281,"projectibility","orange tails",14,100,"dangerous orange tails that are so long and muscular that they can suffocate you in a matter of minutes","dangerous",15
+17,10938,"projectibility","purple shells",15,100,"distinctive purple shells that no other animal on the island has","distinctive",15
+17,5271,"projectibility","purple tails",16,100,"distinctive purple tails that no other animal on the island has","distinctive",10
+17,5845,"projectibility","gold feathers",17,100,"dangerous gold feathers that are as sharp as needles and can easily get lodged in you, causing massive bleeding","dangerous",15
+17,5016,"projectibility","orange shells",18,100,"dangerous orange shells that are so heavy that they would immediately crush your bones","dangerous",20
+17,6258,"projectibility","green tails",19,100,"green tails","bare",15
+17,2435,"projectibility","pink ears",20,100,"pink ears","bare",25
+17,4588,"projectibility","red feathers",21,100,"red feathers","bare",20
+17,10834,"projectibility","copper stripes",22,100,"distinctive copper stripes that no other animal on the island has","distinctive",20
+17,4697,"projectibility","gold stripes",23,100,"dangerous gold stripes that deliver a powerful electric shock that&quotechars deadly to anyone within a few feet","dangerous",30
+17,10567,"projectibility","green shells",24,100,"green shells","bare",80
+17,6431,"projectibility","orange ears",25,100,"dangerous orange ears that are the home to dangerous parasites that can make you go deaf","dangerous",3
+17,5417,"projectibility","silver fur",26,100,"distinctive silver fur that no other animal on the island has","distinctive",75
+17,4944,"projectibility","blue scales",27,100,"distinctive blue scales that no other animal on the island has","distinctive",10
+17,4125,"projectibility","purple feathers",28,100,"distinctive purple feathers that no other animal on the island has","distinctive",20
+17,3643,"projectibility","blue ears",29,100,"distinctive blue ears that no other animal on the island has","distinctive",10
+17,4338,"projectibility","copper spots",30,100,"distinctive copper spots that no other animal on the island has","distinctive",15

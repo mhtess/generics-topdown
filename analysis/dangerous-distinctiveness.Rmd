@@ -1,0 +1,219 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+library(tidyverse)
+library(knitr)
+library(lme4)
+```
+
+
+```{r}
+d <- read_csv("../data/dangerous-distinct/cbg-exp15-trials.csv") %>%
+  mutate(response = ifelse(response == "True", 1, 0)) 
+
+table(d$stim_type, d$stim_prevalence)
+```
+
+```{r}
+d.summary <- d %>%
+  group_by(stim_type, stim_prevalence) %>%
+  tidyboot::tidyboot_mean(column = response)
+
+
+ggplot(d.summary, aes(x = as.numeric(stim_prevalence), 
+                      y = mean, ymin = ci_lower, ymax = ci_upper,
+                      color = stim_type))+
+  geom_line(alpha = 0.4, position = position_dodge(2))+
+  geom_errorbar(alpha = 0.3, width = 2,  position = position_dodge(2))+
+  geom_point( position = position_dodge(2))
+```
+
+
+```{r glm for endorsements}
+d.endorse.glm <- glmer(data = d %>%
+        mutate(property = paste(stim_color, stim_part, sep = " ")),
+      response ~ stim_prevalence * stim_type + 
+        (1 | workerid), 
+      family = 'binomial')
+
+summary(d.endorse.glm)
+
+# d.endorse.glm.item <- glmer(data = d,
+#       response ~ stim_prevalence * stim_type + 
+#         (1 | stim_part), 
+#       family = 'binomial')
+
+```
+
+
+
+# Priors
+
+```{r load priors pilot 1}
+priors.file.path <- "../data/dangerous-distinct/priors/"
+priors.file.prefix <- "dangerous-priors-1-pilot"
+d.priors <- read_csv(paste(priors.file.path, priors.file.prefix, "-trials.csv", sep = ""))
+d.priors.subj <- read_csv(paste(priors.file.path, priors.file.prefix, "-subject_information.csv", sep = ""))
+d.priors.catch <-read_csv(paste(priors.file.path, priors.file.prefix, "-catch_trials.csv", sep = ""))
+```
+
+```{r subject info priors pilot 1}
+d.priors.subj.nativeEnglish <- d.priors.subj %>%
+  select(workerid, language) %>%
+  mutate(nativeEnglish = grepl("eng", tolower(language)))
+
+d.priors.subj %>%
+  select(comments, problems) %>%
+  kable()
+
+table(d.priors.subj$enjoyment)
+```
+
+```{r catch trial infor priors pilot 1}
+d.priors.catch.summary <- d.priors.catch %>%
+  group_by(workerid) %>%
+  summarize(total_correct = sum(correct)) %>% ungroup() 
+
+
+d.priors.catch.summary %>%
+  group_by(total_correct) %>% count()
+
+d.priors.catch %>%
+  group_by(workerid, tested_on) %>%
+  summarize(totalCorrect = sum(correct)) %>%
+  ungroup() %>%
+  spread(tested_on, totalCorrect) %>%
+  rename(correct_rejection = `0`, 
+         hit = `1`) %>%
+  mutate(pass = ifelse(hit >= 4 & correct_rejection >= 4, 1, 0),
+         totalCorrect = correct_rejection + hit)
+
+# merge catch info and native language with data set
+d.priors <- left_join(
+  left_join(
+    d.priors, d.priors.subj.nativeEnglish
+  ), d.priors.catch.summary
+)
+```
+
+
+```{r histograms}
+d.priors %>%
+  ggplot(., aes( x = response ))+
+  geom_histogram()+
+  facet_grid(property_type~ trial_type, scales = 'free')
+```
+
+
+```{r log transform hists}
+d.priors %>%
+  filter(trial_type == "num_categories") %>%
+  mutate(rounded_response = ifelse(response == 0, 0.01, response),
+         log_response = log(rounded_response),
+         sqrt_response = sqrt(response)) %>%
+  ggplot(., aes( x = sqrt_response))+
+  geom_histogram()+
+  facet_wrap(~property_type, scales = 'free')
+```
+
+
+
+```{r bootstrapped cis}
+d.prior.summary <- d.priors %>%
+  group_by(trial_type, property_type) %>%
+  tidyboot::tidyboot_mean(column = response)
+
+
+ggplot(d.prior.summary, 
+       aes( x = property_type,
+            fill = property_type,
+                             y = mean,
+                             ymin = ci_lower,
+                             ymax = ci_upper ))+
+  geom_bar(stat = "identity", position = position_dodge(), color = 'black')+
+  geom_errorbar(position = position_dodge())+
+  facet_wrap(~trial_type, scales = 'free')
+```
+
+
+```{r bootstrapped log}
+
+d.priors.log.summary <- d.priors %>%
+  filter(trial_type == "num_categories") %>%
+  mutate(rounded_response = ifelse(response == 0, 0.01, response),
+         log_response = log(rounded_response))  %>%
+  group_by(trial_type, property_type) %>%
+  tidyboot::tidyboot_mean(column = log_response)
+
+
+ggplot(d.priors.log.summary, 
+       aes( x = property_type,
+            fill = property_type,
+                             y = mean,
+                             ymin = ci_lower,
+                             ymax = ci_upper ))+
+  geom_bar(stat = "identity", position = position_dodge(), color = 'black')+
+  geom_errorbar(position = position_dodge())+
+  facet_wrap(~trial_type, scales = 'free')
+```
+
+
+```{r regression model testing}
+glmer.priors.gamma <- glmer(
+  response ~ property_type + (1 | workerid),
+  data = d.priors %>% filter(trial_type == "num_categories") %>%
+  mutate(response = sqrt(ifelse(response == 0, 0.01, response))),
+  family = 'Gamma')
+
+glmer.priors.shifted_log <- lmer(
+  response ~ property_type + (1 | workerid),
+  data = d.priors %>% filter(trial_type == "num_categories") %>%
+  mutate(response = log(response + 1)))
+
+
+summary(glmer.priors.shifted_log)
+
+plot(glmer.priors.shifted_log)
+```
+
+```{r brms testing}
+brms.priors.shifted_log <- brm(
+  response ~ property_type + (1 | workerid),
+  data = d.priors %>% filter(trial_type == "num_categories") %>%
+  mutate(response = response + 1),
+  chains = 2,
+  family = "lognormal",
+  cores = 2
+)
+summary(brms.priors.shifted_log)
+plot(residuals(brms.priors.shifted_log))
+pp_check(brms.priors.shifted_log)
+
+```
+
+```{r}
+brms.priors.zero_inf_beta_max <- brm(
+  response ~ property_type + 
+    (1 + property_type | workerid) + 
+    (1 + property_type | property),
+  data = d.priors %>% filter(trial_type == "num_categories") %>%
+    mutate(response = response / 1000),
+  chains = 2,
+  cores = 2,
+  family = "zero_inflated_beta"
+)
+
+summary(brms.priors.zero_inf_beta_max)
+plot(residuals(brms.priors.zero_inf_beta_max))
+
+plot(marginal_effects(brms.priors.zero_inf_beta_max), points = TRUE)
+pp_check(brms.priors.zero_inf_beta_max)
+```
+```{r}
+LOO(brms.priors.zero_inf_beta, brms.priors.zero_inf_beta_max)
+
+LOO(brms.priors.zero_inf_beta, brms.priors.shifted_log)
+```
+
