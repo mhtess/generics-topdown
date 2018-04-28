@@ -1,0 +1,112 @@
+---
+title: 'Expt. 1 analysis (property origins / "dobles")'
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(lme4)
+library(brms)
+library(tidyboot)
+```
+
+```{r load dobles}
+origins.file.path <- "../data/origins/"
+origins.file.prefix <- "predictive-1"
+d.origins <- read_csv(paste(origins.file.path, origins.file.prefix, "-trials.csv", sep = ""))
+d.origins.subj <- read_csv(paste(origins.file.path, origins.file.prefix, "-subject_information.csv", sep = ""))
+```
+
+
+```{r subject info dobles}
+d.origins.subj.nativeEnglish <- d.origins.subj %>%
+  select(workerid, language) %>%
+  mutate(nativeEnglish = grepl("eng", tolower(language)))
+
+d.origins.subj %>%
+  select(comments, problems) %>%
+  kable()
+
+table(d.origins.subj$enjoyment)
+
+
+# merge catch info and native language with data set
+d.origins <- left_join(
+    d.origins, d.origins.subj.nativeEnglish
+)
+
+d.origins.filtered <- d.origins %>% filter(nativeEnglish)
+
+n_subjects_pass_dobles <- length(unique(d.origins.filtered$workerid))
+```
+
+
+```{r}
+d.origins.filtered.summary <- d.origins.filtered %>%
+  group_by(origins, event_outcome) %>%
+  tidyboot_mean(column = response)
+
+
+save(d.origins.filtered.summary, file = "../paper/cached_results/dobles_endorsement_cis.RData")
+
+```
+
+
+
+```{r}
+brm.interaction.fit <- brm(data = d.origins.filtered,
+    response ~ origins*event_outcome +
+      (1 | workerid) + (1 | stim_proptype),
+    family = 'bernoulli',
+    cores = 2, chains = 2
+)
+brm.interaction.fit.summary <- summary(brm.interaction.fit)
+
+save(brm.interaction.fit, file = "../paper/cached_results/brm_dobles_2way_randInt-subj-proptype.RData")
+brm.interaction.fit.summary$fixed
+```
+
+```{r}
+brm.3wayinteraction.fit <- brm(data = d.origins.filtered,
+    response ~ origins*event_outcome*stim_proptype +
+      (1 | workerid),
+    family = 'bernoulli',
+    cores = 2, chains = 2
+)
+summary(brm.3wayinteraction.fit)
+```
+
+
+# Predictive prevalence elicitation
+
+```{r load prevalence}
+origins.prevalence.file.path <- "../data/origins/"
+origins.prevalence.file.prefix <- "predictive-elicitation-1"
+d.origins.prevalence <- read_csv(paste(origins.file.path, origins.file.prefix, "-trials.csv", sep = ""))
+d.origins.prevalence.subj <- read_csv(paste(origins.file.path, origins.file.prefix, "-subject_information.csv", sep = ""))
+```
+
+
+```{r subject info prevalence}
+d.origins.prev.subj.nativeEnglish <- d.origins.prevalence.subj %>%
+  select(workerid, language) %>%
+  mutate(nativeEnglish = grepl("eng", tolower(language)))
+
+d.origins.prevalence.subj %>%
+  select(comments, problems) %>%
+  kable()
+
+table(d.origins.prevalence.subj$enjoyment)
+
+
+# merge catch info and native language with data set
+d.origins <- left_join(
+    d.origins, d.origins.subj.nativeEnglish
+)
+
+d.origins.filtered <- d.origins %>% filter(nativeEnglish)
+
+n_subjects_pass_dobles <- length(unique(d.origins.filtered$workerid))
+```

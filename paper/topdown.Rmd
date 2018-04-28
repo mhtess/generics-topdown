@@ -67,6 +67,7 @@ library(cowplot)
 library(ggthemes)
 library(RColorBrewer)
 library(ggpirate)
+library(brms)
 theme_set(theme_few())
 ```
 
@@ -175,6 +176,46 @@ The creatures were either birds, bugs, or fish, with randomly sampled physical d
 The experiment in full can be viewed at \url{http://stanford.edu/~mtessler/generics/experiments/predictive/predictive-1.html}.
 
 #### Results
+
+```{r}
+load("cached_results/brm_dobles_2way_randInt-subj-proptype.RData") # brm.interaction.fit
+brm.interaction.fit.summary <- summary(brm.interaction.fit)
+format_regression_effects <- function(brm_summary, fixed_effect_name, n_digits = 3){
+   e1 <- brm.interaction.fit.summary[["fixed"]][[fixed_effect_name, "Estimate"]]
+   e_lower <- brm.interaction.fit.summary[["fixed"]][[fixed_effect_name, "l-95% CI"]]
+   e_upper <- brm.interaction.fit.summary[["fixed"]][[fixed_effect_name, "u-95% CI"]]
+   return(paste(
+     format(e1, digits = n_digits), " [", 
+     format(e_lower, digits = n_digits), ", ", 
+     format(e_upper, digits = n_digits), "]", sep = ""))
+}
+```
+
+
+
+
+@Gelman2007 found that participants endorsed the generic when the property was inborn but not when the property was acquired through extrinsic means, regardless of how many of the category currently had the property. 
+Figure\ \@ref(fig:predictiveDoblesResults) shows the proportion of participants who endorsed the generic under the four experimental conditions.
+To evaluate the effects, we built a Bayesian mixed-effects regression model with fixed-effects of property origins, current state, and their interaction with a random intercept by participant and by property type (color vs. body part). 
+There were both effects of property origins `r format_regression_effects(brm.interaction.fit.summary, "originsintrinsic", 3)` and of current state  `r format_regression_effects(brm.interaction.fit.summary, "event_outcomemaintained", 3)` that were, with 95% probability, greater than 0. 
+
+
+
+```{r predictiveDoblesResults, fig.width=4, fig.cap="Caption"}
+load(file = "cached_results/dobles_endorsement_cis.RData") # d.origins.filtered.summary
+
+bar_width = 0.5
+ggplot(d.origins.filtered.summary, aes(x = origins, y = mean, ymin = ci_lower, ymax = ci_upper, 
+                                       fill = event_outcome))+
+  geom_bar(stat = 'identity', position = position_dodge(bar_width), color = 'black', width = bar_width)+
+  scale_fill_manual(values = c("white", "grey30"))+
+  geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
+  scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
+  ylab("Proportion endorsement")
+```
+
+
+reported a main effect of property origins with no effect of the current state.
 
 \red{ clean up }
 <!-- %                                         Estimate Std. Error z value        Pr(>|z|)     -->
@@ -402,8 +443,7 @@ The experiment consisted of thirty trials. Participant saw each prevalence level
 
 #### Participants
 
-We recruited 40 participants over MTurk. 
-All participants were native English speakers. 
+We recruited 80 participants over MTurk. 
 The experiment took about X minutes and participants were compensated \$Y.
 
 #### Materials and procedure
@@ -412,11 +452,20 @@ The experiment was divided into two blocks.
 In the first block, participants were told that on this island there were one thousand (1000) different species of animals. They were asked to make a prediction about how many different species of animals they thought would have the property.
 In the second block, participants were told they scientists came across a particular instance of a novel category with the property (e.g., "Scientists today saw a glippet. It had *property*") and asked to predict how many other instances of the category had the property (e.g., "What percentage of other glippets do you think *have property*?").
 
-
 The materials were the same as in Expt. 2a. 
 
 ### Results
 
+Our primary analysis concerns whether or not dangerousness and distinctiveness both influence the number of species predicted to have the property in the same way.
+In particular, we predict that both dangerousness and distinctiveness will similarly decrease the number of species expected to have the property (i.e., they both increase the distinctiveness of the property).
+To test this, we built a Bayesian regression model using the `brms` package in R.
+We transformed the raw numerical responses (numbers between 0-1000) into proportions by dividing by 1000.
+We use a "zero inflated beta" linking function, because our dependent measure is proportions between 0 and 1 and because pilot testing revealed the response distributions to be highly non-normal, with substantial probability mass at exactly 0 (i.e., 0 species have the property). 
+We use the maximal mixed effects structure, which has by-participant and by-item random effects of intercept and effect of property type.^[
+The model syntax is: `response ~ property_type +  (1 + property_type | participant) +  (1 + property_type | property)`, where property_type is either dangerous, distinctiveness, or neither, and property are individual items (e.g., purple feathers).
+]
+
+\ref{Table X} shows the the 95% credible interval over the estimated effects for the three conditions. 
 <!-- # Experiment 3: Transient properties -->
 
 # Discussion
