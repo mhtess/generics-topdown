@@ -48,8 +48,12 @@ d.origins.filtered.summary <- d.origins.filtered %>%
   group_by(origins, event_outcome) %>%
   tidyboot_mean(column = response)
 
+d.origins.filtered.property.summary <- d.origins.filtered %>%
+  group_by(origins, event_outcome, stim_proptype) %>%
+  tidyboot_mean(column = response)
 
-save(d.origins.filtered.summary, file = "../paper/cached_results/dobles_endorsement_cis.RData")
+
+save(d.origins.filtered.summary, d.origins.filtered.property.summary, file = "../paper/cached_results/dobles_endorsement_cis.RData")
 
 ```
 
@@ -84,8 +88,10 @@ summary(brm.3wayinteraction.fit)
 ```{r load prevalence}
 origins.prevalence.file.path <- "../data/origins/"
 origins.prevalence.file.prefix <- "predictive-elicitation-1"
-d.origins.prevalence <- read_csv(paste(origins.file.path, origins.file.prefix, "-trials.csv", sep = ""))
-d.origins.prevalence.subj <- read_csv(paste(origins.file.path, origins.file.prefix, "-subject_information.csv", sep = ""))
+d.origins.prevalence <- read_csv(paste(origins.prevalence.file.path, origins.prevalence.file.prefix, "-trials.csv", sep = ""))
+d.origins.prevalence.subj <- read_csv(paste(origins.prevalence.file.path, origins.prevalence.file.prefix, "-subject_information.csv", sep = ""))
+
+View(d.origins.prevalence)
 ```
 
 
@@ -102,11 +108,66 @@ table(d.origins.prevalence.subj$enjoyment)
 
 
 # merge catch info and native language with data set
-d.origins <- left_join(
-    d.origins, d.origins.subj.nativeEnglish
+d.origins.prevalence <- left_join(
+    d.origins.prevalence, d.origins.prev.subj.nativeEnglish
 )
 
-d.origins.filtered <- d.origins %>% filter(nativeEnglish)
+d.origins.prev.filtered <- d.origins.prevalence %>% 
+  filter(nativeEnglish)
 
-n_subjects_pass_dobles <- length(unique(d.origins.filtered$workerid))
+n_subjects_pass_dobles_prev <- length(unique(d.origins.prev.filtered$workerid))
+d.origins.prev.subj.nativeEnglish %>%
+  filter(!nativeEnglish) %>% select(language) %>%
+  kable()
 ```
+
+```{r}
+d.origins.prev.filtered %>%
+  ggplot(., aes( x= response))+
+  geom_histogram(bins = 20)+
+  facet_grid(origins ~ event_outcome)
+```
+
+
+```{r}
+d.origins.prev.filtered.summary <- d.origins.prev.filtered %>%
+  group_by(origins, event_outcome) %>%
+  tidyboot_mean(column = response)
+
+d.origins.prev.filtered.property.summary <- d.origins.prev.filtered %>%
+  group_by(origins, event_outcome, stim_proptype) %>%
+  tidyboot_mean(column = response)
+
+
+save(d.origins.prev.filtered.summary, d.origins.prev.filtered.property.summary, 
+     file = "../paper/cached_results/dobles_prevalence_cis.RData")
+```
+
+
+
+```{r}
+brm.interaction.prev.fit <- brm(
+  data = d.origins.prev.filtered %>%
+    mutate(response = ifelse(response == 0, 0.001, 
+                             ifelse(response == 1, 0.999, response))),
+    response ~ origins*event_outcome +
+      (1 | workerid) + (1 | stim_proptype),
+    family = 'Beta',
+    cores = 2, chains = 2
+)
+brm.interaction.prev.fit.summary <- summary(brm.interaction.prev.fit)
+
+save(brm.interaction.prev.fit, file = "../paper/cached_results/brm_doblesPrev_2way_randInt-subj-proptype.RData")
+brm.interaction.prev.fit.summary
+```
+
+```{r}
+brm.3wayinteraction.fit <- brm(data = d.origins.filtered,
+    response ~ origins*event_outcome*stim_proptype +
+      (1 | workerid),
+    family = 'bernoulli',
+    cores = 2, chains = 2
+)
+summary(brm.3wayinteraction.fit)
+```
+

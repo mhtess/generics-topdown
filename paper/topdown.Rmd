@@ -255,7 +255,7 @@ fig.dobles.prevalence <- ggplot(d.origins.prev.filtered.summary,
   scale_fill_manual(values = c("white", "grey45"))+
   geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
   scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
-  ylab("Proportion endorsement")+
+  ylab("Predicted prevalence")+
   guides(fill = F)
 
 fig.dobles.prevalence.property <- ggplot(d.origins.prev.filtered.property.summary, 
@@ -265,7 +265,7 @@ fig.dobles.prevalence.property <- ggplot(d.origins.prev.filtered.property.summar
   scale_fill_manual(values = c("white", "grey45"))+
   geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
   scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
-  ylab("Proportion endorsement")+
+  ylab("Predicted prevalence")+
   facet_wrap(~stim_proptype)
 
 
@@ -529,6 +529,7 @@ The materials were the same as in Expt. 2a.
 ```{r load dangerous priors results}
 # brms.priors.zero_inf_beta_max, brms.priors.zero_inf_beta_randInt
 load(file = "cached_results/dangerous-priors-randIntSlope.RData")
+load(file = "cached_results/dangerous-priors-sansInt-randIntSlope.RData") #brms.priors.zero_inf_beta_max.sansInt
 load(file = "cached_results/dangerous-priors-projectibility-randIntSlope.RData")
 # brms.priors.project.zeroone_beta_max
 brms.priors.zero_inf_beta_max.summary <- summary(brms.priors.zero_inf_beta_max)
@@ -543,33 +544,27 @@ We use the maximal mixed effects structure, which has by-participant and by-item
 The model syntax is: `response ~ property_type +  (1 + property_type | participant) +  (1 + property_type | property)`, where property_type is either dangerous, distinctiveness, or neither, and property are individual items (e.g., purple feathers).
 ]
 
-In keeping with our prediction, both distinctive properties ($\beta = `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedistinctive")`$) and dangerous properties ($\beta = `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedangerous")`$) were expected to be present in fewer categories. 
+In keeping with our prediction, both distinctive properties ($\beta_{distinctive} = `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedistinctive")`$) and dangerous properties ($\beta_{dangerous} = `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedangerous")`$) were expected to be present in fewer categories in comparison to the control condition (i.e., properties present without any further information). 
 The fact that such properties are present in fewer categories relaxes their truth conditions, according to our purely probabilistic semantic account. 
 Thus, the influence of dangerous properties on endorsements of generic sentences [at least the examples used by @Cimpian2010] can be attributed purely to the statistics of the feature.
-Dangerous properties are distinctive properties.
+Dangerous properties are distinctive properties, and the absolute estimates were not appreciably different from each other  ($\beta_{distinctive} = `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt, "property_typedistinctive")`$, $\beta_{dangerous} = `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt, "property_typedangerous")`$) 
 
-As a secondary analysis, we were interested whether dangerousness properties were also more *projectible*, as hypothesized by @Leslie2008.
+As a secondary analysis, we were interested as to whether dangerousness properties were also more *projectible*, as hypothesized by @Leslie2008.
 Admittedly, our paradigm is not the only way one would want to test the projectibility hypothesis, but it is one way. 
 We built a similar regression model, which used a "zero and one inflated beta" linking function, which independently models the responses of exactly 0% and exactly 100%, because these are undefined under the beta distribution.
 The model had a maximal random-effects structure similar to that for the analysis of the distinctiveness measure.
 Though the effect of dangerousness leading to higher ratings of projectibility were numerically positive, the credible intervals were too broad to draw a conclusion ($\beta_{dangerousness} = `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous")`$) and similarly for distinctive properties ($\beta_{distinctive} = `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive")`$).
 Thus, we do not have evidence to support the claim that dangerousness leads to stronger projectibility, operationalized in measured prevalence based on observing a single instance with the feature [cf., @Rothbart1978].
 
-<!-- 
-Figure 
-- dists
-  - num_categories
-  - projectibility
-- bars
-  - same.
--->
-
-```{r}
-load("cached_results/dangerous-priors-filtered.RData") # d.priors.filtered 
+```{r dangerousPriorsResults, fig.width=8, fig.cap="Caption", fig.asp=0.6}
+load(file = "cached_results/dangerous-priors-filtered.RData") # d.priors.filtered 
 
 
-d.priors.filtered %>%
+fig.dangerous.priors.numcats <- d.priors.filtered %>%
   filter(trial_type == "num_categories") %>%
+           mutate(property_type = factor(property_type,
+                                        levels = c("bare", "distinctive", "dangerous"),
+                                        labels = c("control", "distinctive", "dangerous"))) %>%
   ggplot(., aes( x = response ))+
   geom_histogram(bins = 20, color = 'black', fill = 'white',
                 aes(y=(..count..)/tapply(..count..,..PANEL..,sum)[..PANEL..]))+
@@ -579,6 +574,55 @@ d.priors.filtered %>%
   ylab("proportion of responses")+
   xlab("predicted number of categories with property")
 
+fig.dangerous.priors.projectibility <-d.priors.filtered %>%
+  filter(trial_type == "projectibility") %>%
+           mutate(property_type = factor(property_type,
+                                        levels = c("bare", "distinctive", "dangerous"),
+                                        labels = c("control", "distinctive", "dangerous"))) %>%
+  ggplot(., aes( x = response ))+
+  geom_histogram(bins = 20, color = 'black', fill = 'white',
+                aes(y=(..count..)/tapply(..count..,..PANEL..,sum)[..PANEL..]))+
+  scale_x_continuous(breaks = c(0, 50, 100))+
+  scale_y_continuous(limits = c(0, 0.52), breaks = c(0, 0.5))+
+  facet_wrap(~property_type)+
+  ylab("proportion of responses")+
+  xlab("predicted number of instances of category with property")
+
+
+bar_width = 0.6
+fig.dangerous.priors.bars <- ggplot(d.prior.summary %>% ungroup() %>%
+         mutate(property_type = factor(property_type,
+                                        levels = c("bare", "distinctive", "dangerous"),
+                                        labels = c("control", "distinctive", "dangerous")),
+                trial_type = factor(trial_type,
+                                    levels = c("num_categories","projectibility"),
+                                    labels = c("Number of categories",
+                                               "Number of instances"))), 
+       aes( x = property_type,
+            #fill = property_type,
+                             y = mean,
+                             ymin = ci_lower,
+                             ymax = ci_upper ))+
+  geom_bar(stat = "identity", position = position_dodge(bar_width),
+           width = bar_width, color = 'black')+
+  geom_errorbar(position = position_dodge(bar_width), width = bar_width/2)+
+  #scale_x_discrete()+ 
+  xlim("control","distinctive", "dangerous")+
+  scale_y_continuous(limits = c(0, 100), breaks = c(0, 50, 100))+
+  #scale_fill_solarized()
+  facet_wrap(~trial_type, scales = 'free', ncol = 1)+
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))+
+  ylab("Mean ratings")
+
+cowplot::plot_grid(
+  cowplot::plot_grid( fig.dangerous.priors.numcats, fig.dangerous.priors.projectibility, ncol = 1,
+                      labels = c("A","B")),
+  fig.dangerous.priors.bars,
+  labels = c("", "C"), 
+  nrow = 1,
+  rel_widths = c(2,1)
+)
 
 
 ```
