@@ -80,9 +80,6 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, cache=T, message=FALSE, sanitiz
 
 # Introduction
 
-
-<!-- Include (in the GD) some informal analysis of Cimpian, Gelman, & Brandone (2010), Lang Cogn Process -->
-
 In the literature on generics, it is long argued that generic meaning cannot be reduced to probabilities or quantification [@Carlson1977; @Carlson1995; @Gelman2007; @Leslie2008; @Prasada2000; @Cimpian2010theory; @Cimpian2010].
 These studies (both empirical and theoretical) are limited by their assumption that the literal meaning of generics is directly inspectable, that we can interpret our intuitions or findings about generics without needing to formalize the world knowledge that any language user would be bring to interpret a sentence.
 In this chapter, I examine a few of these studies to see, if indeed, they are incompatible with a probability-based semantics. 
@@ -128,19 +125,17 @@ The causal history of a property should also be taken into account when determin
 <!-- Does generic language communicate prevalence in terms of past frequency or future expectations? -->
 
 
-@Gelman2007 found that adult endorsements of novel generics were sensitive to the origins of the property (i.e., whether or not the creatures were born with or acquired the property through extrinsic means).
+@Gelman2007 found that adult endorsements of novel generics were sensitive to the origins of the property (i.e., whether or not the creatures were born with or acquired the property through experience).
 In their paradigm, participants are told a story about a novel creature (e.g., dobles) and a property of that kind (e.g., have claws).
-After being told the origins of the property (i.e., born with or found and put on), participants are told about an event that either causes the property to disappear (e.g., they drank a chemical and their claws fell off) or that leaves the property intact (e.g., they drank a yummy drink and felt happy).
+After being told the origins of the property (i.e., dobles were either born with claws, or found claws and put them on), participants are told about an event that either causes the property to disappear (e.g., they drank a chemical and their claws fell off) or that leaves the property intact (e.g., they drank a yummy drink and felt happy).
 The final display of the experiment shows the novel category in their current state: Dobles either with or without claws (depending on the outcome of the event).
-Participants' judgments of the generic (e.g., "Dobles have claws") were *insensitive* to the current state (i.e., the outcome of the event, property maintained vs. lost): Participants fully-endorsed the generic when it was inborn, and rejected it when it was acquired.
-
+@Gelman2007 found that participants' judgments of the generic (e.g., "Dobles have claws") were *insensitive* to the current state (i.e., the outcome of the drinking event: property maintained vs. lost): Participants fully-endorsed the generic when it was in-born, and rejected it when it was acquired.
 
 In Experiment 1a, we use a paradigm similar to that of @Gelman2007 to replicate the effect of property origins on generic endorsement.
-We replicate the effect of property origins, but also, unlike @Gelman2007, discover an effect of the current state.
-In Experiment 1b, we alter the dependent measure to measure *predictive prevalence*: participants' expectations about future instances of the kind.
-We find that, consistent with our hypothesis, predictive prevalence is altered by knowledge of the origins of the the property and tracks both the replicated main effect of property origins as well as the novel effect of current state.
+We replicate the effect of property origins, but also, discover an effect of the event outcome.
+In Experiment 1b, we alter the dependent measure to measure *predictive prevalence*: participants' expectations that future instances of the kind will have the property.
+We find that, consistent with our hypothesis, knowledge of the property influences predictive prevalence in such a way that tracks both the replicated main effect of property origins as well as the novel effect of current state.
 Furthermore, predictive prevalence tracks with subtle item-level differences, further indicating that it is an intermediate representation between conceptual knowledge and generic endorsement.
-
 
 ## Experiment 1a: Endorsement task
 
@@ -157,11 +152,34 @@ The experiment took about 3 minutes and participants were compensated \$0.35.
 
 #### Procedure and materials
 
+```{r doblesExpt, fig.cap="Overview of Expt. 1 (intrinsic origins, property lost condition shown) A: Participants are first introduced to ten identical exemplars of a novel categories, either with or without a property (here, shown with the target property of being red). B: The origins of the property are described, either they are born with the property or the acquire it through extrinsic means (born with property shown). C: The event is described and event outcome shown (here, property is lost). D: Participants evaluate the generic with exemplars present."}
+fig.dobles.1 <- ggdraw() + draw_image("figs/dobles-expt-1a.jpeg", scale = 0.9) +
+  theme(plot.margin = unit(c(2,0,0,0), "pt"),
+        panel.background = element_rect(colour = "black", size=1))
+fig.dobles.2 <- ggdraw() + draw_image("figs/dobles-expt-2a.jpeg", scale = 0.9)+
+  theme(plot.margin = unit(c(2,0,0,0), "pt"),
+        panel.background = element_rect(colour = "black", size=1)) 
+fig.dobles.3 <- ggdraw() + draw_image("figs/dobles-expt-3a.jpeg", scale = 0.95)+
+  theme(plot.margin = unit(c(2,0,0,0), "pt"),
+        panel.background = element_rect(colour = "black", size=1))
+fig.dobles.4 <- ggdraw() + draw_image("figs/dobles-expt-4a.jpeg", scale = 0.95)+
+  theme(plot.margin = unit(c(2,0,0,0), "pt"),
+        panel.background = element_rect(colour = "black", size=1))
+
+plot_grid(
+  fig.dobles.1,
+  fig.dobles.2,
+  fig.dobles.3,
+  fig.dobles.4,
+  nrow = 2, labels = c("A","B", "C", "D")
+)
+```
+
 On each trial, participants read a vignette about a novel creature. For instance,
 
 > These are dobles. [picture of ten dobles with claws] Here is how they grew. They grew up with claws. First they were born, then they got bigger, then they were full size. [picture of a doble with claws, getting bigger and bigger; in some vignettes, the animal was first shown hatching out of an egg with the relevant property already visible] Then one day they drank a bad chemical. They got very sick and this is how they looked. [picture of ten dobles without claws]
 
-The trial proceeded by participants reading the text, and clicking a button to continue to the next part of the story (at which time, the images changed according to the example above).
+The trial proceeded by participants reading the text, and clicking a button to continue to the next part of the story at which time, the images changed according to the example above (Figure\ \@ref(fig:doblesExpt)).
 
 Participants completed four trials: two in which the creatures are born with the property (*intrinsic origins*) and two in which the creatures are shown discovering and acquiring the property (*extrinsic origins* e.g., painting themselves brown).
 Property origins were crossed with either the creatures drinking a "bad chemical" and losing the property, or drinking a "yummy drink" and maintaining the property.
@@ -177,7 +195,7 @@ The experiment in full can be viewed at \url{http://stanford.edu/~mtessler/gener
 
 #### Results
 
-```{r}
+```{r load dobles regression results}
 load("cached_results/brm_dobles_2way_randInt-subj-proptype.RData") # brm.interaction.fit
 load("cached_results/brm_doblesPrev_2way_randInt-subj-proptype.RData") # brm.interaction.prev.fit
 brm.interaction.fit.summary <- summary(brm.interaction.fit)
@@ -193,14 +211,13 @@ format_regression_effects <- function(brm_summary, fixed_effect_name, n_digits =
 }
 ```
 
-
 One participant was excluded for self-reporting a native language other than English, leaving n=79 for these analyses.
-@Gelman2007 found that participants endorsed the generic when the property was inborn but not when the property was acquired through extrinsic means (i.e., an effect of *property origins*), regardless of how many of the category currently had the property (i.e., no effect of *current state*). 
+@Gelman2007 found that participants endorsed the generic when the property was inborn but not when the property was acquired through extrinsic means (i.e., an effect of *property origins*), regardless of how the event turned out (property lost vs. maintained). 
 Figure\ \@ref(fig:predictiveDoblesResults)A shows the proportion of participants who endorsed the generic under the four experimental conditions.
 To evaluate the effects, we built a Bayesian mixed-effects Bernoulli regression model with fixed-effects of property origins, current state, and their interaction with a random intercept by participant and by property type (color vs. body part). 
-As is evident in Figure Figure\ \@ref(fig:predictiveDoblesResults)A, were both effects of property origins  and of current state such that participants were more likely to endorse the generic when it was a property that was in-born ($\beta = `r format_regression_effects(brm.interaction.fit.summary, "originsintrinsic", 3)`$) and when it was a property that was maintained following the drinking event ($\beta = `r format_regression_effects(brm.interaction.fit.summary, "event_outcomemaintained", 3)`$). 
+As is evident in Figure\ \@ref(fig:predictiveDoblesResults)A, there were effects of both property origins and of event outcome such that participants were more likely to endorse the generic when it was a property that was in-born ($\beta =$ `r format_regression_effects(brm.interaction.fit.summary, "originsintrinsic", 3)`) and when it was a property that was maintained following the drinking event ($\beta =$ `r format_regression_effects(brm.interaction.fit.summary, "event_outcomemaintained", 3)`). 
 <!-- The 95% credible intervals indicate that there is at least a 95% probability that the regression coefficients are greater than 0. -->
-The interaction term was not different from 0 ($\beta = `r format_regression_effects(brm.interaction.fit.summary, "originsintrinsic:event_outcomemaintained", 3)`$).
+The interaction term was not different from zero ($\beta =$ `r format_regression_effects(brm.interaction.fit.summary, "originsintrinsic:event_outcomemaintained", 3)`).
 
 
 <!-- In the original study, the first sentence of each vignette used the possessive "my": "These are my dobles.". -->
@@ -209,26 +226,29 @@ The interaction term was not different from 0 ($\beta = `r format_regression_eff
 <!-- 36 participants based their responses on only the origins, and 9 participants exhibited some other pattern of responses. -->
 <!-- Thus, it seems this effect is not due to a subgroup of participants basing their responses on only the final screen. -->
 
-The fact that participants were sensitive to the current state when endorsing the generic suggests that their beliefs about the stability of these properties influenced their judgments.
-For example, participants may believe that the fact that the property can be lost based on drinking a chemical indicates that the property is relatively unstable in the category; similarly, if there are claws in the environment such that dobles can find them and put them on, perhaps this external cause of the property is a relatively stable external cause. 
-As an exploratory analysis, we looked to see if this second main effect of current state was modulated by the kind of property in question (color vs. body part). 
-Figure\ \@ref(fig:predictiveDoblesResults)B shows the endorsements split up by the type of property in question.
-We see suggestive evidence that the endorsement of a generic for color properties (e.g., "Dobles are green") seems to be less sensitive to the outcome of the event (i.e., dobles losing their color as a result of drinking a chemical).
-An intuiging possibility is that participants believe skin color to be a more stable property than that the body part stimuli (e.g., claws, feathers). 
-If that is what is leading more participants to endorse the generics about skin color, we would expect to see it reflected in their predictions about future instances of the category.
+As an exploratory analysis, we looked to see if these effects were modulated by the kind of property in question (skin color vs. body part). 
+Figure\ \@ref(fig:predictiveDoblesResultsProperty)A shows the endorsements split up by the type of property in question.
+There is suggestive evidence that the endorsement of a generic for skin color properties (e.g., "Dobles are green") seems to be less sensitive to the outcome of the event (i.e., dobles losing their color as a result of drinking a chemical).
 
-The fact that we find a second main effect of current state in addition to property origins, while the original only found only a main effect of origins, makes it worth remarking on the differences between our paradigm and the original study by @Gelman2007.
+The fact that participants were sensitive to the outcome of the event when endorsing the generic suggests that their beliefs about the stability of these properties influenced their judgments.
+For example, participants may believe that the fact that the property can be lost based on drinking a chemical indicates that the property is relatively unstable feature, analagous to heads of hair on adult male humans.
+Similarly, the existence of properties in the environment that individuals can come across and acquire is perhaps some evidence that the this external cause of the property is relatively stable. 
+The exploratory analysis is consistent with this if participants believe skin color to be a less malleable property than the body part stimuli.
+If that is what is leading more participants to endorse the generics about skin color, we would expect to see it reflected in their predictions about future instances of the category having the property, which we measure in Expt. 1b.
+
+The fact that we find a second main effect of event outcome in addition to property origins, while the original only found only a main effect of origins, makes it worth remarking on the differences between our paradigm and the original study by @Gelman2007.
 At the end of each vignette, the original study had participants judge two statements in counterbalanced order: "Do my dobles have claws?" and "Do dobles have claws?" (the creatures on the displays were first introduced as "my dobles", whereas in our paradigm, they were simply "dobles").
-This explicit contrast may have led participants to provide different answers in the conditions where the property origins conflicted with the current state.
-Another possibility is that the original study was underpowered to detect such a difference: The original sample size was 14; ours is 80. 
+This explicit contrast may have led participants to provide different answers in the conditions where the property origins conflicted with the event outcome.
+Another possibility is that the original study was underpowered to detect the effect of event outcome: The original sample size was 14; ours is 80. 
 
 
-```{r predictiveDoblesResults, fig.width=8, fig.cap="Caption", fig.asp=0.4}
+```{r predictiveDoblesResults, fig.width=8, fig.cap="Expt. 1 results. A: Generic endorsement task (Expt. 1a). B:Predicted prevalence task (Expt. 1b). Error bars represented bootstrapped 95% confidence intervals.", fig.asp=0.36}
 load(file = "cached_results/dobles_endorsement_cis.RData") # d.origins.filtered.summary, d.origins.filtered.property.summary
 load(file = "cached_results/dobles_prevalence_cis.RData") # d.origins.prev.filtered.summary, d.origins.prev.filtered.property.summary
 
 
 bar_width = 0.5
+
 fig.dobles.endorsement <- ggplot(d.origins.filtered.summary, aes(x = origins, y = mean, ymin = ci_lower, ymax = ci_upper, 
                                        fill = event_outcome))+
   geom_bar(stat = 'identity', position = position_dodge(bar_width), color = 'black', width = bar_width)+
@@ -236,17 +256,8 @@ fig.dobles.endorsement <- ggplot(d.origins.filtered.summary, aes(x = origins, y 
   geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
   scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
   ylab("Proportion endorsement")+
+  xlab("Property origins")+
   guides(fill = F)
-
-fig.dobles.endorsement.property <- ggplot(d.origins.filtered.property.summary, aes(x = origins, y = mean, ymin = ci_lower, ymax = ci_upper, 
-                                       fill = event_outcome))+
-  geom_bar(stat = 'identity', position = position_dodge(bar_width), color = 'black', width = bar_width)+
-  scale_fill_manual(values = c("white", "grey45"))+
-  geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
-  scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
-  ylab("Proportion endorsement")+
-  facet_wrap(~stim_proptype)
-
 
 fig.dobles.prevalence <- ggplot(d.origins.prev.filtered.summary, 
                                 aes(x = origins, y = mean, ymin = ci_lower, ymax = ci_upper, 
@@ -256,29 +267,62 @@ fig.dobles.prevalence <- ggplot(d.origins.prev.filtered.summary,
   geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
   scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
   ylab("Predicted prevalence")+
-  guides(fill = F)
-
-fig.dobles.prevalence.property <- ggplot(d.origins.prev.filtered.property.summary, 
-                                         aes(x = origins, y = mean, ymin = ci_lower, ymax = ci_upper, 
-                                       fill = event_outcome))+
-  geom_bar(stat = 'identity', position = position_dodge(bar_width), color = 'black', width = bar_width)+
-  scale_fill_manual(values = c("white", "grey45"))+
-  geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
-  scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
-  ylab("Predicted prevalence")+
-  facet_wrap(~stim_proptype)
-
+  xlab("Property origins")+
+  guides(fill = guide_legend(title = "Event outcome",reverse = T))
 
 cowplot::plot_grid(
-  fig.dobles.endorsement, fig.dobles.endorsement.property,
-  fig.dobles.prevalence, fig.dobles.prevalence.property,
-  nrow = 2,
-  labels = c("A", "B","C","D"),
-  rel_widths = c(1, 1.5, 1, 1.5)
+  fig.dobles.endorsement,
+  fig.dobles.prevalence,
+  nrow = 1,
+  labels = c("A", "B"),
+  rel_widths = c(1, 1.5)
 )
 
 ```
 
+
+
+
+```{r predictiveDoblesResultsProperty, fig.width=9, fig.cap="Expt. 1 exploratory analysis breaking down results by the type of property (skin color vs. body part). A: Generic endorsement task (Expt. 1a). B:Predicted prevalence task (Expt. 1b). Error bars represented bootstrapped 95% confidence intervals. ", fig.asp=0.35}
+fig.dobles.endorsement.property <- ggplot(d.origins.filtered.property.summary, 
+                                          aes(x = origins, 
+                                              y = mean, ymin = ci_lower, ymax = ci_upper, 
+                                       fill = stim_proptype))+
+  geom_bar(stat = 'identity', position = position_dodge(bar_width), color = 'black', width = bar_width,
+           alpha = 0.8)+
+  #scale_fill_manual(values = c("white", "grey45"))+
+  scale_fill_solarized()+
+  geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
+  scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
+  ylab("Proportion endorsement")+
+  xlab("Property origins")+
+  facet_wrap(~event_outcome, nrow = 1)+
+  guides(fill = F)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+
+fig.dobles.prevalence.property <- ggplot(d.origins.prev.filtered.property.summary, 
+                                         aes(x = origins, y = mean, ymin = ci_lower, ymax = ci_upper, 
+                                       fill = stim_proptype))+
+  geom_bar(stat = 'identity', position = position_dodge(bar_width), color = 'black', width = bar_width,
+           alpha = 0.8)+
+  scale_fill_solarized()+
+  geom_errorbar(position = position_dodge(bar_width), width = bar_width/1.5)+
+  scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
+  ylab("Predicted prevalence")+
+  xlab("Property origins")+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))+
+  facet_wrap(~event_outcome, nrow = 1)+
+  guides(fill = guide_legend(title = "Property type",reverse = T))
+
+
+cowplot::plot_grid(
+  fig.dobles.endorsement.property,
+  fig.dobles.prevalence.property,
+  nrow = 1,
+  labels = c("A", "B"),
+  rel_widths = c(1, 1.5)
+)
+```
 
 <!-- reported a main effect of property origins with no effect of the current state. -->
 
@@ -331,28 +375,6 @@ cowplot::plot_grid(
 <!--   \label{fig:dobles} -->
 <!-- \end{figure*} -->
 
-```{r doblesResults, eval =F}
-fig.dobles.1 <- ggdraw() + draw_image("figs/dobles-model.pdf", scale = 1) +
-  theme(plot.margin = unit(c(2,0,0,0), "pt"),
-        panel.background = element_rect(colour = "black", size=1)) 
-fig.dobles.2 <- ggdraw() + draw_image("figs/dobles-results.pdf", scale = 0.9)+
-  theme(plot.margin = unit(c(2,0,0,0), "pt"),
-        panel.background = element_rect(colour = "black", size=1)) 
-fig.dobles.3 <- ggdraw() + draw_image("figs/dobles-model-byItem.pdf", scale = 0.95)+
-  theme(plot.margin = unit(c(2,0,0,0), "pt"),
-        panel.background = element_rect(colour = "black", size=1))
-fig.dobles.4 <- ggdraw() + draw_image("figs/dobles-byItem-results.pdf", scale = 0.95)+
-  theme(plot.margin = unit(c(2,0,0,0), "pt"),
-        panel.background = element_rect(colour = "black", size=1))
-
-plot_grid(
-  fig.dobles.1,
-  fig.dobles.2,
-  fig.dobles.3,
-  fig.dobles.4,
-  nrow = 2
-)
-```
 
 ## Experiment 1b: Predictive prevalence elicitation
 
@@ -376,13 +398,32 @@ Participants responded using sliders ranging from "very unlikely" to "very likel
 3 participants were excluded for self-reporting a native language other than English, leaving n=77 for these analyses.
 The computational model predicts that generic endorsement is modulated by a speaker's degree of belief in the property being present in future instances of the category. 
 In order to evaluate this hypothesis, we built a Bayesian mixed-effects beta regression model with fixed-effects of property origins, current state, and their interaction with a random intercept by participant and by property type (color vs. body part). 
-As is evident in Figure\ \@ref(fig:predictiveDoblesResults)C, participants predicted with more certainty that the property would be present in future instnaces when the property that was in-born ($\beta = `r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic", 3)`$) and when it was a property that was maintained following the drinking event ($\beta = `r format_regression_effects(brm.interaction.prev.fit.summary, "event_outcomemaintained", 3)`$). 
+As is evident in Figure\ \@ref(fig:predictiveDoblesResults)C, participants predicted with more certainty that the property would be present in future instances when the property that was in-born ($\beta = `r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic", 3)`$) and when it was a property that was maintained following the drinking event ($\beta = `r format_regression_effects(brm.interaction.prev.fit.summary, "event_outcomemaintained", 3)`$). 
 <!-- The 95% credible intervals indicate that there is at least a 95% probability that the regression coefficients are greater than 0. -->
 The interaction term was not different from 0 ($\beta = `r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic:event_outcomemaintained", 3)`$).
 
-Again, as an exploratory analysis, we break the items down by type of property (skins color vs. body parts). 
+Again, as an exploratory analysis, we break the items down by type of property (skin colors vs. body parts). 
 Figure\ \@ref(fig:predictiveDoblesResults)D shows the parallel pattern of responses, wherein predictions about skin color were less sensitive to the current state than predictions about body parts. 
-This 
+
+Thus, we have evidence that beliefs about property origins influences generic endorsement via influencing beliefs about future prevalence. 
+To confirm this, we use these predicted probabilities as the referent prevalence $p$ that the speaker model is trying to communicate: $S(u\mid p)$, and examine the model's predicted endorsments, using the body part and color priors elicited in Ch. 2 (Expt. 1a) as the priors in this model.
+The generic endorsement model predictions track closely with the empirical generic endorsement (Expt. 1a) and, by extension, the predicted prevalence ratings.  
+For the eight data points of generic endorsement based on origins, outcome, and property type, our model's predictions match the data well ($r^2(8) = 0.96$).
+
+
+<!-- The computational model's predictions are not necessarily the same as the predicted prevalence values, but instead depend upon the listener's prevalence prior distribution.  -->
+<!-- Since the properties are only of two types (color and body part) and both biological in nature, we do not expect substantial interactions with the prevalence prior; futher, since the priors for body part and color priors elicited in Ch. 2. (Expt. 1a) are both relatively broad (high variance), we expect predicted generic endorsement to track predictive prevalence to a large degree. -->
+
+<!-- We, thus, elaborate our theory: -->
+<!-- The semantics of generics can be understood as a threshold on property prevalence, and this prevalence is a speaker's subjective belief about what is likely to be the case in the future. -->
+
+
+
+
+```{r dobles-model-scatter, fig.width=6, fig.cap="Model predictions"}
+ggdraw() + draw_image("figs/dobles-model-data-scatter.pdf", scale = 1)
+```
+
 
 
 <!-- The average predicted prevalences for the four experimental conditions are shown in Table \ref{tab:predictive}. -->
@@ -392,15 +433,6 @@ This
 <!-- When participants observe a creature who loses the property by drinking a chemical, they report future members of the category are less likely to have the property. -->
 <!-- This inference could be driven by inferences about the property (e.g., learning that the property is an unstable property because you can lose it simply by drinking something) or by inferences about the event (e.g., learning that the "chemical drinking" event is within the space of possibilities for dobles, and thus it could happen in the future). -->
 
-The computational model's predictions are not necessarily the same as the predicted prevalence values, but instead depend upon the listener's prevalence prior distribution. 
-Since the properties are only of two types (color and body part) and both biological in nature, we do not expect substantial interactions with the prevalence prior; futher, since the priors for body part and color priors elicited in Ch. 2. (Expt. 1a) are both relatively broad (high variance), we expect predicted generic endorsement to track predictive prevalence to a large degree.
-We use these predicted probabilities as the referent prevalence $p$ that the speaker model is trying to communicate: $S(u\mid p)$, and examine the model's predicted endorsments, using the body part and color priors elicited in Ch. 2. (Expt. 1a) as the priors in this model.
-The model predictions track closely with the predicted prevalence (Figure \ref{fig:dobles}a, top, compare with predicted prevalence in Table \ref{tab:predictive}), and thus with the empirical generic endorsement (Expt. 1a). 
-<!-- Indeed this difference is apparent in the predictive prevalence task (Expt. 1a). -->
-For the eight data points of generic endorsement based on origins, outcome, and property type, our model's predictions match the data well ($r^2(8) = 0.96$).
-<!-- We, thus, elaborate our theory: -->
-The semantics of generics can be understood as a threshold on property prevalence, and this prevalence is a speaker's subjective belief about what is likely to be the case in the future.
-
 
 <!-- This is because both color and body part priors are relatively broad, and hence when the property is (predicted to be) more prevalent, the generic has a higher probability of applying (see schematic predictions from Figure \ref{fig:schematic-unif} ``have wings'' for comparison). -->
 <!-- We also see that the model predicts a subtle by-item difference, such that the influence of the event outcome (lost or maintained) on generic endorsement is predicted to be stronger for body parts than for color terms (Figure \ref{fig:dobles}a, bottom). -->
@@ -408,24 +440,24 @@ The semantics of generics can be understood as a threshold on property prevalenc
 
 
 
-\begin{table}
-\centering
-\begin{tabular}{l|l|r|r|r}
-\hline
-Origins & Event Outcome & Collapsed Mean [95\% CI]  & Color  [95\% CI] & Body Part [95\% CI] \\
-\hline
-Extrinsic & Lost  & 0.15 [0.10, 0.21]& 0.13 [0.07, 0.21] & 0.17 [0.09, 0.26] \\
-\hline
-Extrinsic & Maintained & 0.32 [0.24, 0.39] & 0.24 [0.16, 0.35] & 0.38 [0.27, 0.50] \\
-\hline
-Intrinsic & Lost  & 0.69 [0.62, 0.76] & 0.73 [0.63, 0.83] & 0.66 [0.56, 0.75] \\
-\hline
-Intrinsic & Maintained  &0.95 [0.94, 0.97] & 0.96 [0.94, 0.98] & 0.94 [0.91, 0.97] \\
-\hline
-\end{tabular}
-\caption{Predicted prevalence for the four experimental conditions of Expt.~3a. Right two columns show the summaries broken down by the two types of properties used in the experiment.}
-\label{tab:predictive}
-\end{table}
+<!-- \begin{table} -->
+<!-- \centering -->
+<!-- \begin{tabular}{l|l|r|r|r} -->
+<!-- \hline -->
+<!-- Origins & Event Outcome & Collapsed Mean [95\% CI]  & Color  [95\% CI] & Body Part [95\% CI] \\ -->
+<!-- \hline -->
+<!-- Extrinsic & Lost  & 0.15 [0.10, 0.21]& 0.13 [0.07, 0.21] & 0.17 [0.09, 0.26] \\ -->
+<!-- \hline -->
+<!-- Extrinsic & Maintained & 0.32 [0.24, 0.39] & 0.24 [0.16, 0.35] & 0.38 [0.27, 0.50] \\ -->
+<!-- \hline -->
+<!-- Intrinsic & Lost  & 0.69 [0.62, 0.76] & 0.73 [0.63, 0.83] & 0.66 [0.56, 0.75] \\ -->
+<!-- \hline -->
+<!-- Intrinsic & Maintained  &0.95 [0.94, 0.97] & 0.96 [0.94, 0.98] & 0.94 [0.91, 0.97] \\ -->
+<!-- \hline -->
+<!-- \end{tabular} -->
+<!-- \caption{Predicted prevalence for the four experimental conditions of Expt.~3a. Right two columns show the summaries broken down by the two types of properties used in the experiment.} -->
+<!-- \label{tab:predictive} -->
+<!-- \end{table} -->
 
 <!-- We use these predicted probabilities as the prevalence $p$ that the speaker model is trying to communicate: $S(u\mid p)$, and examine the model's predicted truth judgments. -->
 <!-- We explore the model's predictions for each origin and event outcome, as well as when the data is split by property type (color vs. body parts).  -->
@@ -533,6 +565,7 @@ load(file = "cached_results/dangerous-priors-sansInt-randIntSlope.RData") #brms.
 load(file = "cached_results/dangerous-priors-projectibility-randIntSlope.RData")
 # brms.priors.project.zeroone_beta_max
 brms.priors.zero_inf_beta_max.summary <- summary(brms.priors.zero_inf_beta_max)
+brms.priors.zero_inf_beta_max.sansInt.summary <- summary(brms.priors.zero_inf_beta_max.sansInt)
 brms.priors.project.zeroone_beta_max.summary <- summary(brms.priors.project.zeroone_beta_max)
 ```
 
@@ -545,15 +578,16 @@ The model syntax is: `response ~ property_type +  (1 + property_type | participa
 ]
 
 In keeping with our prediction, both distinctive properties ($\beta_{distinctive} = `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedistinctive")`$) and dangerous properties ($\beta_{dangerous} = `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedangerous")`$) were expected to be present in fewer categories in comparison to the control condition (i.e., properties present without any further information). 
-The fact that such properties are present in fewer categories relaxes their truth conditions, according to our purely probabilistic semantic account. 
+Figure\ \@ref(fig:dangerousPriorsResults) shows the empirical distribution of responses for both questions, as well as the means. 
+The fact that such properties are present in fewer categories relaxes their truth conditions, leading to increased endorsements at lower prevalence levels, as can be seen by the computational model predictions based on these empirically elicited priors \red{(Figure)}.
 Thus, the influence of dangerous properties on endorsements of generic sentences [at least the examples used by @Cimpian2010] can be attributed purely to the statistics of the feature.
-Dangerous properties are distinctive properties, and the absolute estimates were not appreciably different from each other  ($\beta_{distinctive} = `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt, "property_typedistinctive")`$, $\beta_{dangerous} = `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt, "property_typedangerous")`$) 
+Dangerous properties are distinctive properties, and the absolute estimates were not appreciably different from each other  ($\beta_{distinctive} = `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedistinctive")`$, $\beta_{dangerous} = `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedangerous")`$) 
 
-As a secondary analysis, we were interested as to whether dangerousness properties were also more *projectible*, as hypothesized by @Leslie2008.
+As a secondary analysis, we were interested as to whether dangerous properties were also more *projectible*, as hypothesized by @Leslie2008.
 Admittedly, our paradigm is not the only way one would want to test the projectibility hypothesis, but it is one way. 
 We built a similar regression model, which used a "zero and one inflated beta" linking function, which independently models the responses of exactly 0% and exactly 100%, because these are undefined under the beta distribution.
 The model had a maximal random-effects structure similar to that for the analysis of the distinctiveness measure.
-Though the effect of dangerousness leading to higher ratings of projectibility were numerically positive, the credible intervals were too broad to draw a conclusion ($\beta_{dangerousness} = `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous")`$) and similarly for distinctive properties ($\beta_{distinctive} = `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive")`$).
+Though the effect of dangerousness leading to higher ratings of projectibility was numerically positive, the credible intervals were too broad to draw a conclusion ($\beta_{dangerousness} = `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous", 2)`$) and similarly for distinctive properties ($\beta_{distinctive} = `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive", 2)`$).
 Thus, we do not have evidence to support the claim that dangerousness leads to stronger projectibility, operationalized in measured prevalence based on observing a single instance with the feature [cf., @Rothbart1978].
 
 ```{r dangerousPriorsResults, fig.width=8, fig.cap="Caption", fig.asp=0.6}
@@ -641,6 +675,9 @@ cowplot::plot_grid(
   - Predictive other side of planet
 
 - relation to "normal" generics approaches
+
+<!-- Include (in the GD) some informal analysis of Cimpian, Gelman, & Brandone (2010), Lang Cogn Process -->
+
 
 <!-- 
 
