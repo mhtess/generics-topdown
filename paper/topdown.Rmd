@@ -398,15 +398,15 @@ Participants responded using sliders ranging from "very unlikely" to "very likel
 3 participants were excluded for self-reporting a native language other than English, leaving n=77 for these analyses.
 The computational model predicts that generic endorsement is modulated by a speaker's degree of belief in the property being present in future instances of the category. 
 In order to evaluate this hypothesis, we built a Bayesian mixed-effects beta regression model with fixed-effects of property origins, current state, and their interaction with a random intercept by participant and by property type (color vs. body part). 
-As is evident in Figure\ \@ref(fig:predictiveDoblesResults)B, participants predicted with more certainty that the property would be present in future instances when the property that was in-born ($\beta = $`r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic", 2)`) and when it was a property that was maintained following the drinking event ($\beta = $`r format_regression_effects(brm.interaction.prev.fit.summary, "event_outcomemaintained", 2)`). 
+As is evident in Figure\ \@ref(fig:predictiveDoblesResults)B, participants predicted with more certainty that the property would be present in future instances when the property that was in-born ($\beta =$ `r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic", 2)`) and when it was a property that was maintained following the drinking event ($\beta =$ `r format_regression_effects(brm.interaction.prev.fit.summary, "event_outcomemaintained", 2)`). 
 <!-- The 95% credible intervals indicate that there is at least a 95% probability that the regression coefficients are greater than 0. -->
-The interaction term was not different from zero ($\beta = $`r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic:event_outcomemaintained", 2)`).
+The interaction term was not different from zero ($\beta =$ `r format_regression_effects(brm.interaction.prev.fit.summary, "originsintrinsic:event_outcomemaintained", 2)`).
 
 Again, as an exploratory analysis, we break the items down by type of property (skin colors vs. body parts). 
 Figure\ \@ref(fig:predictiveDoblesResultsProperty)B shows the parallel pattern of responses, wherein predictions about skin color were less sensitive to the event outcome than predictions about body parts. 
 
 To confirm that our computational model accomodates the generic endorsement data (Expt. 1a), we use the predicted prevalence ratings (Expt. 1b) as the referent prevalence $p$ that the speaker model is trying to communicate: $S(u\mid p)$, and examine the model's predicted endorsements, using the body part and skin color priors elicited in Ch. 2 (Expt. 1a) as the priors in this model.
-The generic endorsement model predictions track closely with the empirical generic endorsement data based on origins, outcome, and property type ($r^2(8) = 0.96$).^[
+The generic endorsement model predictions track closely with the empirical generic endorsement data based on origins, outcome, and property type (Figure\ \@ref(fig:dobles-model-scatter); $r^2(8) = 0.96$).^[
  <!-- By extension, the generic endorsement model predictions also track closely with the predicted prevalence ratings. -->
  In this instance, the computational model's predictions are very similar to the predicted prevalence ratings, even though the model predictions depend upon the listener's prevalence prior distribution.
   Since the properties are both biological in nature and, as measured in Ch. 2 (Expt. 1a), are both relatively broad (high variance), we do not observe substantial interactions with the prevalence prior.
@@ -423,7 +423,7 @@ This is strong evidence that beliefs about property origins influences generic e
 
 
 
-```{r dobles-model-scatter, fig.width=6, fig.cap="Model predictions"}
+```{r dobles-model-scatter, fig.width=6, fig.cap="Computational model predictions for generic endorsements (Expt. 1a) based on predicted prevalence ratings (Expt. 1b). Model predictions also track the predicted prevalence ratings to a high degree."}
 ggdraw() + draw_image("figs/dobles-model-data-scatter.pdf", scale = 1)
 ```
 
