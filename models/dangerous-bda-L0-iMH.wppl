@@ -1,0 +1,283 @@
+// time ~/webppl-fork/webppl dangerous-bda-L0-iMH.wppl --require utils uncertain 1
+
+var chain = last(process.argv) // load index as last command line index
+
+// penultimate argument is the semantics
+// uncertain = uncertain threshold
+// fixed = fixed threshold at lowest threshold value
+var semantics = process.argv[process.argv.length - 2]
+// console.log(semantics)
+
+var dataPath = "../data/dangerous-distinct/";
+
+
+var priorFilePrefix = "prior-3",
+    // priorFilePrefix = "prior-manipulation-3",
+    interpretationFilePrefix = "interpretation-6",
+    endorsementFilePrefix = "endorsement-1";
+
+// expt 2: measured priors
+var d_prior = readPriorFile(dataPath + "priors/dangerous-priors-1-trials.csv"),
+    d_prior_subj = readSubjFile(dataPath +"priors/dangerous-priors-1-subject_information.csv"),
+    d_prior_catch = readCatchFile(dataPath +"priors/dangerous-priors-1-catch_trials.csv"),
+    d_endorsement = readDataFile(dataPath +"cbg-exp15-trials.csv"),
+    d_endorsement_subj = readSubjFile(dataPath +"cbg-exp15-subject_information.csv");
+
+
+var priorWorkeridsPassed = passCatchTrials(d_prior_catch),
+    priorWorkeridsEnglish = nativeEnglish(d_prior_subj),
+    endorsementWorkeridsEnglish = nativeEnglish(d_endorsement_subj);
+
+var data = {
+	prior: filter(function(di){
+    return ((priorWorkeridsPassed.indexOf(di.workerid) > -1) && 
+      (priorWorkeridsEnglish.indexOf(di.workerid) > -1) && 
+      utils.isNumber(di.response))
+  }, map(function(d){ return extend(d, {
+		avoided_endval: avoidEnds(d.trial_type == "num_categories" ? d.response / 1000 : d.response / 100)
+  })}, d_prior)),
+	// interpretation: filter(function(di){
+ //    return ((interpretationWorkeridsPassed.indexOf(di.workerid) > -1) && 
+ //      (interpretationWorkeridsEnglish.indexOf(di.workerid) > -1) && 
+ //      utils.isNumber(di.response) &&
+ //      di.trial_type == "implied_prevalence")
+ //  }, map(function(d){ return extend(d, {
+	// 	binnedResponse:  utils.closest( midBins.slice(1), d.response)
+	// })}, d_interpretation))//,
+  endorsement: filter(function(di){
+    return (endorsementWorkeridsEnglish.indexOf(di.workerid) > -1)
+  }, map(function(d){ return extend(d, {
+    binned_prevalence:  utils.closest( midBins, d.stim_prevalence / 100),
+    numeric_endorsement: d.response == "True" ? 1 : 0
+  })}, d_endorsement))
+};
+
+
+// var prevalence_levels = map(function(x){ utils.closest(midBins, x) }, [0.1,0.3,0.5,0.7,0.9])
+
+// // // test that removing Ss who failed catch trial works properly (computed in R)
+assert.ok(levels(data.endorsement, "workerid").length == 79)
+// assert.ok(levels(data.interpretation, "workerid").length == 107)
+// assert.ok(levels(data.prior, "workerid").length == 131)
+// assert.ok(levels(data.prior, "workerid").length == 126) // prior 3
+// assert.ok(levels(data.prior, "workerid").length == 175) // prior 3 n200
+assert.ok(levels(data.prior, "workerid").length == 53) // endorsement 1
+
+var utterancePrior = Infer({model: function(){
+	return uniformDraw(["generic", "silence"])
+}});
+
+var meaning = function(utt,state, theta) {
+  return utt=="generic"? state > theta :
+         utt=="generic is false"? state<=theta :
+         utt=='silence'? true :
+         utt=='some'? state > 0 :
+         true
+}
+//
+var properties = levels(data.prior, "property_type");
+var prevalence_levels = levels(data.endorsement, "binned_prevalence");
+var nullParams = {a:1, b:100}, nullDistribution = Beta(nullParams);
+// properties
+
+var addNoise = function(dist, noise){
+  return Infer({model: function(){
+    return flip(noise) ? uniformDraw(midBins) : sample(dist)
+  }})
+}
+
+
+var propertyDictionary = {
+  dangerous: "danger",
+  distinctive: "distinct", 
+  bare: "bare"
+}
+
+var model = function(){
+
+  var speakerOptimality = uniformDrift({a:0, b:10, width: 1})
+  var numcat_scale =  uniformDrift({a:0, b:1, width: 1})
+
+  foreach(properties, function(item){
+    // display(item)
+    var propertyData = {
+        prior: {
+          num_categories: _.filter(data.prior, {property_type: item, trial_type: "num_categories"}),
+          projectibility: _.filter(data.prior, {property_type: item, trial_type: "projectibility"})
+        },
+        endorsement: _.filter(data.endorsement, {stim_type: propertyDictionary[item]})
+    };
+
+    var numcat_zeroInflation = uniformDrift({a: 0, b: 1, width: 0.2})
+
+    var numcat_params = {
+      g: uniformDrift({a: 0, b: 1, width: 0.2}),
+      d: uniformDrift({a: 0, b: 100, width: 5})
+    }
+
+    var numcat_shape = betaShape(numcat_params)
+
+    query.add(["numcat_params", item, "gamma"], numcat_params.g)
+    query.add(["numcat_params", item, "delta"], numcat_params.d)
+    query.add(["numcat_params", item, "zeroInflation"], numcat_zeroInflation)
+
+
+    mapData({data: propertyData.prior.num_categories}, function(d){
+
+      var scaled_response = avoidEnds(d.response / (1000 * numcat_scale) );
+
+      var scr = util.logsumexp([
+         Math.log(numcat_zeroInflation) + Beta(numcat_shape).score(d.avoided_endval),
+         Math.log(1-numcat_zeroInflation) + nullDistribution.score(d.avoided_endval)
+         // Math.log(1-numcat_zeroInflation) + Delta({v: 0}).score(d.response)
+       ])
+
+      // var componentLogLikelihood = map2(function(w, params){
+      //   Math.log(w) + Beta(params).score(d.avoided_endval)
+      // }, weights, componentParameters)
+      // var scr = util.logsumexp(componentLogLikelihood)
+      // var scr = Beta(numcat_params).score(d.avoided_endval)
+      scr == -Infinity ? displayObj(d) : null
+      factor(scr)
+    })
+
+    var projectibility_params = {
+      g: uniformDrift({a: 0, b: 1, width: 0.2}),
+      d: uniformDrift({a: 0, b: 100, width: 5})
+    }
+    var projectibility_shape = betaShape(projectibility_params)
+
+    // displayObj(projectibility_params)
+    var project_zeroInflation = uniformDrift({a: 0, b: 1, width: 0.2})
+
+    query.add(["projectibility_params", item, "gamma"], projectibility_params.g)
+    query.add(["projectibility_params", item, "delta"], projectibility_params.d)
+    query.add(["projectibility_params", item, "zeroInflation"], project_zeroInflation)
+
+    mapData({data: propertyData.prior.projectibility}, function(d){
+      // var componentLogLikelihood = map2(function(w, params){
+      //   Math.log(w) + Beta(params).score(d.avoided_endval)
+      // }, weights, componentParameters)
+      // var scr = util.logsumexp(componentLogLikelihood)
+
+      var scr = util.logsumexp([
+         Math.log(project_zeroInflation) + Beta(projectibility_shape).score(d.avoided_endval),
+         Math.log(1-project_zeroInflation) + nullDistribution.score(d.avoided_endval)
+         // Math.log(1-numcat_zeroInflation) + Delta({v: 0}).score(d.response)
+       ])
+
+      scr == -Infinity ? displayObj(d) : null
+      factor(scr)
+    })
+
+    // var posteriorPredictive_numCats = beta(numcat_params)
+
+    // foreach(_.range(numberOfComponents), function(i){
+
+    //   query.add(["componentParameters", item, i, "weight"],
+    //     weights[i]
+    //   )
+    //   query.add(["componentParameters", item, i, "alpha"],
+    //     componentParameters[i]["a"]
+    //   )
+
+    //   query.add(["componentParameters", item, i, "beta"],
+    //     componentParameters[i]["b"]
+    //   )
+
+    // })
+
+  	var statePrior = Infer({model: function(){
+      sample(
+        DiscretizedBeta(
+          flip(
+            sample(
+              DiscretizedBeta(flip(numcat_zeroInflation) ? numcat_shape : {a:1, b:200} )
+              )
+            ) ? 
+          projectibility_shape : 
+          {a:1, b:200}
+        ))
+  	}});
+
+  	/// RSA model
+  	var listener0 = cache(function(utterance) {
+  	  Infer({model: function(){
+  	    var state = sample(statePrior);
+        var theta =sample(thetaPrior);
+  	    var m = meaning(utterance, state, theta)
+  	    condition(m)
+  	    return state
+  	 }})}, 10000)
+
+
+   var speaker1 = function(state) {
+    Infer({model: function(){
+      var utterance = sample(utterancePrior);
+      var L0 = listener0(utterance);
+      factor(speakerOptimality * L0.score(state))
+      return utterance == "generic" ? 1 : 0
+    }})}
+    // displayObj(statePrior)
+    // displayObj(listener0("generic"))
+
+    // foreach([1, 5, 10], function(speakerOptimality){
+
+
+     foreach(prevalence_levels, function(p){
+
+      var prevalenceData = _.filter(
+        propertyData.endorsement, {binned_prevalence: p}
+        )
+
+      display(p + " " + levels(prevalenceData, "binned_prevalence"))
+
+       var endorsement = speaker1(p)
+       // display(p + " " + JSON.stringify(endorsement))
+
+      mapData({data: prevalenceData}, function(d){
+        // display(d.stim_prevalence+" ,,.," +endorsement.score(d.numeric_endorsement))
+        observe(endorsement, d.numeric_endorsement)
+      })
+
+       query.add(["endorsement", item,  p], Math.exp(endorsement.score(1)))
+
+     })
+
+    // })
+
+   // query.add(["prediction", item, -99, "prior"], expectation(statePrior))
+   // query.add(["prediction", item, -99, "posterior"], expectation(interpretationPrediction))
+ })
+
+   // RECORD PARAMETERS AND PREDICTIVES
+  query.add(["speakerOptimality", -99, -99], speakerOptimality)
+  query.add(["numcat_scale", -99, -99], numcat_scale)
+   // semantics == "most" ? query.add(["noise", -99, -99, -99], noise) : null
+
+	return query
+}
+
+// data.interpretation
+// data.prior
+// data.endorsement
+var totalIterations = 1000, lag =  1;
+// // var totalIterations = 500000, lag =  250;
+var samples = totalIterations/lag, burn = totalIterations / 2;
+
+// // var outfile = 'results-genint-S1-endorsePrediction-int6-prior3-3Components_'+semantics+'-semantics_'+ totalIterations+'_burn'+burn+'_lag'+lag+'_chain'+chain+'.csv'
+var outfile = 'results-dangerous-S1-roundto01scaleNumcats-zeroInflateNumCatsProject_'+semantics+'-semantics_'+ totalIterations+'_burn'+burn+'_lag'+lag+'_chain'+chain+'.csv'
+
+var posterior = Infer({
+  model: model,
+	method: "incrementalMH",
+  samples: samples, burn: burn, lag: lag,
+  verbose: T,
+  verboseLag: totalIterations / 20,
+	stream: {
+		path: "results/" + outfile,
+		header: ["type", "property", "parameter", "val"]
+	}
+})
+
+"written to " + outfile;
