@@ -69,9 +69,12 @@ library(RColorBrewer)
 library(ggpirate)
 library(brms)
 theme_set(theme_few())
+```
 
+```{r helper functions}
 
 format_regression_effects <- function(brm_summary, fixed_effect_name, n_digits = 3){
+   #print(fixed_effect_name)
    e1 <- brm_summary[["fixed"]][[fixed_effect_name, "Estimate"]]
    e_lower <- brm_summary[["fixed"]][[fixed_effect_name, "l-95% CI"]]
    e_upper <- brm_summary[["fixed"]][[fixed_effect_name, "u-95% CI"]]
@@ -81,6 +84,7 @@ format_regression_effects <- function(brm_summary, fixed_effect_name, n_digits =
      format(e_upper, digits = n_digits), "]", sep = ""))
 }
 ```
+
 
 ```{r analysis_preferences}
 # Seed for random number generation
@@ -548,28 +552,41 @@ The experiment can be viewed at http://stanford.edu/~mtessler/generics/cbg2010-r
 
 ### Results
 
-```{r load dangerous endorsement results}
+```{r load dangerous endorsement results, cache=F}
 load("cached_results/dangerous-endorsements-summary.RData") # d.summary
 load("cached_results/dangerous-endorsements-randIntTypeeff.RData") # brms.endorsement.bern.1, brms.endorsement.bern.2,
 brms.endorsement.bern.2.summary <- summary(brms.endorsement.bern.2)
 ```
 
-
 One participant was excluded for self-reporting a native language other than English, leaving n=79 for these analyses.
 Figure\ \@ref(fig:dangerousEndorsements) shows the endorsement levels for the three different kinds of properties at the five prevalence levels tested.
-We see that both dangerous and distinctive properties are endorsed more, especially so at the lowest prevalence levels. 
+We see that both dangerous and distinctive properties have a different pattern of endorsement than the control properties.
 This is confirmed by a Bayesian bernoulli regression model with fixed-effects of property type (dangerous vs. distinctive vs. neither), prevalence levels (treated as a continuous variable, centered and scaled), and their interaction.
 As well, the model included random intercepts and effects of property type, by participant and by item. 
-
-In addition to the obvious main effect of prevalence ($\beta_{prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "prev_scaled")`),  
-There is a $\beta_{dangerous}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger")`.
-
-And something more $\beta_{distinctive}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct")`.
-
-More
-
+We find evidence for different slopes such that both dangerous properties ($\beta_{dangerous\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger:prev_centered")`) and distinctive properties ($\beta_{distinctive\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct:prev_centered")`) show less of an effect of prevalence on their endorsement; this is because they are endorsed higher specifically at low prevalence levels, thus making their endorsement curves more flat. 
+The main effects of dangerous and distinctive properties on endorsement are in the predicted direction, but the credible intervals include zero ($\beta_{dangerous}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger")`;  $\beta_{distinctive}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct")`).
+Finally there is a main effect of prevalence ($\beta_{prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "prev_centered")`).  
 
 ```{r dangerousEndorsements, fig.asp=0.65, fig.cap="A replication of Cimpian et al. (2010; Expt. 4). Y-axis denotes proportion of participants who endorsed the generic statement for different types of properties (color). X-axis denotes the prevalence of the property within the category given to participants.", fig.width=5, out.width="70%", fig.align="center"}
+
+# d.summary.collapse %>%
+#   ungroup() %>%
+#   mutate(stim_type = factor(stim_type, levels = c("danger", "distinct", "bare"),
+#                             labels = c("dangerous", "distinctive", "control"))) %>%
+# ggplot(., aes(x = stim_type,
+#                       y = mean, ymin = ci_lower, ymax = ci_upper,
+#                       fill = stim_type))+
+#   #geom_line(alpha = 0.8, position = position_dodge(4))+
+#   geom_bar( position = position_dodge(0.5), width = 0.7, stat = 'identity', color = 'black')+
+#   geom_errorbar(position = position_dodge(0.5), width = 0.3, color = 'black')+
+#   ylab("Proportion endorsement")+
+#   #xlab("Referent prevalence")+
+#   scale_y_continuous(limits = c(0, 1), breaks = c(0, 0.5, 1))+
+#   #scale_x_reverse()+
+#   scale_x_discrete(limits = c("control", "distinctive", "dangerous"))+
+#   guides(fill = F,color = F)+
+#   theme(axis.text.x = element_blank(), axis.title.x = element_blank())
+
 d.summary %>%
   ungroup() %>%
   mutate(stim_type = factor(stim_type, levels = c("danger", "distinct", "bare"),
@@ -577,7 +594,7 @@ d.summary %>%
 ggplot(., aes(x = as.numeric(stim_prevalence), 
                       y = mean, ymin = ci_lower, ymax = ci_upper,
                       fill = stim_type, color = stim_type))+
-  geom_line(alpha = 0.8, position = position_dodge(4))+
+  geom_line(alpha = 0.3, position = position_dodge(4))+
   geom_errorbar(alpha = 0.3, width = 2,  position = position_dodge(4), color = 'black')+
   geom_point( position = position_dodge(4), shape = 21, color = 'black', size = 2.5)+
   ylab("Proportion endorsement")+
@@ -643,14 +660,14 @@ In keeping with our prediction, both distinctive properties ($\beta_{distinctive
 Figure\ \@ref(fig:dangerousPriorsResults) shows the empirical distribution of responses for both questions, as well as the means. 
 The fact that such properties are present in fewer categories relaxes their truth conditions, leading to increased endorsements at lower prevalence levels, as can be seen by the computational model predictions based on these empirically elicited priors \red{(Figure)}.
 Thus, the influence of dangerous properties on endorsements of generic sentences [at least the examples used by @Cimpian2010] can be attributed purely to the statistics of the feature.
-Dangerous properties are distinctive properties, and the absolute estimates were not appreciably different from each other  ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedistinctive")`, $\beta_{dangerous} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedangerous")`) 
+Dangerous properties are distinctive properties (also, the absolute estimates of the effect for each kind of property were not appreciably different from each other  $\beta_{distinctive} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedistinctive")`, $\beta_{dangerous} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedangerous")`).
 
 As a secondary analysis, we were interested as to whether dangerous properties were also more *projectible*, as hypothesized by @Leslie2008.
-Admittedly, our paradigm is not the only way one would want to test the projectibility hypothesis, but it is one way. 
+Our question corresponds to the $n=1$ condition in @Nisbett1983, wherein participants are asked to generalize a property from a single observed instance.
 We built a similar regression model, which used a "zero and one inflated beta" linking function, which independently models the responses of exactly 0% and exactly 100%, because these are undefined under the beta distribution.
 The model had a maximal random-effects structure similar to that for the analysis of the distinctiveness measure.
-Though the effect of dangerousness leading to higher ratings of projectibility was numerically positive, the credible intervals were too broad to draw a conclusion ($\beta_{dangerousness} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous", 2)`) and similarly for distinctive properties ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive", 2)`).
-Thus, we do not have evidence to support the claim that dangerousness leads to stronger projectibility, operationalized in measured prevalence based on observing a single instance with the feature [cf., @Rothbart1978].
+Though the effect of higher ratings of projectibility in comparison to control properties was numerically positive, the credible intervals were too broad to draw a conclusion for both dangerous ($\beta_{dangerousness} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous", 2)`) and  distinctive properties ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive", 2)`).
+Thus, we do not have evidence to support the claim that dangerousness leads to stronger projectibility, operationalized in projected prevalence based on observing a single instance with the feature [cf., @Rothbart1978].
 
 ```{r dangerousPriorsResults, fig.width=8, fig.cap="Caption", fig.asp=0.6}
 load(file = "cached_results/dangerous-priors-filtered.RData") # d.priors.filtered 
