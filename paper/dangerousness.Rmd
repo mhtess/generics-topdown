@@ -108,17 +108,17 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, cache=T, message=FALSE, sanitiz
 
 Generic language (e.g., "Alligators have big teeth") convey generalizations about categories [@Carlson1977] and are thought to play a critical role in learning abstract knowledge about the world [@Gelmanbook].
 For the past decade, there has been mounting evidence that meaning of generic statements cannot simply be reduced to probabilistic or statistical statements [@Carlson1995; @Gelman2007; @Leslie2008; @Prasada2000; @Cimpian2010theory; @Cimpian2010]: Generics are judged true even when the predicated property is only rarely present (e.g., "Mosquitos carry malaria" is true despite very few mosquitos actually carrying malaria).
-Instead, generics are thought be a direct, linguistic manifestion of conceptual knowledge and thus subject to certain top-down influence [@Prasada; @Leslie]. @Leslie2007 brings our attention to examples like the following:
+Instead, generics are thought to be a direct, linguistic manifestion of conceptual knowledge and thus subject to certain top-down influence [@Prasada; @Leslie]. @Leslie2007 brings our attention to examples like the following:
 
 1. Sharks attack bathers.
 2. Rottweilers maul children. 
 3. Mosquitos carry the West Nile Virus.
 
-arguing that these generics are reasonable utterances, even though the actual prevalence of the property is quite low (e.g., less than 1% of mosquitos carry the West Nile Virus), because in each case, the property is somehow *striking, alarming,* or *dangerous*:
+\noindent arguing that these generics are reasonable utterances, even though the actual *prevalence* of the property (e.g., the number of mosquitos that carry the West Nile Virus) is quite low because in each case, the property is somehow *striking, alarming,* or *dangerous*:
 
 > The examples... have something in common: In all of them, the sentence attributes harmful, dangerous, or appalling properties to the kind. More generally, if the property in question is the sort of property of which one would be well served to be forewarned, even if there were only a small chance of encountering it, then generic attributions of the property are intuitively true. (2008, p.15)
 
-Consistent with this viewpoint, @Cimpian2010 found participants willing to endorse generics about striking properties (e.g., "Lorches have dangerous feathers") more so than that of neutral properties (e.g., "Lorches have purple feathers") at low levels of prevalence (e.g., when only 30% of the category have the property).
+\noindent Consistent with this viewpoint, @Cimpian2010 found participants willing to endorse generics about striking properties (e.g., "Lorches have dangerous feathers") more so than that of neutral properties (e.g., "Lorches have purple feathers") at low levels of prevalence (e.g., when only 30% of the category have the property).
 
 <!-- @Cimpian2010 found that generics about novel categories (e.g., "Lorches have purple feathers") are endorsed more highly when the property being predicated is *distinctive and dangerous*  (Expt. 1) and when described independently as either distinctive or dangerous (Expt. 4). -->
 <!-- For example, the utterance "Rottweilers maul children" is thought to be a true generic statement  -->
@@ -126,61 +126,27 @@ Consistent with this viewpoint, @Cimpian2010 found participants willing to endor
 <!-- because *mauling children* is a striking property for animal to exhibit and the human conceptual system priviledges this kind of survival-relevant information [@Leslie2008]. -->
 
 
-Recently, however, we have shown that generics *can* be reduced to probabilistic statements, albeit ones that are vague and context-dependent: A generic is true if an instance of the category is subjectively likely to have the property, where what counts as *likely* is determined by one's prior knowledge about the property in a set of categories.
+Recently, however, we have shown that generics *can* be reduced to probabilistic statements, albeit ones that are vague and context-dependent: A generic is true if an instance of the category is subjectively likely to have the property, where what counts as *likely* is determined by one's prior knowledge about the property in a set of alternative categories [@TesslerGenericsInPress].
 For instance, *carrying malaria* is significantly more true of mosquitos than it is of other animals.
-This framework was both sufficiently precise to make fine-grained, quantitative predictions that matched human judgments and sufficiently general to be able to explain both generic (e.g., "Mosquitos carry malaria") and habitual language (e.g., "John). 
-The information-theoretic communicative model predicts that differences in endorsements based on striking are mediated by corresponding differences in the prevalence prior distributions.^[
+This framework is sufficiently general to explain the context-sensitivity of *habitual language* (e.g., "John runs"), as well.
+One intruiging claim of the information-theoretic communicative model is that differences in endorsements based on top-down, conceptual knowledge (e.g., strikingness) could be mediated by corresponding differences in the relevant prior knowledge recruited about the properties in the form of expectations about prevalence.^[
   Another non-mutually exclusive possibility suggested by @Leslie2008 is that a speaker's perception of the prevalence of the feature is altered by virtue of its dangerousness [@Rothbart1978].
-  This explanatory mechanism is the same as that explored to explain the effects of property origins in Expt. 1.
 ]
 
-Here, we examine if the striking or dangerous properties used by @Cimpian2010 do, in fact, alter the prevalence priors to make them resemble that of distinctive properties. 
-First, we replicate the findings of @Cimpian2010 (Expt. 4) that information about the dangerousness of a property increases generic endorsement at low prevalence levels.
-Then, we run a prevalence elicitation paradigm to see if these differences in endorsements can be traced back to differences in the prevalence prior distributions, using our computational model with the prevalence priors to predict generic endorsement.
+Here, we test whether the impact of strikingness on judgments about generics observed by @Cimpian2010 be reduced to probabilistic expectations about the prevalence of properties.
+If this were so, we would expect information about the dangerousness of a property to alter the relevant prior knowledge recruited by a listener to reflect the kind of prior knowledge associated with *distinctive* properties (i.e., properties that are expected to be present in very few categories).
+We investigate this by first replicating the findings of @Cimpian2010 Expt. 4, which showed that information about the dangerousness of a property increases generic endorsement at low prevalence levels.
+Then, we run a prevalence elicitation experiments to see if these differences in endorsements are associated with differences in the prevalence prior distributions.
+We use the computational model of @TesslerGenericsInPress to predict the endorsement results using the elicited priors, finding that indeed the priors are sufficiently altered as the result of information about the property's dangerousness to account for the differences in endorsements observed by @Cimpian2010.
+Finally, we perform a Bayesian mediation analysis, finding that probabilistic knowledge fully mediates the effects of dangerous information on generic endorsements.
+These results call into question claims about the special status of dangerous information on generic language understanding and suggest more careful experimental controls for future investigations.
 
-
-
-
-
-<!-- In the literature on generics, it is long argued that generic meaning cannot be reduced to probabilities or quantification  -->
-<!-- These studies (both empirical and theoretical) are limited by their assumption that the literal meaning of generics is directly inspectable, that we can interpret our intuitions or findings about generics without needing to formalize the world knowledge that any language user would be bring to interpret a sentence. -->
-<!-- In this chapter, I examine a few of these studies to see, if indeed, they are incompatible with a probability-based semantics.  -->
-
-<!-- I will examine two case studies that demonstrate top-down influence of conceptual knowledge on generic endorsement: the origins and dangerousness of properties. -->
-<!-- An old intuition with generics is that at least some express properties that are especially enduring and central to a category [@Lyons1977].  -->
-<!-- Such a *principled connection* between a kind and a property supports both a normative expectation (e.g., *Ks should F*) and explanation of category membership [e.g., *x is a K because it Fs*; @Prasada2006]. -->
-<!-- @Gelman2007 posit that the way in which an exemplar comes to have a property---the *origins* of a property---can bring about a principled connection between the kind and the property.  -->
-<!-- Learning that members of a category (e.g., *dobles*) are born with the property (e.g., born with claws) signals that the kind has a principled connection to the property, which is believed to be what makes the generic ("Dobles have claws") true. -->
-<!-- By contrast, observing individuals who acquire the property from the external world (e.g., dobles who find claws on the side of the road and put them on) is less likely to bring about a principled connection, and the generic intuitively is less true.  -->
-
-<!-- Further evidence for how our understanding of generics is tied to our conceptual knowledge comes from the observation that properties that are "striking, appalling, or otherwise gripping" make the generic "...more tolerant [...] to exceptions" [@Leslie2008, p.15]. -->
-<!-- This argument stems from an attempt to explain why sentences like "Mosquitos carry malaria" and "Tigers eat people" sound like true generic sentences despite the prevalence of the feature in the referent categories being exceptionally low.  -->
-<!-- @Cimpian2010 provided empirical support for this claim by testing adult intuitions about generics about novel categories (e.g., "Lorches have dangerous purple feathers").  -->
-<!-- Information about the dangerousness of the property was found to increase participants' propensity to endorse generic sentences when information about the referent prevalence was fixed [e.g., when 30% of lorches have these purple feathers; @Cimpian2010, Expts. 1 & 4].  -->
-
-<!-- Both @Gelman2007 and @Cimpian2010 measure generic endorsement by having participants judge whether or the sentence is true or false (or, right vs. wrong). -->
-<!-- In Chapter 3, we saw how endorsement depends on the referent prevalence (i.e., the prevalence of the property within the referent category) in a nonlinear way relative to the distribution of prevalence of the property within a set of relevant alternative categories.  -->
-<!-- Thus, the minimal computational model presented here already has two distinct mechanisms by which theory-based expectations can influence endorsement: the prevalence prior and the referent prevalence. -->
-<!-- Prevalence prior distributions exhibit complex structure (often manifesting as multi-modal distributions) and can change dramatically between properties of different types (e.g., biological vs. accidental properties; Ch. 2, Expt. 1; Ch. 3, Expt. 1, Expt. 2) and even within properties that are all of the same conceptual type (e.g., biological properties; Ch. 2, Expt. 2; Ch. 3, Expt. 2).  -->
-<!-- Second, we take referent prevalence to be not the objective frequency of the property among actual members of the category in the world, as is assumed in other studies. -->
-<!-- Instead, the prevalence that matters for determining the truth or falsity of a generic is a subjective, predictive probability that exists in the mind of the speaker. -->
-<!-- (Frequency information is relevant insofar as it informs a speaker's beliefs about the property or event's probability of occurring in the future.) -->
-<!-- In our experiments on habitual endorsement (Ch. 3, Expt. 2c), we showed how endorsement patterns can easily be divorced from the objective, present frequency, even taking into account the prior distribution over prevalence. -->
-<!-- In those experiments, participants' predictions about the future are what mediated their endorsement of habituals (though again, in a manner relative to the prevalence prior).  -->
-
-<!-- We revisit the effects of property origins and property dangerousness through the computational lens of this thesis. -->
-<!-- First, if referent prevalence is what matters for generic endorsement, then the *pricipled connections* thought to result from learning intrinsic property origins in @Gelman2007 would matter only insofar as it increases the subjective probability that a future instance of the category would have the property.  -->
-<!-- Second, if information about dangerousness is argued to influence generic endorsement in a way independent of prevalence, then it must be shown that information about dangerousness does not alter the prevalence prior. -->
-<!-- We test these assumptions in this chapter. -->
-
-<!-- We first replicate the effects shown in @Gelman2007 and @Cimpian2010 (Expt. 4). -->
-<!-- We then design paradigms to measure the predictive prevalence and prevalence priors, respectively.  -->
-<!-- We find that the endorsement patterns in these experiments can be accounted for by changes in the underlying prevalence representations that the generic endorsement model posits. -->
-
+# Computational model predictions
 
 # Experiment 1
 
-This experiment is a replication of @Cimpian2010 (Expt. 4).
+@Cimpian2010 Expt. 4 demonstrated that generic statements ascribing dangerous properties to novel categories as well as those ascribing distinctive properties to novel categories were judged more true at low-levels of prevalence (e.g., when only 30% of the category had the property) than control items.
+Here, we aim to directly replicate this finding using the same stimuli. 
 
 ## Method
 
@@ -227,11 +193,11 @@ brms.endorsement.bern.2.summary <- summary(brms.endorsement.bern.2)
 One participant was excluded for self-reporting a native language other than English, leaving n=79 for these analyses.
 Figure\ \@ref(fig:dangerousEndorsements) shows the endorsement levels for the three different kinds of properties at the five prevalence levels tested.
 We see that both dangerous and distinctive properties have a different pattern of endorsement than the control properties.
-This is confirmed by a Bayesian bernoulli regression model with fixed-effects of property type (dangerous vs. distinctive vs. neither), prevalence levels (treated as a continuous variable, centered and scaled), and their interaction.
+This is confirmed by a Bayesian Bernoulli regression model with fixed-effects of property type (dangerous vs. distinctive vs. neither), prevalence levels (treated as a continuous variable, centered and scaled), and their interaction.
 As well, the model included random intercepts and effects of property type, by participant and by item. 
-We find evidence for different slopes such that both dangerous properties ($\beta_{dangerous\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger:prev_centered")`) and distinctive properties ($\beta_{distinctive\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct:prev_centered")`) show less of an effect of prevalence on their endorsement; this is because they are endorsed higher specifically at low prevalence levels, thus making their endorsement curves more flat. 
+We find evidence for different slopes such that both dangerous properties ($\beta_{dangerous\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger:prev_centered")`) and distinctive properties ($\beta_{distinctive\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct:prev_centered")`) show less of an effect of prevalence on their endorsement; this is because dangerous and distinctive properties are endorsed more so than neutral items, specifically at low prevalence levels, thus making their endorsement curves more flat. 
 The main effects of dangerous and distinctive properties on endorsement are in the predicted direction, but the credible intervals include zero ($\beta_{dangerous}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger")`;  $\beta_{distinctive}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct")`).
-Finally there is a main effect of prevalence ($\beta_{prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "prev_centered")`).  
+Finally there is a main effect of prevalence such that generics about more prevalent features are judged true more often ($\beta_{prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "prev_centered")`).  
 
 ```{r dangerousEndorsements, fig.asp=0.65, fig.cap="A replication of Cimpian et al. (2010; Expt. 4). Y-axis denotes proportion of participants who endorsed the generic statement for different types of properties (color). X-axis denotes the prevalence of the property within the category given to participants.", fig.width=5, out.width="70%", fig.align="center"}
 
@@ -274,7 +240,6 @@ ggplot(., aes(x = as.numeric(stim_prevalence),
 
 Having replicated the results of @Cimpian2010, we now test whether or not the prevalence priors are altered by the presentation of dangerous information. 
 
-
 # Experiment 2: Prior elicitation
 
 ## Method
@@ -296,7 +261,7 @@ To serve as an attention check, participants were shown a list of ten properties
 They were asked to select all and only the properties they had seen. 
 The list was composed of five seen properties and five distractor properties which were very similar to the seen properties (e.g., seen properties = \{*yellow legs*, *blue ears*, *pink teeth*, ...\}, distactor properties = \{*red arms*, *purple eyes*, *copper fingers*,...\}).
 
-The materials were the same as in Expt. 2a. 
+The materials were the same as in Expt. 1. 
 The experiment can be viewed at: http://stanford.edu/~mtessler/generics-topdown/experiments/dangerous-distinct/prior-1.html
 
 ## Results
@@ -325,15 +290,15 @@ The model syntax is: `response ~ property_type +  (1 + property_type | participa
 In keeping with our prediction, both distinctive properties ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedistinctive")`) and dangerous properties ($\beta_{dangerous} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.summary, "property_typedangerous")`) were expected to be present in fewer categories in comparison to the control condition (i.e., properties present without any further information). 
 Figure\ \@ref(fig:dangerousPriorsResults)A-C shows the empirical distribution of responses for both questions, as well as the means. 
 The fact that such properties are present in fewer categories relaxes their truth conditions, leading to increased endorsements at lower prevalence levels, as can be seen by the computational model predictions based on these empirically elicited priors (Figure\ \@ref(fig:dangerousPriorsResults)D).
-Thus, the influence of dangerous properties on endorsements of generic sentences [at least the examples used by @Cimpian2010] can be attributed purely to the statistics of the feature.
-Dangerous properties are distinctive properties (the absolute estimates of the effect for each kind of property are not appreciably different from each other  $\beta_{distinctive} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedistinctive")`, $\beta_{dangerous} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedangerous")`).
+Thus, the influence of dangerous properties on endorsements of generic sentences [at least the examples used by @Cimpian2010] can be predicted purely to the statistics of the feature.
+The statistical knowledge of dangerous properties is not meaningfully different from that of distinctive properties ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedistinctive")`, $\beta_{dangerous} =$ `r format_regression_effects(brms.priors.zero_inf_beta_max.sansInt.summary, "property_typedangerous")`).
 
 As a secondary analysis, we were interested as to whether dangerous properties were also more *projectible*, as hypothesized by @Leslie2008.
 Our question corresponds to the $n=1$ condition in @Nisbett1983, wherein participants are asked to generalize a property from a single observed instance.
 We built a similar regression model, which used a "zero and one inflated beta" linking function, which independently models the responses of exactly 0% and exactly 100%, because these are undefined under the beta distribution.
 The model had a maximal random-effects structure similar to that for the analysis of the distinctiveness measure.
-Though the effect of higher ratings of projectibility in comparison to control properties was numerically positive, the credible intervals were too broad to draw a conclusion for both dangerous ($\beta_{dangerousness} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous", 2)`) and  distinctive properties ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive", 2)`).
-Thus, we do not have evidence to support the claim that dangerousness leads to stronger projectibility, operationalized in projected prevalence based on observing a single instance with the feature [cf., @Rothbart1978].
+Though the effect of higher ratings of projectibility in comparison to control properties was numerically positive, the credible intervals were too broad to draw about differences for both dangerous ($\beta_{dangerousness} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedangerous", 2)`) and distinctive properties ($\beta_{distinctive} =$ `r format_regression_effects(brms.priors.project.zeroone_beta_max.summary, "property_typedistinctive", 2)`).
+Thus, we do not have evidence to support the claim that dangerousness leads to stronger projectibility, operationalized in terms of projected prevalence based on observing a single instance with the feature [cf., @Rothbart1978].
 
 ```{r dangerousPriorsResults, fig.width=11, fig.cap="Results of Expt. 2b. A: Empirical distributions of responses for the question of how many different categories would be expected to have the property. X-axis is truncated (from extending to a maximum possible response of 1000) to zoom in on the region of most responses. B: Empirical distribution of responses for the projectibility question (given one has feature, how many others have feature?). C: Empirical means for both questions. Error-bars denote 95% bootstrapped confidence intervals. D: Generic endorsement model predictions given these elicited prevalence priors.", fig.asp=0.5}
 load(file = "cached_results/dangerous-priors-filtered.RData") # d.priors.filtered 
@@ -443,7 +408,6 @@ cowplot::plot_grid(
 
 ```
 
-
 ```{r model data dangerous endorsement merge}
 md.dangerous.endorsement <- left_join(d.summary %>% ungroup() %>%
     mutate(stim_type = factor(stim_type, 
@@ -455,6 +419,8 @@ md.dangerous.endorsement <- left_join(d.summary %>% ungroup() %>%
 To confirm that these elicited prevalence priors are sufficient to explain the impact of dangerousness on the increased endorsements for generics, we incorporating these prior measurements into our computational model of generic endorsement (Ch. 3).
 Following our treatment of the priors for novel generics (Ch. 1 Expt. 1, Ch. 3 Expt. 1), we used a zero-inflated beta distribution shape for the prevalence priors, taking the first prior elicitation question (*number of categories*) as the estimate of the probability mass at 0% prevalence and responses to the second prior elicitation question (*projectibility*) as samples from the Beta distribution.
 Figure\ \@ref(fig:dangerousPriorsResults)D shows that the model is able to recapitulate the qualitative effects of dangerousness and distinctiveness on generic endorsement and provide a high degree quantitative fit to the endorsement task data ($r^2(15) =$ `r compute_r2(md.dangerous.endorsement, "MAP", "mean")`; $MSE =$ `r compute_mse(md.dangerous.endorsement, "MAP", "mean")`).
+
+## Bayesian mediation analysis
 
 <!-- # Experiment 3: Transient properties -->
 
