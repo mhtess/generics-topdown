@@ -106,9 +106,15 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, cache=T, message=FALSE, sanitiz
 
 # Introduction
 
-Generic language (e.g., "Alligators have big teeth") convey generalizations about categories [@Carlson1977] and are thought to play a critical role in learning abstract knowledge about the world [@Gelmanbook].
-For the past decade, there has been mounting evidence that meaning of generic statements cannot simply be reduced to probabilistic or statistical statements [@Carlson1995; @Gelman2007; @Leslie2008; @Prasada2000; @Cimpian2010theory; @Cimpian2010]: Generics are judged true even when the predicated property is only rarely present (e.g., "Mosquitos carry malaria" is true despite very few mosquitos actually carrying malaria).
-Instead, generics are thought to be a direct, linguistic manifestion of conceptual knowledge and thus subject to certain top-down influence [@Prasada; @Leslie]. @Leslie2007 brings our attention to examples like the following:
+Generic language (*generics*, e.g., "Alligators have big teeth") convey generalizations about categories [@Carlson1977].
+Generics are believed to be a part of every language [@behrens], and they are seemingly understood by children as early as they have the syntactic knowledge to combine a subject and a predicate [@graham:30mo].
+The fact that generics refer to abstractions outside of direct experience (i.e., categories) has pinpointed them as potentially central in learning abstract knowledge about the world [@Gelmanbook].
+The question of what generic statements mean has thus of interest to psychologists, linguists, and philosophers for at least forty years.
+
+There is considerable experimental evidence that meaning of generic statements cannot simply be reduced to probabilistic or statistical statements [@Carlson1995; @Gelman2007; @Leslie2008; @Prasada2000; @Cimpian2010theory; @Cimpian2010]: Generics are judged true even when the predicated property is only rarely present (e.g., "Mosquitos carry malaria" is true despite very few mosquitos actually carrying malaria).
+Instead, a popular view in cognitive science is sthat generics are a direct, linguistic manifestion of conceptual knowledge[@Prasada; @Leslie].  
+As a result, the process of understanding generics is predicted to be sensitive to certain top-down influence.
+Accordingly, @Leslie2007 brings our attention to examples like the following:
 
 1. Sharks attack bathers.
 2. Rottweilers maul children. 
@@ -127,21 +133,38 @@ Instead, generics are thought to be a direct, linguistic manifestion of conceptu
 
 
 Recently, however, we have shown that generics *can* be reduced to probabilistic statements, albeit ones that are vague and context-dependent: A generic is true if an instance of the category is subjectively likely to have the property, where what counts as *likely* is determined by one's prior knowledge about the property in a set of alternative categories [@TesslerGenericsInPress].
-For instance, *carrying malaria* is significantly more true of mosquitos than it is of other animals.
-This framework is sufficiently general to explain the context-sensitivity of *habitual language* (e.g., "John runs"), as well.
-One intruiging claim of the information-theoretic communicative model is that differences in endorsements based on top-down, conceptual knowledge (e.g., strikingness) could be mediated by corresponding differences in the relevant prior knowledge recruited about the properties in the form of expectations about prevalence.^[
+For instance, *carrying malaria* is significantly more true of mosquitos than it is of other insects or animals.
+This framework is sufficiently general to explain the context-sensitivity of *habitual language* (e.g., "John runs") as well, a relationship that has been remarked upon in the literature on generics [@Carlson; @Leslie] but never before foramlized. 
+
+Here, we examine and test an intruiging claim of the computational model of @TesslerGenericsInPress: Whether differences in endorsements based on top-down, conceptual knowledge (e.g., strikingness) could be mediated by corresponding differences in the relevant prior knowledge recruited about the properties in the form of expectations about prevalence.^[
   Another non-mutually exclusive possibility suggested by @Leslie2008 is that a speaker's perception of the prevalence of the feature is altered by virtue of its dangerousness [@Rothbart1978].
 ]
-
-Here, we test whether the impact of strikingness on judgments about generics observed by @Cimpian2010 be reduced to probabilistic expectations about the prevalence of properties.
-If this were so, we would expect information about the dangerousness of a property to alter the relevant prior knowledge recruited by a listener to reflect the kind of prior knowledge associated with *distinctive* properties (i.e., properties that are expected to be present in very few categories).
-We investigate this by first replicating the findings of @Cimpian2010 Expt. 4, which showed that information about the dangerousness of a property increases generic endorsement at low prevalence levels.
+If this were so, we would expect information about the strikingness of a property to alter the listener's relevant prior knowledge to reflect the kind of prior knowledge associated with *distinctive* properties (i.e., properties that are expected to be present in very few categories).
+We examine this claim in the context of the experimental paradigm of @Cimpian2010, which found judgments about generics were influenced by information about the dangerousness of the property being predicated. 
+We first replicate the findings of @Cimpian2010 Expt. 4, which showed that information about the dangerousness of a property increases generic endorsement at low prevalence levels.
 Then, we run a prevalence elicitation experiments to see if these differences in endorsements are associated with differences in the prevalence prior distributions.
 We use the computational model of @TesslerGenericsInPress to predict the endorsement results using the elicited priors, finding that indeed the priors are sufficiently altered as the result of information about the property's dangerousness to account for the differences in endorsements observed by @Cimpian2010.
 Finally, we perform a Bayesian mediation analysis, finding that probabilistic knowledge fully mediates the effects of dangerous information on generic endorsements.
 These results call into question claims about the special status of dangerous information on generic language understanding and suggest more careful experimental controls for future investigations.
 
 # Computational model predictions
+
+@TesslerGenericsInPress propose a computational model of truth judgments or endorsements about generic sentences.
+This model is a kind of Rational Speech Act model [@goodman] wherein a rational speaker decides whether or not to produce an utterance to a Bayesian listener. 
+The listener $L$ updates his prior beliefs from the meaning of the utterance, and the speaker $S$ decides if the generic (or an information-less alternative) would better align the listener's beliefs with that of their own.
+The model is given by these two equations:
+
+\begin{eqnarray}
+S(u \mid r) \propto (\int_{\theta} L(r, \theta \mid u)  \diff \theta)^\lambda  \label{eq:S1} \\
+L(r, \theta \mid u) &\propto& {\delta_{\denote{u}(r, \theta)} \cdot P(r) \cdot P(\theta)} \label{eq:L0} 
+\end{eqnarray}
+
+Using the truth-functional tools of formal semantics [@Montague1973], the literal meaning of a generic statement is modeled as a threshold function operating on the prevalence $r$ of the feature in the category (e.g., the proportion of mosquitos that carry malaria): $\denote{generic} = \{r > \theta\}$.^[
+  The prevalence $r$ can be thought as a "prevalence in the mind", or a subjective degree of belief about the property in the category. Such subjective probabilities may or may not accurately track true empirical frequencies.
+]
+The literal meaning of quantifiers can also be described by threshold functions (e.g., $\denote{some} = \{r > 0\}$, $\denote{most} = \{r > 0.5\}$, $\denote{all} = \{r = 1\}$).
+@TesslerLangGenUnderReview posit that the corresponding threshold for the generic $\theta$ is *a priori* uncertain---formally, it is drawn from a context-invariant, uniform prior distribution on thresholds $P(\theta)$---and is resolved by context.
+
 
 # Experiment 1
 
