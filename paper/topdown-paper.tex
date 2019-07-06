@@ -1,0 +1,171 @@
+\documentclass[floatsintext,doc]{apa6}
+
+%\usepackage{gb4e}
+%\usepackage{pslatex}
+\usepackage{apacite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{url}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{lingmacros}
+\linespread{1.2}
+%\newcommand{\url}[1]{$#1$}
+
+\definecolor{Blue}{RGB}{50,50,200}
+\newcommand{\blue}[1]{\textcolor{Blue}{#1}}
+
+\definecolor{Red}{RGB}{255,0,0}
+\newcommand{\red}[1]{\textcolor{Red}{#1}}
+
+\definecolor{Green}{RGB}{50,200,50}
+\newcommand{\ndg}[1]{\textcolor{Green}{[ndg: #1]}}  
+
+\definecolor{blueish}{RGB}{20,150,250}
+\newcommand{\blueish}[1]{\textcolor{blueish}{#1}}
+\newcommand{\mht}[1]{\textcolor{blueish}{[mht: #1]}}  
+
+
+ \newcommand{\denote}[1]{\mbox{ $[\![ #1 ]\!]$}}
+
+\newcommand{\subsubsubsection}[1]{{\em #1}}
+\newcommand{\eref}[1]{(\ref{#1})}
+\newcommand{\tableref}[1]{Table \ref{#1}}
+\newcommand{\figref}[1]{Figure \ref{#1}}
+\newcommand{\appref}[1]{Appendix \ref{#1}}
+\newcommand{\sectionref}[1]{Section \ref{#1}}
+
+
+
+% ggplot colors: "#F8766D", "#A3A500", "#00BF7D", "#E76BF3", "#00B0F6"
+
+% variations on blue: "#007fb1", "#4ecdff"
+
+
+%% TODO
+% somewhere in the intro, discuss what other theories of scalar implicature/utterance interpretation have to say about world knowledge 
+% add Exp. 4 (run it first...)
+% rework discussion
+% add appendix with all items
+
+% in intro (or discussion?) talk about what other people have said about how world knowledge is integrated in utterance interpretation, and data that shows that it does. e.g., from guerts (2010, p. 78) : "In general, a sentence like ÒThe peanut was in loveÓ, would yield a massive N400 for the last word. But what will happen when this sentence is embedded in a discourse like the following: 'A woman saw a dancing peanut who had a big smile on his face. The peanut was singing about a girl he had just met. And judging from the song, the peanut was totally crazy about her. The woman thought it was really cute to see the peanut singing and dancing like that. The peanut was {salted/in love}, and by the sound of it, this was definitely mutual. He was seeing a little almond.' (Nieuwland and van Berkum 2006: 1106) As reported by Nieuwland and van Berkum, in this context it is ÒsaltedÓ, not Òin loveÓ, that elicits an N400. Apparently, the expectations tracked by the N400 take into account contextual information, as well as general world knowledge. One of the most salient components of the context is the speaker, and van Berkum et al. (2008) showed that the N400 takes into account information about the speaker, too. In van Berkum et al.Õs study, people listened to sen- tences whose meanings might be at odds with reasonable assumptions about the speakerÕs sex, age, or social status, as inferred from the speakerÕs voice. For example, when ÒI have a large tattoo on my backÓ was spoken in an upper- class accent, there was an obvious discrepancy between social elevation and dorsal decoration, which became apparent at the critical word ÒtattooÓ. This type of mismatch, too, turned out to yield an N400."
+
+\title{Probabilistic beliefs mediate the influence of intuitive theories on generic language}
+  \author{Michael Henry Tessler\textsuperscript{1}~\& Noah D. Goodman\textsuperscript{2}}
+\affiliation{
+\vspace{0.5cm}
+ \textsuperscript{1} Massachusetts Institute of Technology, Department of Brain and Cognitive Sciences\\\textsuperscript{2} Stanford University, Departments of Psychology and Computer Science 
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Human knowledge about categories is expressed in generic language (, or generics; e.g., ``Birds have hollow bones''). 
+Generics are rife with puzzling statistical properties and paradoxes, which many have taken as evidence that generics express some kind of special mental relationship between an abstract kind and its properties rather than a probabilistic relationship. 
+\citeA{Tessler2019} formalize a meaning for generics without appealing to special mental relationships but instead draw upon distributional knowledge about properties and principles of Bayesian belief-updating.
+Under this model, intuitive theories can influence understanding of generic language by two statistical avenues: knowledge of a property among other categories and predictive beliefs about the future. 
+Here we re-examine two key data-points that purport to show that intuitive theories modulate understanding of generics without influencing statistical knowledge. 
+Contra the original conclusions, we find the relevant empirical signatures are predicted by a model with no special mental relationship that a generic picks out, but instead general principles of structured probabilistic models of human cognition. 
+We argue that a Bayesian framework for intuitive theories have the appropriate mechanisms to influence generic language understanding without generics having to refer to a special mental relationship.
+
+\textbf{Keywords:} 
+intuitive theories; generic language; semantics; pragmatics
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+
+Generic language (or, \emph{generics}, e.g., ``Alligators have big teeth'') convey generalizable information about categories \cite{Carlson1977, Carlson1995}.
+Generics are believed to be a part of every human language \cite{Behrens2005}, are understood by children as soon as they have the syntactic knowledge to combine a subject and a predicate \cite{graham2011two}, and guide the development of intuitive theories \cite{Gelman2003}.
+Despite being morphosyntactically simple and ubiquitous in political, scientific, and everyday discourse, generics are rife with statistical paradoxes and puzzles.
+For instance, ``Robins lay eggs'' is a true generic, while ``Robins are female'' sounds odd to most people: yet, in both cases, only roughly 50\% of the category has the property (i.e., the female birds). 
+The standard generalization drawn from this and many other examples is to say that generics are not statements of statistical information \emph{per se}, but rather convey special mental relationships between kinds and properties \cite{Gelman2007, Leslie2008, Prasada2000, Cimpian2010theory, Cimpian2010}.
+
+The rules that govern these special mental relationships are often correlated with statistical information, but they are separable from statistical knowledge in deep ways that reflect the hidden structure of human thought.
+For example, some generics communicate about properties that are relatively enduring in a category \cite{Lyons1977, Prasada2006}, and these generics are somewhat resilient to counterexamples (e.g., the existence of three-legged-dogs does not falsify the generic ``Dogs have four legs'').
+Consistent with this intuition, \cite{Gelman2007} found that adults' endorse novel generics like ``Dobles have claws'' regardless of how many dobles have claws at this present moment if the way in which dobles acquire claws is genetically determined, as opposed to acquiring them through their environment.
+Another feature of intuitive theories that is thought to directly relate to generic language is the status of the property as \emph{striking}, \emph{alarming}, or \emph{dangerous}, wherein we accept generics about dangerousness properties, even when the actual prevalence of the feature within the category is low (e.g., the number of mosquitos that carry the West Nile Virus is exceedingly small but ``Mosquitos carry West Nile Virus'' is true; \citeNP{Leslie2007}). 
+Consistent with this viewpoint, \citeA{Cimpian2010} found participants willing to endorse generics about striking properties (e.g., ``Lorches have dangerous feathers'') more so than that of neutral properties (e.g., ``Lorches have purple feathers'') at low levels of prevalence (e.g., when only 30\% of the category have the property).
+
+Recent work in computational cognitive science and formal models of language understanding has shown that many of the standard ``paradoxes'' of generic language can be resolved without appealing to special mental relationships, but instead drawing upon distributional knowledge about properties and principles of Bayesian belief-updating.
+A simple, quantificational semantic theory for generics---generics convey that a relatively high percentage of the category has the property---can account for human judgments of generics across different dependent measures; they key insight is that what counts as \emph{relatively high} depends upon a listener's prior beliefs about the property and where what gets communicate is a speaker's predictive beliefs about the category, not the raw empirical frequencies \cite{Tessler2019, TesslerGenIntMS}.
+For example, ``Robins lay eggs'' is intuitively true while ``Robins are female'' is not because laying eggs is a feature that distinguishes robins from many other animals, while the property of being female is present in almost all animal categories in exactly the same proportion.
+Under this model, intuitive theories could influence understanding of generic language by two statistical avenues: knowledge of a property among other categories and predictive beliefs about the future. 
+
+We re-examine the two key data points about \emph{property origins} \cite{Gelman2007} and \emph{property strikingness} \cite{Cimpian2010} that argue for the role of special mental relationships in the meaning of generics. 
+We replicate the original behavioral patterns, while also measuring the relevant probabilistic constructs that are predicted by \cite{Tessler2019} to be the intermediate representation between intuitive theories and generic language. 
+We find that knowledge about the origins of a property changes human expectations about the prevalence of the property among future members of the category in the exact way that the probabilistic model of generic language would predict given the influence of property origins on generic language.
+Additionally, we find that knowledge about the strikingness or dangerousness properties changes listeners' prior expectations about the property in a way that should make generics acceptable even when the property is relatively rare.
+Thus, probabilistic knowledge mediates the influence of intuitive theories on generic languages, consistent with Bayesian approaches to intuitive theories. 
+
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Methods}
+
+
+
+There is considerable experimental evidence that meaning of generic statements cannot simply be reduced to probabilistic or statistical statements : Generics are judged true even when the predicated property is only rarely present (e.g., "Mosquitos carry malaria" is true despite very few mosquitos actually carrying malaria).
+Instead, a popular view in cognitive science is that generics are a direct, linguistic manifestation of conceptual knowledge \cite{Prasada, Leslie}.  
+As a result, the process of understanding generics is predicted to be sensitive to certain top-down influence.
+Accordingly, \citeA{Leslie2007} brings our attention to examples like the following:
+
+\begin{enumerate}
+\item 1. Sharks attack bathers.
+\item 2. Rottweilers maul children. 
+\item 3. Mosquitos carry the West Nile Virus.
+\end{enumerate}
+
+
+\begin{quote}
+The examples... have something in common: In all of them, the sentence attributes harmful, dangerous, or appalling properties to the kind. More generally, if the property in question is the sort of property of which one would be well served to be forewarned, even if there were only a small chance of encountering it, then generic attributions of the property are intuitively true. (2008, p.15)
+\end{quote}
+
+\noindent 
+
+
+This framework is sufficiently general to explain the context-sensitivity of *habitual language* (e.g., "John runs") as well, a relationship that has been remarked upon in the literature on generics \cite{Carlson, Leslie} but never before formalized. 
+
+@Gelman2007 found that adult endorsements of novel generics were sensitive to the origins of the property (i.e., whether or not the creatures were born with or acquired the property through experience).
+In their paradigm, participants are told a story about a novel creature (e.g., dobles) and a property of that kind (e.g., have claws).
+After being told the origins of the property (i.e., dobles were either born with claws, or found claws and put them on), participants are told about an event that either causes the property to disappear (e.g., they drank a chemical and their claws fell off) or that leaves the property intact (e.g., they drank a yummy drink and felt happy).
+The final display of the experiment shows the novel category in their current state: Dobles either with or without claws (depending on the outcome of the event).
+@Gelman2007 found that participants' judgments of the generic (e.g., "Dobles have claws") were *insensitive* to the current state (i.e., the outcome of the drinking event: property maintained vs. lost): Participants fully-endorsed the generic when it was in-born, and rejected it when it was acquired.
+
+In Experiment 1a, we use a paradigm similar to that of \citeA{Gelman2007} to replicate the effect of property origins on generic endorsement.
+We replicate the effect of property origins, but also, discover an effect of the event outcome.
+In Experiment 1b, we alter the dependent measure to measure *predictive prevalence*: participants' expectations that future instances of the kind will have the property.
+We find that, consistent with our hypothesis, knowledge of the property influences predictive prevalence in such a way that tracks both the replicated main effect of property origins as well as the novel effect of current state.
+Furthermore, predictive prevalence tracks with subtle item-level differences, further indicating that it is an intermediate representation between conceptual knowledge and generic endorsement.
+
+Here, we examine and test an intriguing claim of the computational model of \citeA{TesslerGenericsInPress}: Whether differences in endorsements based on top-down, conceptual knowledge (e.g., strikingness) could be mediated by corresponding differences in the relevant prior knowledge recruited about the properties in the form of expectations about prevalence.\footnote{
+  Another non-mutually exclusive possibility suggested by \citeA{Leslie2008}| is that a speaker's perception of the prevalence of the feature is altered by virtue of its dangerousness \cite{Rothbart1978}.
+}
+If this were so, we would expect information about the strikingness of a property to alter the listener's relevant prior knowledge to reflect the kind of prior knowledge associated with *distinctive* properties (i.e., properties that are expected to be present in very few categories).
+We examine this claim in the context of the experimental paradigm of \citeA{Cimpian2010}, which found judgments about generics were influenced by information about the dangerousness of the property being predicated. 
+We first replicate the findings of \citeA{Cimpian2010} Expt. 4, which showed that information about the dangerousness of a property increases generic endorsement at low prevalence levels.
+Then, we run a prevalence elicitation experiments to see if these differences in endorsements are associated with differences in the prevalence prior distributions.
+We use the computational model of \citeA{TesslerGenericsInPress} to predict the endorsement results using the elicited priors, finding that indeed the priors are sufficiently altered as the result of information about the property's dangerousness to account for the differences in endorsements observed by \citeA{Cimpian2010}.
+Finally, we perform a Bayesian mediation analysis, finding that probabilistic knowledge fully mediates the effects of dangerous information on generic endorsements.
+These results call into question claims about the special status of dangerous information on generic language understanding and suggest more careful experimental controls for future investigations.
+
+\bibliographystyle{apacite}
+
+\setlength{\bibleftmargin}{.125in}
+\setlength{\bibindent}{-\bibleftmargin}
+
+\bibliography{generics}
+
+
+\end{document}
+
+
+\end{document}
