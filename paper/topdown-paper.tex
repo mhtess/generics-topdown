@@ -1,9 +1,10 @@
-\documentclass[floatsintext,doc]{apa6}
+\documentclass[floatsintext, 11pt, doc]{apa6}
 
 %\usepackage{gb4e}
 %\usepackage{pslatex}
 \usepackage{apacite}
 \usepackage{amsmath,amssymb}
+%\usepackage[super, numbers]{natbib}
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage{url}
@@ -85,27 +86,47 @@ Generic language (or, \emph{generics}, e.g., ``Alligators have big teeth'') conv
 Generics are believed to be a part of every human language \cite{Behrens2005}, are understood by children as soon as they have the syntactic knowledge to combine a subject and a predicate \cite{graham2011two}, and guide the development of intuitive theories \cite{Gelman2003}.
 Despite being morphosyntactically simple and ubiquitous in political, scientific, and everyday discourse, generics are rife with statistical paradoxes and puzzles.
 For instance, ``Robins lay eggs'' is a true generic, while ``Robins are female'' sounds odd to most people: yet, in both cases, only roughly 50\% of the category has the property (i.e., the female birds). 
-The standard generalization drawn from this and many other examples is to say that generics are not statements of statistical information \emph{per se}, but rather convey special mental relationships between kinds and properties \cite{Gelman2007, Leslie2008, Prasada2000, Cimpian2010theory, Cimpian2010}.
+The standard generalization drawn from this and many other examples is to say that generics are not statements of statistical information \emph{per se}; instead, many argue, generics convey special mental relationships between kinds and properties \cite{Gelman2007, Leslie2008, Prasada2000, Cimpian2010theory, Cimpian2010}.
 
-The rules that govern these special mental relationships are often correlated with statistical information, but they are separable from statistical knowledge in deep ways that reflect the hidden structure of human thought.
+The rules that govern special mental relationships between kinds and properties are often correlated with statistical information, but they are separable from statistical knowledge in deep ways that reflect the hidden structure of human thought.
 For example, some generics communicate about properties that are relatively enduring in a category \cite{Lyons1977, Prasada2006}, and these generics are somewhat resilient to counterexamples (e.g., the existence of three-legged-dogs does not falsify the generic ``Dogs have four legs'').
-Consistent with this intuition, \cite{Gelman2007} found that adults' endorse novel generics like ``Dobles have claws'' regardless of how many dobles have claws at this present moment if the way in which dobles acquire claws is genetically determined, as opposed to acquiring them through their environment.
-Another feature of intuitive theories that is thought to directly relate to generic language is the status of the property as \emph{striking}, \emph{alarming}, or \emph{dangerous}, wherein we accept generics about dangerousness properties, even when the actual prevalence of the feature within the category is low (e.g., the number of mosquitos that carry the West Nile Virus is exceedingly small but ``Mosquitos carry West Nile Virus'' is true; \citeNP{Leslie2007}). 
+Consistent with this intuition, \citeA{Gelman2007} found that adults endorse generics about novel categories like ``Dobles have claws'' irrespective of how many dobles have claws at this present moment, if the way in which dobles acquire claws is genetically determined, as opposed to acquiring them through their environment.
+Another feature of intuitive theories that is thought to directly relate to generic language is the status of the property as \emph{striking}, \emph{alarming}, or \emph{dangerous}, wherein people accept generics about dangerousness properties, even when the actual prevalence of the feature within the category is low (e.g., the number of mosquitos that carry the West Nile Virus is exceedingly small but ``Mosquitos carry West Nile Virus'' is true; \citeNP{Leslie2007}). 
 Consistent with this viewpoint, \citeA{Cimpian2010} found participants willing to endorse generics about striking properties (e.g., ``Lorches have dangerous feathers'') more so than that of neutral properties (e.g., ``Lorches have purple feathers'') at low levels of prevalence (e.g., when only 30\% of the category have the property).
 
-Recent work in computational cognitive science and formal models of language understanding has shown that many of the standard ``paradoxes'' of generic language can be resolved without appealing to special mental relationships, but instead drawing upon distributional knowledge about properties and principles of Bayesian belief-updating.
-A simple, quantificational semantic theory for generics---generics convey that a relatively high percentage of the category has the property---can account for human judgments of generics across different dependent measures; they key insight is that what counts as \emph{relatively high} depends upon a listener's prior beliefs about the property and where what gets communicate is a speaker's predictive beliefs about the category, not the raw empirical frequencies \cite{Tessler2019, TesslerGenIntMS}.
+Recent work in probabilistic models of language understanding, however, has shown that many of the standard ``paradoxes'' of generic language can be resolved without appealing to special mental relationships, but instead drawing upon distributional knowledge about properties and principles of Bayesian belief-updating.
+A simple, quantificational semantic theory for generics---generics convey that a relatively high percentage of the category has the property---can account for human judgments of generics across different dependent measures; the key insight is that what counts as \emph{relatively high} depends upon a listener's prior beliefs about the property and where what gets communicate is a speaker's predictive beliefs about the category, not the raw empirical frequencies \cite{Tessler2019}. %, TesslerGenIntMS}.
 For example, ``Robins lay eggs'' is intuitively true while ``Robins are female'' is not because laying eggs is a feature that distinguishes robins from many other animals, while the property of being female is present in almost all animal categories in exactly the same proportion.
-Under this model, intuitive theories could influence understanding of generic language by two statistical avenues: knowledge of a property among other categories and predictive beliefs about the future. 
+Under this model, there are two natural avenues through which intuitive theories could influence understanding of generic language: knowledge of a property among other categories and predictive beliefs about the future. 
 
-We re-examine the two key data points about \emph{property origins} \cite{Gelman2007} and \emph{property strikingness} \cite{Cimpian2010} that argue for the role of special mental relationships in the meaning of generics. 
-We replicate the original behavioral patterns, while also measuring the relevant probabilistic constructs that are predicted by \cite{Tessler2019} to be the intermediate representation between intuitive theories and generic language. 
+We re-examine the two key data points arguing for the special mental relationships view: one concerning \emph{property origins} \cite{Gelman2007} and one concerning \emph{property strikingness} \cite{Cimpian2010}.% that argue for the role of special mental relationships in the meaning of generics. 
+We replicate the original behavioral patterns, while also measuring the relevant probabilistic constructs that are predicted by \citeA{Tessler2019} to be the intermediate representation between intuitive theories and generic language. 
 We find that knowledge about the origins of a property changes human expectations about the prevalence of the property among future members of the category in the exact way that the probabilistic model of generic language would predict given the influence of property origins on generic language.
-Additionally, we find that knowledge about the strikingness or dangerousness properties changes listeners' prior expectations about the property in a way that should make generics acceptable even when the property is relatively rare.
+Additionally, we find that knowledge about the strikingness or dangerousness properties changes listeners' prior expectations about the property in a way that makes dangerous properties seem more distinctive, and thus make generics acceptable even when the property is not very common.
 Thus, probabilistic knowledge mediates the influence of intuitive theories on generic languages, consistent with Bayesian approaches to intuitive theories. 
 
 
 \section{Results}
+
+We examine two case studies that purport to show that generics convey special mental relationships between kinds and properties through the lens of a probabilistic model of generic language, in which no such special relationships exist. 
+The first experiment highlights that the origins of a property---how instances of the kind came to have the property---plays a role in the endorsement of generic sentences such as ``Dobles have claws''.
+
+The original paradigm by \citeA{Gelman2007} introduced participants to a novel categories (\emph{dobles}) through a picture book, which also conveyed how instances of the category came to have a property (\emph{property origins}) as well as whether or not they maintained the property throughout their lives (\emph{outcome}).
+Participants saw either that the creatures were born with the feature (\emph{intrinsic origins}, e.g., dobles are hatched out of the egg with claws) or acquired it through experience (\emph{extrinsic origins, e.g., dobles find claws on the ground and put them on}) and then either maintain or lose the property following an event (\emph{lost}: dobles drink some chemical and their claws fall off; \emph{maintained}: doubles drink some chemical and nothing happens). 
+The authors found that adult participants paid attention only to the origins of the property when judging whether or not the sentence ``Dobles have claws'' was true.
+We partially replicate this finding using an online version of the experiment conducted on participants on Amazon's Mechanical Turk ($n=80$; original study $n=14$). 
+We find two main effects on generic endorsements: both property origins (intrinsic > extrinsic)\red{(regression results)} and the outcome (maintained > lost)\red{(regression results)}. 
+
+We hypothesize that the impact of conceptual information on generic language is mediated by participants' expectations about the property. \citeA{Tessler2019} found that it was participants' frequency beliefs about the future that mattered for endorsing habitual sentences (another linguistic expression that conveys generalization) like \emph{John runs} and not the objective, past frequency. 
+To test this hypothesis, we collected judgments from a separate group of participants ($n = 80$) about the probability that a future instance of the category (e.g., a doble born today) would grow up to have the property (have claws).
+We find similar main effects on the predicative probability judgments \red{(regression results)}, and that that these results strongly predict the generic endorsement results \red{(regression results)}.
+We additionally find by-item variability (color features vs. body part features) that is strongly correlated between the two measures  \red{(regression results)}. 
+Thus, beliefs about property origins influences generic endorsement via influencing beliefs about future prevalence. 
+
+The fact that participants were sensitive to the outcome of the event when endorsing the generic suggests that their beliefs about the stability of these properties influenced their judgments.
+For example, participants may believe that the fact that the property can be lost based on drinking a chemical indicates that the property is relatively unstable feature, analogous to heads of hair on adult male humans.
+Similarly, the existence of properties in the environment that individuals can come across and acquire is perhaps some evidence that the this external cause of the property is relatively stable \red{(cite Nadya V's work)}.. 
+The exploratory analysis is consistent with this if participants believe skin color to be a less malleable property than the body part stimuli.
 
 \section{Discussion}
 
@@ -119,9 +140,9 @@ As a result, the process of understanding generics is predicted to be sensitive 
 Accordingly, \citeA{Leslie2007} brings our attention to examples like the following:
 
 \begin{enumerate}
-\item 1. Sharks attack bathers.
-\item 2. Rottweilers maul children. 
-\item 3. Mosquitos carry the West Nile Virus.
+\item Sharks attack bathers.
+\item Rottweilers maul children. 
+\item Mosquitos carry the West Nile Virus.
 \end{enumerate}
 
 
