@@ -110,6 +110,10 @@ Thus, probabilistic knowledge mediates the influence of intuitive theories on ge
 
 We examine two case studies that purport to show that generics convey special mental relationships between kinds and properties through the lens of a probabilistic model of generic language, in which no such special relationships exist. 
 The first experiment highlights that the origins of a property---how instances of the kind came to have the property---plays a role in the endorsement of generic sentences such as ``Dobles have claws''.
+The second shows how the strikingness or dangerousness of properties can also impact endorsements of generic sentences.
+We re-examine each of these findings in turn. 
+
+\subsection{Experiment 1: Property origins}
 
 The original paradigm by \citeA{Gelman2007} introduced participants to a novel categories (\emph{dobles}) through a picture book, which also conveyed how instances of the category came to have a property (\emph{property origins}) as well as whether or not they maintained the property throughout their lives (\emph{outcome}).
 Participants saw either that the creatures were born with the feature (\emph{intrinsic origins}, e.g., dobles are hatched out of the egg with claws) or acquired it through experience (\emph{extrinsic origins, e.g., dobles find claws on the ground and put them on}) and then either maintain or lose the property following an event (\emph{lost}: dobles drink some chemical and their claws fall off; \emph{maintained}: doubles drink some chemical and nothing happens). 
@@ -128,16 +132,10 @@ For example, participants may believe that the fact that the property can be los
 Similarly, the existence of properties in the environment that individuals can come across and acquire is perhaps some evidence that the this external cause of the property is relatively stable \red{(cite Nadya V's work)}.. 
 The exploratory analysis is consistent with this if participants believe skin color to be a less malleable property than the body part stimuli.
 
-\section{Discussion}
-
-\section{Methods}
+\subsection{Experiment 2: Dangerousness}
 
 
-
-There is considerable experimental evidence that meaning of generic statements cannot simply be reduced to probabilistic or statistical statements : Generics are judged true even when the predicated property is only rarely present (e.g., "Mosquitos carry malaria" is true despite very few mosquitos actually carrying malaria).
-Instead, a popular view in cognitive science is that generics are a direct, linguistic manifestation of conceptual knowledge \cite{Prasada, Leslie}.  
-As a result, the process of understanding generics is predicted to be sensitive to certain top-down influence.
-Accordingly, \citeA{Leslie2007} brings our attention to examples like the following:
+\citeA{Leslie2007} brings our attention to examples like the following:
 
 \begin{enumerate}
 \item Sharks attack bathers.
@@ -145,38 +143,45 @@ Accordingly, \citeA{Leslie2007} brings our attention to examples like the follow
 \item Mosquitos carry the West Nile Virus.
 \end{enumerate}
 
+\noindent arguing that these generic statements are reasonable utterances by virtue of the fact that the ``the property in question is the sort of property of which one would be well served to be forewarned, even if there were only a small chance of encountering it'' (Leslie, 2008; p.15).
+(\citeA{Leslie2008} further goes on to speculate that one mediator of dangerous knowledge on generic endorsement is the property's projectibility, or a speaker's perception of the prevalence of the feature \cite{Rothbart1978}.)
+Consistent with this intuition,  \citeA{Cimpian2010} (Expts. 1\&4) found that generics about novel categories (e.g., "Lorches have purple feathers") are endorsed more highly when the property is distinctive (\emph{distinctive purple feathers}) or dangerous (\emph{dangerous purple feathers}).
+We replicated the original findings by \citeA{Cimpian2010} that these generics are specifically endorsed more at low levels of prevalence (e.g., when only 30\% have the feature; $n=80$; original $n=15$). 
+Describing properties as either dangerous or distinctive yields a different pattern of endorsements than when properties are not described as such, which manifests as endorsements exhibiting less of a sensitivity to the actual prevalence owing to the fact that generics about these kinds of properties are endorsed more strongly specifically at low prevalence levels, making their endorsement curves more flat \red{(regression model results)}. 
 
-\begin{quote}
-The examples... have something in common: In all of them, the sentence attributes harmful, dangerous, or appalling properties to the kind. More generally, if the property in question is the sort of property of which one would be well served to be forewarned, even if there were only a small chance of encountering it, then generic attributions of the property are intuitively true. (2008, p.15)
-\end{quote}
+We hypothesize that the impact of dangerousness on generic language results from participants' implicitly construing dangerous properties as distinctive properties. 
+For example, \citeA{Tessler2019} showed how truth judgments for ``Mosquitos carry West Nile Virus'' (which is attested to be true, despite the prevalence of carrying West Nile among mosquitos being low) can be accounted for by virtue of the fact that most animals do not carry the West Nile Virus and even among those animals that could carry the virus, the prevalence would be expected to be low (technically: the prevalence prior distribution for the property \emph{carries West Nile Virus} is strongly biased towards low or 0\% prevalence values) \red{(should have a figure showing this... in fact, a figure for both model-based explanations would be good)}. 
+To test this, we ran a \emph{prior elicitation study} where we collected participants' beliefs about the statistical distribution of the property, given either dangerous or distinctive (or no) information about the property. 
+Specifically, participants ($n=80$) were asked to predict how many different species of animals they thought would have the property as well as to estimate the property's projectibility (given that at least one instance of the category has the property, how many other instances have the property); both of these constructs contribute to the prevalence prior distribution, which impacts participants' endorsements of generics.
+The results are shown in \red{Figure}; consistent with our predictions, both distinctive properties \red{regression results)} and dangerous properties (\red{regression results)} were expected to be present in fewer categories in comparison to the control condition (i.e., properties present without any further information). 
+At the same time, neither dangerous nor distinctive properties were more projectible than control properties, contra \citeA{Leslie2008}'s speculation. 
+Thus, dangerous properties are construed as distinctive properties, which have different generic endorsement profiles for purely statistical considerations. 
 
-\noindent 
+As a further test of the explanatory power of these elicited prevalence priors, we incorporating these prior measurements into the computational model of generic endorsement proposed by \cite{Tessler2019}.
+\red{Figure} shows that the model is able to accommodate the qualitative effects of dangerousness and distinctiveness on generic endorsement and provide a high degree quantitative fit to the endorsement task data. 
+\mht{control models... projectibility alone? or mediation analysis?}
 
 
-This framework is sufficiently general to explain the context-sensitivity of *habitual language* (e.g., "John runs") as well, a relationship that has been remarked upon in the literature on generics \cite{Carlson, Leslie} but never before formalized. 
+\section{Discussion}
 
-@Gelman2007 found that adult endorsements of novel generics were sensitive to the origins of the property (i.e., whether or not the creatures were born with or acquired the property through experience).
-In their paradigm, participants are told a story about a novel creature (e.g., dobles) and a property of that kind (e.g., have claws).
-After being told the origins of the property (i.e., dobles were either born with claws, or found claws and put them on), participants are told about an event that either causes the property to disappear (e.g., they drank a chemical and their claws fell off) or that leaves the property intact (e.g., they drank a yummy drink and felt happy).
-The final display of the experiment shows the novel category in their current state: Dobles either with or without claws (depending on the outcome of the event).
-@Gelman2007 found that participants' judgments of the generic (e.g., "Dobles have claws") were *insensitive* to the current state (i.e., the outcome of the drinking event: property maintained vs. lost): Participants fully-endorsed the generic when it was in-born, and rejected it when it was acquired.
+\section{Methods}
 
-In Experiment 1a, we use a paradigm similar to that of \citeA{Gelman2007} to replicate the effect of property origins on generic endorsement.
-We replicate the effect of property origins, but also, discover an effect of the event outcome.
-In Experiment 1b, we alter the dependent measure to measure *predictive prevalence*: participants' expectations that future instances of the kind will have the property.
-We find that, consistent with our hypothesis, knowledge of the property influences predictive prevalence in such a way that tracks both the replicated main effect of property origins as well as the novel effect of current state.
-Furthermore, predictive prevalence tracks with subtle item-level differences, further indicating that it is an intermediate representation between conceptual knowledge and generic endorsement.
+\subsection{Experiment 1}
 
-Here, we examine and test an intriguing claim of the computational model of \citeA{TesslerGenericsInPress}: Whether differences in endorsements based on top-down, conceptual knowledge (e.g., strikingness) could be mediated by corresponding differences in the relevant prior knowledge recruited about the properties in the form of expectations about prevalence.\footnote{
-  Another non-mutually exclusive possibility suggested by \citeA{Leslie2008}| is that a speaker's perception of the prevalence of the feature is altered by virtue of its dangerousness \cite{Rothbart1978}.
-}
-If this were so, we would expect information about the strikingness of a property to alter the listener's relevant prior knowledge to reflect the kind of prior knowledge associated with *distinctive* properties (i.e., properties that are expected to be present in very few categories).
-We examine this claim in the context of the experimental paradigm of \citeA{Cimpian2010}, which found judgments about generics were influenced by information about the dangerousness of the property being predicated. 
-We first replicate the findings of \citeA{Cimpian2010} Expt. 4, which showed that information about the dangerousness of a property increases generic endorsement at low prevalence levels.
-Then, we run a prevalence elicitation experiments to see if these differences in endorsements are associated with differences in the prevalence prior distributions.
-We use the computational model of \citeA{TesslerGenericsInPress} to predict the endorsement results using the elicited priors, finding that indeed the priors are sufficiently altered as the result of information about the property's dangerousness to account for the differences in endorsements observed by \citeA{Cimpian2010}.
-Finally, we perform a Bayesian mediation analysis, finding that probabilistic knowledge fully mediates the effects of dangerous information on generic endorsements.
-These results call into question claims about the special status of dangerous information on generic language understanding and suggest more careful experimental controls for future investigations.
+\subsection{Experiment 2}
+
+Participants were presented with an evidence statement describing the prevalence of the property within the category as well as highlighting either the dangerousness or distinctiveness of the feature (e.g., ``30\% of lorches have \{dangerous, distinctive, \emph{null}\} purple feathers.''), followed up by another sentence reinforcing the the dangerousness or distinctiveness of the property (e.g., ``These feathers are as sharp as needles and can easily get lodged in you, causing massive bleeding.''; ``No other animals on this island have wide, smooth feathers like these.''). Control items were followed with additional, irrelevant descriptions (e.g., ``These feathers are wide and very smooth to the touch.''). 
+
+%This is confirmed by a Bayesian Bernoulli regression model with fixed-effects of property type (dangerous vs. distinctive vs. neither), prevalence levels (treated as a continuous variable, centered and scaled), and their interaction.
+%As well, the model included random intercepts and effects of property type, by participant and by item. 
+%We find evidence for different slopes such that both dangerous properties ($\beta_{dangerous\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedanger:prev_centered")`) and distinctive properties ($\beta_{distinctive\times prevalence}=$ `r format_regression_effects(brms.endorsement.bern.2.summary, "stim_typedistinct:prev_centered")`) show less of an effect of prevalence on their endorsement; this is because they are endorsed higher specifically at low prevalence levels, thus making their endorsement curves more flat. 
+
+
+%Finally, we perform a Bayesian mediation analysis, finding that probabilistic knowledge fully mediates the effects of dangerous information on generic endorsements.
+%These results call into question claims about the special status of dangerous information on generic language understanding and suggest more careful experimental controls for future investigations.
+
+%Following our treatment of the priors for novel generics (Ch. 1 Expt. 1, Ch. 3 Expt. 1), we used a zero-inflated beta distribution shape for the prevalence priors, taking the first prior elicitation question (*number of categories*) as the estimate of the probability mass at 0% prevalence and responses to the second prior elicitation question (*projectibility*) as samples from the Beta distribution.
+
 
 \bibliographystyle{apacite}
 
