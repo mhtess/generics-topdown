@@ -39,7 +39,57 @@
 \newcommand{\sectionref}[1]{Section \ref{#1}}
 
 
+% these packages are needed to insert results 
+% obtained from R into the LaTeX document
+\usepackage{pgfplotstable}
+\usepackage{csvsimple}
+\usepackage{siunitx}
 
+% set the name of the folder in which the CSV files with 
+% information from R is stored
+\newcommand{\datafoldername}{csv_data_4_tex}
+
+% the following code defines the convenience functions
+% as described in the main text below
+
+% rlgetvalue returns whatever is the in cell of the CSV file
+% be it string or number; it does not format anything
+\newcommand{\rlgetvalue}[4]{\csvreader[filter strcmp={\mykey}{#3},
+             late after line = {{,}\ }, late after last line = {{}}]
+            {\datafoldername/#1}{#2=\mykey,#4=\myvalue}{\myvalue}}
+
+% rlgetvariable is a shortcut for a specific CSV file (myvars.csv) in which
+% individual variables that do not belong to a larger chunk can be stored
+\newcommand{\rlgetvariable}[1]{\csvreader[]{\datafoldername/myvars.csv}{#1=\myvar}{\myvar}\xspace}
+
+% rlnum format a decimal number
+\newcommand{\rlnum}[2]{\num[output-decimal-marker={.},
+                             exponent-product = \cdot,
+                             round-mode=places,
+                             round-precision=#2,
+                             group-digits=false]{#1}}
+
+\newcommand{\rlnumsci}[2]{\num[output-decimal-marker={.},
+                          scientific-notation = true,
+                             exponent-product = \cdot,
+                             round-mode=places,
+                             round-precision=#2,
+                             group-digits=false]{#1}}
+
+\newcommand{\rlgetnum}[5]{\csvreader[filter strcmp={\mykey}{#3},
+             late after line = {{,}\ }, late after last line = {{}}]
+            {\datafoldername/#1}{#2=\mykey,#4=\myvalue}{\rlnum{\myvalue}{#5}}}
+
+\newcommand{\rlgetnumsci}[5]{\csvreader[filter strcmp={\mykey}{#3},
+             late after line = {{,}\ }, late after last line = {{}}]
+            {\datafoldername/#1}{#2=\mykey,#4=\myvalue}{\rlnumsci{\myvalue}{#5}}}
+
+\newcommand{\betaCI}[2]{
+ \(\beta = \rlgetnum{#1}{Rowname}{#2}{Estimate}{2}\) ($\rlgetnum{#1}{Rowname}{#2}{l.95..CI}{2}$, $\rlgetnum{#1}{Rowname}{#2}{u.95..CI}{2}$)
+}
+
+%\newcommand{\bb}[1]{\mathbb{#1}}
+ 
 % ggplot colors: "#F8766D", "#A3A500", "#00BF7D", "#E76BF3", "#00B0F6"
 
 % variations on blue: "#007fb1", "#4ecdff"
@@ -118,14 +168,25 @@ We re-examine each of these findings in turn.
 The original paradigm by \citeA{Gelman2007} introduced participants to a novel categories (\emph{dobles}) through a picture book, which also conveyed how instances of the category came to have a property (\emph{property origins}) as well as whether or not they maintained the property throughout their lives (\emph{outcome}).
 Participants saw either that the creatures were born with the feature (\emph{intrinsic origins}, e.g., dobles are hatched out of the egg with claws) or acquired it through experience (\emph{extrinsic origins, e.g., dobles find claws on the ground and put them on}) and then either maintain or lose the property following an event (\emph{lost}: dobles drink some chemical and their claws fall off; \emph{maintained}: doubles drink some chemical and nothing happens). 
 The authors found that adult participants paid attention only to the origins of the property when judging whether or not the sentence ``Dobles have claws'' was true.
-We partially replicate this finding using an online version of the experiment conducted on participants on Amazon's Mechanical Turk ($n=80$; original study $n=14$). 
-We find two main effects on generic endorsements: both property origins (intrinsic > extrinsic)\red{(regression results)} and the outcome (maintained > lost)\red{(regression results)}. 
+We attempted to reproduce this finding using an online version of the experiment conducted on participants on Amazon's Mechanical Turk ($n=80$; original study $n=14$). 
+Rather than just a single effect of the property origins, we find two main effects on generic endorsements: both property origins (intrinsic > extrinsic; Bayesian Binomial regression beta-weight and 95\% highest density interval: \betaCI{brm_dobles_2way_randInt-subj-proptype.csv}{originsintrinsic}) and the outcome (maintained > lost; \betaCI{brm_dobles_2way_randInt-subj-proptype.csv}{event_outcomemaintained}).
+
+
+\begin{figure}
+  \centering
+    \includegraphics[width=0.8\textwidth]{figs/dobles-expt-fig.pdf}
+  \caption{Overview of Expt. 1 (intrinsic origins, property lost condition shown) A: Participants are first introduced to ten identical exemplars of a novel category, either with or without a property (here, shown with the target property of being red). B: The origins of the property are described, either they are born with the property or the acquire it through extrinsic means (born with property shown). C: The event is described and event outcome shown
+(here, property is lost). D: Participants evaluate the generic sentence.}
+\end{figure}
 
 We hypothesize that the impact of conceptual information on generic language is mediated by participants' expectations about the property. \citeA{Tessler2019} found that it was participants' frequency beliefs about the future that mattered for endorsing habitual sentences (another linguistic expression that conveys generalization) like \emph{John runs} and not the objective, past frequency. 
 To test this hypothesis, we collected judgments from a separate group of participants ($n = 80$) about the probability that a future instance of the category (e.g., a doble born today) would grow up to have the property (have claws).
-We find similar main effects on the predicative probability judgments \red{(regression results)}, and that that these results strongly predict the generic endorsement results \red{(regression results)}.
+We find similar main effects on the predicative probability judgments  property origins (intrinsic > extrinsic origins; \betaCI{brm_doblesPrev_2way_randInt-subj-proptype.csv}{originsintrinsic} and maintained > lost outcome;  \betaCI{brm_doblesPrev_2way_randInt-subj-proptype.csv}{event_outcomemaintained}) and that that the mean predicted prevalence judgments strongly predict the generic endorsement results \red{(regression results)}.
 We additionally find by-item variability (color features vs. body part features) that is strongly correlated between the two measures  \red{(regression results)}. 
 Thus, beliefs about property origins influences generic endorsement via influencing beliefs about future prevalence. 
+
+
+
 
 The fact that participants were sensitive to the outcome of the event when endorsing the generic suggests that their beliefs about the stability of these properties influenced their judgments.
 For example, participants may believe that the fact that the property can be lost based on drinking a chemical indicates that the property is relatively unstable feature, analogous to heads of hair on adult male humans.
