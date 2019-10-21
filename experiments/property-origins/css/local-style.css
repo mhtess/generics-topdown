@@ -1,0 +1,23 @@
+.slider {
+  /* default is width 400 and margin 10 */
+	width: 400;
+	margin: 10px;
+}
+
+.evidence{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+}
+
+.query{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+}
+
+.err{
+	color: red;
+}
+
+.ipTable{
+	border: 2px solid black;;
+}
